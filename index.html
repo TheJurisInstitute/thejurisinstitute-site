@@ -1,0 +1,581 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>The Juris Institute — Legal Document Preparation &amp; Education</title>
+<meta name="description" content="Professional legal document preparation and education — flat-fee, virtual, nationwide. J.D. credentialed with 25+ years experience. Wills, trusts, deeds, contracts, LLC formation, litigation docs and more.">
+<meta name="keywords" content="legal document preparation, document drafting, wills, trusts, deeds, LLC formation, flat fee legal, pro se document preparation">
+<link rel="canonical" href="https://thejurisinstitute.com/">
+<meta property="og:title" content="The Juris Institute — Legal Document Preparation &amp; Education">
+<meta property="og:description" content="Professional legal document preparation, flat-fee and virtual. J.D. credentialed with 25+ years of legal experience. Nationwide service.">
+<meta property="og:url" content="https://thejurisinstitute.com/">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap">
+<style>
+:root { --bg:#F2F4F7; --surface:#FFFFFF; --ink:#111827; --ink-2:#374151; --ink-3:#6B7280; --border:#D1D8E4; --red:#BE1F24; --red-lt:#D94247; --red-bg:#FDF2F2; --red-rule:#F0CCCC; --navy:#1C3058; --navy-mid:#162848; --navy-lt:#223870; --hero-fg:#EDF0F5; --hero-sub:#92A3BC; --hero-muted:#5C7090; --font-display:'Cormorant Garamond',Georgia,'Times New Roman',serif; --font-body:'DM Sans',system-ui,-apple-system,sans-serif; color-scheme:light; }
+@media (prefers-color-scheme:dark) { :root:not([data-theme="light"]) { --bg:#0D1520; --surface:#152030; --ink:#EDF0F5; --ink-2:#B8C4D4; --ink-3:#7A90A8; --border:#1E3050; --red:#E04448; --red-lt:#EA6568; --red-bg:#1A1018; --red-rule:#3A1820; --navy:#0A1020; --navy-mid:#0F1828; --navy-lt:#152030; --hero-fg:#EDF0F5; --hero-sub:#7A90A8; --hero-muted:#4A6080; color-scheme:dark; } }
+:root[data-theme="dark"] { --bg:#0D1520; --surface:#152030; --ink:#EDF0F5; --ink-2:#B8C4D4; --ink-3:#7A90A8; --border:#1E3050; --red:#E04448; --red-lt:#EA6568; --red-bg:#1A1018; --red-rule:#3A1820; --navy:#0A1020; --navy-mid:#0F1828; --navy-lt:#152030; --hero-fg:#EDF0F5; --hero-sub:#7A90A8; --hero-muted:#4A6080; color-scheme:dark; }
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--font-body);background:var(--bg);color:var(--ink);font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:200;background:var(--navy);border-bottom:1px solid rgba(255,255,255,0.06)}
+.nav-inner{max-width:1160px;margin:0 auto;padding:1rem max(20px,env(safe-area-inset-right,0px));padding-left:max(20px,env(safe-area-inset-left,0px));display:flex;align-items:center;justify-content:space-between;gap:1.5rem}
+.nav-brand{display:flex;flex-direction:column;line-height:1.15;min-width:0;text-decoration:none}
+.nav-name{font-family:var(--font-display);font-size:1.3rem;font-weight:600;color:var(--hero-fg);letter-spacing:0.01em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.nav-sub{font-size:0.63rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--hero-muted);font-weight:400;white-space:nowrap}
+.nav-links{display:flex;align-items:center;gap:0.25rem 1.75rem;flex-wrap:wrap;justify-content:flex-end}
+.nav-links a{font-size:0.82rem;color:var(--hero-sub);text-decoration:none;font-weight:400;transition:color 0.18s;white-space:nowrap}
+.nav-links a:hover{color:var(--hero-fg)}
+.nav-cta{background:var(--red);color:#fff!important;padding:0.5rem 1.15rem;border-radius:3px;font-weight:500!important;font-size:0.82rem!important;letter-spacing:0.03em;transition:opacity 0.18s!important}
+.nav-cta:hover{opacity:0.85}
+@media(max-width:680px){.nav-links .hide-sm{display:none}}
+.hero{background:var(--navy);padding:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px));padding-block:5.5rem 5rem;text-align:center;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 50% 0%,rgba(190,31,36,0.12) 0%,transparent 70%);pointer-events:none}
+.hero-inner{position:relative;max-width:860px;margin:0 auto}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:0.5rem;font-size:0.72rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--red-lt);font-weight:500;margin-bottom:1.5rem}
+.hero-eyebrow::before,.hero-eyebrow::after{content:'';width:32px;height:1px;background:var(--red-lt);opacity:0.5}
+.hero h1{font-family:var(--font-display);font-size:clamp(2.8rem,6.5vw,5rem);font-weight:600;color:var(--hero-fg);line-height:1.08;letter-spacing:-0.01em;text-wrap:balance;margin-bottom:1.5rem}
+.hero h1 em{font-style:italic;color:var(--red-lt)}
+.hero-sub{font-size:1.05rem;color:var(--hero-sub);max-width:580px;margin:0 auto 2.75rem;line-height:1.65;font-weight:300}
+.hero-creds{display:flex;flex-wrap:wrap;justify-content:center;gap:0.4rem 0;margin-bottom:3rem;border-top:1px solid rgba(255,255,255,0.08);border-bottom:1px solid rgba(255,255,255,0.08);padding-block:1.1rem}
+.cred-pill{display:flex;align-items:center;gap:0;color:var(--hero-fg);font-size:0.82rem;font-weight:400;letter-spacing:0.03em;padding:0 1.25rem;border-right:1px solid rgba(255,255,255,0.12)}
+.cred-pill:last-child{border-right:none}
+.cred-pill strong{color:var(--red-lt);font-weight:600;margin-right:0.4rem}
+.hero-actions{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+.btn-primary{background:var(--red);color:#fff;padding:0.875rem 2.25rem;border-radius:3px;text-decoration:none;font-weight:500;font-size:0.9rem;letter-spacing:0.04em;transition:opacity 0.18s;display:inline-block;text-transform:uppercase}
+.btn-primary:hover{opacity:0.85}
+.btn-ghost{background:transparent;color:var(--hero-fg);padding:0.875rem 2.25rem;border-radius:3px;text-decoration:none;font-weight:400;font-size:0.9rem;letter-spacing:0.04em;border:1px solid rgba(255,255,255,0.2);display:inline-block;text-transform:uppercase;transition:border-color 0.18s}
+.btn-ghost:hover{border-color:rgba(255,255,255,0.5)}
+.trust{background:var(--navy-lt);border-top:1px solid rgba(255,255,255,0.06);border-bottom:1px solid rgba(255,255,255,0.06);padding:0.95rem max(20px,env(safe-area-inset-right,0px));padding-left:max(20px,env(safe-area-inset-left,0px))}
+.trust-inner{max-width:1160px;margin:0 auto;display:flex;flex-wrap:wrap;justify-content:center;gap:0.35rem 2.5rem}
+.trust-item{font-size:0.74rem;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.7);font-weight:500}
+.section{padding:5.5rem max(20px,env(safe-area-inset-right,0px));padding-left:max(20px,env(safe-area-inset-left,0px))}
+.section-inner{max-width:1160px;margin:0 auto}
+.section-label{font-size:0.7rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--red);font-weight:600;margin-bottom:0.8rem}
+.section-title{font-family:var(--font-display);font-size:clamp(2rem,4.5vw,3.25rem);font-weight:600;line-height:1.12;color:var(--ink);text-wrap:balance;margin-bottom:1rem}
+.section-lead{font-size:1.05rem;color:var(--ink-2);max-width:620px;margin-bottom:3.5rem;line-height:1.7;font-weight:300}
+.services-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:1px;background:var(--border);border:1px solid var(--border);border-radius:6px;overflow:hidden}
+.svc-card{background:var(--surface);padding:1.85rem 1.75rem;transition:background 0.18s;position:relative}
+.svc-card:hover{background:var(--red-bg)}
+.svc-no{font-size:0.65rem;letter-spacing:0.16em;font-weight:700;color:var(--red);text-transform:uppercase;margin-bottom:0.8rem;font-variant-numeric:tabular-nums}
+.svc-title{font-family:var(--font-display);font-size:1.25rem;font-weight:600;color:var(--ink);line-height:1.25;margin-bottom:0.65rem}
+.svc-desc{font-size:0.875rem;color:var(--ink-3);line-height:1.65;margin-bottom:1.1rem}
+.svc-docs{font-size:0.77rem;color:var(--ink-3);font-style:italic;margin-bottom:1rem;line-height:1.5}
+.svc-link{font-size:0.75rem;font-weight:600;color:var(--red);text-decoration:none;letter-spacing:0.08em;text-transform:uppercase}
+.svc-link:hover{text-decoration:underline}
+.how-section{background:var(--navy)}
+.how-section .section-title{color:var(--hero-fg)}
+.how-section .section-lead{color:var(--hero-sub)}
+.steps-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:2.5rem}
+.step{text-align:center}
+.step-circle{width:64px;height:64px;border-radius:50%;border:1.5px solid var(--red);margin:0 auto 1.4rem;display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-size:1.65rem;font-weight:600;color:var(--red-lt);font-variant-numeric:tabular-nums}
+.step h3{font-family:var(--font-display);font-size:1.4rem;font-weight:600;color:var(--hero-fg);margin-bottom:0.6rem;line-height:1.2}
+.step p{font-size:0.9rem;color:var(--hero-sub);font-weight:300;line-height:1.7}
+.about-layout{display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:start}
+@media(max-width:780px){.about-layout{grid-template-columns:1fr;gap:2.5rem}}
+.about-copy{font-size:1rem;color:var(--ink-2);line-height:1.8;font-weight:300;margin-bottom:1.25rem}
+.creds-stack{margin-top:2rem;display:flex;flex-direction:column;gap:1rem}
+.cred-row{display:flex;gap:1rem;align-items:flex-start}
+.cred-badge{width:44px;height:44px;border-radius:4px;background:var(--red-bg);border:1px solid var(--red-rule);flex-shrink:0;display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-size:0.7rem;font-weight:700;letter-spacing:0.05em;color:var(--red)}
+.cred-body strong{display:block;font-size:0.88rem;font-weight:600;color:var(--ink);margin-bottom:0.15rem}
+.cred-body span{font-size:0.82rem;color:var(--ink-3);font-weight:300;line-height:1.5}
+.why-card{background:var(--surface);border:1px solid var(--border);border-radius:6px;padding:2.25rem}
+.why-card h3{font-family:var(--font-display);font-size:1.6rem;font-weight:600;color:var(--ink);margin-bottom:1.5rem;line-height:1.2}
+.why-list{list-style:none;display:flex;flex-direction:column;gap:1.1rem}
+.why-item{display:flex;gap:1rem;align-items:flex-start}
+.why-marker{width:22px;height:22px;border-radius:50%;background:var(--red-bg);border:1.5px solid var(--red);flex-shrink:0;margin-top:1px;display:flex;align-items:center;justify-content:center}
+.why-marker::after{content:'';width:6px;height:6px;border-radius:50%;background:var(--red)}
+.why-item p{font-size:0.88rem;color:var(--ink-2);line-height:1.6}
+.why-item strong{color:var(--ink);font-weight:600}
+.scope-strip{background:var(--red-bg);border-top:1px solid var(--red-rule);border-bottom:1px solid var(--red-rule);padding:2.5rem max(20px,env(safe-area-inset-right,0px));padding-left:max(20px,env(safe-area-inset-left,0px))}
+.scope-inner{max-width:960px;margin:0 auto}
+.scope-label{font-size:0.68rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--red);font-weight:700;margin-bottom:0.65rem;text-align:center}
+.scope-compare{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
+@media(max-width:600px){.scope-compare{grid-template-columns:1fr}}
+.scope-col h4{font-size:0.78rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:0.75rem;padding-bottom:0.5rem;border-bottom:1px solid var(--red-rule)}
+.scope-col.yes h4{color:var(--red)}
+.scope-col.no h4{color:var(--ink-3)}
+.scope-col ul{list-style:none;display:flex;flex-direction:column;gap:0.5rem}
+.scope-col li{font-size:0.85rem;color:var(--ink-2);padding-left:1.25rem;position:relative;font-weight:300}
+.scope-col.yes li::before{content:'✓';position:absolute;left:0;color:var(--red);font-weight:700;font-size:0.8rem}
+.scope-col.no li::before{content:'✕';position:absolute;left:0;color:var(--ink-3);font-size:0.8rem}
+.disclaimer{background:var(--navy-mid);padding:2.25rem max(20px,env(safe-area-inset-right,0px));padding-left:max(20px,env(safe-area-inset-left,0px))}
+.disclaimer-inner{max-width:900px;margin:0 auto;text-align:center}
+.disclaimer-label{font-size:0.67rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--hero-muted);font-weight:600;margin-bottom:0.65rem}
+.disclaimer-text{font-size:0.82rem;color:var(--hero-muted);line-height:1.75;font-weight:300}
+.cta-section{background:var(--navy);padding:5rem max(20px,env(safe-area-inset-right,0px));padding-left:max(20px,env(safe-area-inset-left,0px));text-align:center}
+.cta-section h2{font-family:var(--font-display);font-size:clamp(2rem,4.5vw,3.25rem);font-weight:600;color:var(--hero-fg);max-width:700px;margin:0 auto 1rem;text-wrap:balance;line-height:1.15}
+.cta-section .sub{font-size:1rem;color:var(--hero-sub);max-width:520px;margin:0 auto 2.75rem;font-weight:300}
+.contact-row{margin-top:2.25rem;display:flex;flex-wrap:wrap;gap:0.4rem 2.5rem;justify-content:center}
+.contact-item{font-size:0.87rem;color:var(--hero-muted)}
+.contact-item a{color:var(--red-lt);text-decoration:none}
+.contact-item a:hover{text-decoration:underline}
+.contact-form-wrap{max-width:680px;margin:0 auto;text-align:left}
+.cf-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+@media(max-width:560px){.cf-grid{grid-template-columns:1fr}}
+.cf-field{display:flex;flex-direction:column;gap:0.4rem;margin-bottom:1rem}
+.cf-field:last-of-type{margin-bottom:0}
+.cf-field label{font-size:0.75rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--hero-muted)}
+.cf-field input,.cf-field select,.cf-field textarea{font-family:var(--font-body);font-size:0.9rem;color:var(--ink);background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);border-radius:4px;padding:0.7rem 0.9rem;width:100%;transition:border-color 0.15s;color:#EDF0F5}
+.cf-field input::placeholder,.cf-field textarea::placeholder{color:rgba(255,255,255,0.3)}
+.cf-field select{color:#EDF0F5}
+.cf-field select option{background:#1C3058;color:#EDF0F5}
+.cf-field input:focus,.cf-field select:focus,.cf-field textarea:focus{outline:none;border-color:var(--red-lt);background:rgba(255,255,255,0.12)}
+.cf-field textarea{resize:vertical;min-height:110px;line-height:1.6}
+.cf-submit{background:var(--red);color:#fff;font-family:var(--font-body);font-size:0.88rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;border:none;border-radius:4px;padding:0.9rem 2.5rem;cursor:pointer;transition:opacity 0.18s;margin-top:1.5rem;width:100%}
+.cf-submit:hover{opacity:0.85}
+.cf-submit:disabled{opacity:0.55;cursor:not-allowed}
+.cf-msg{margin-top:1.25rem;padding:1rem 1.25rem;border-radius:4px;font-size:0.875rem;line-height:1.6;display:none}
+.cf-msg.success{background:rgba(74,222,128,0.12);border:1px solid rgba(74,222,128,0.3);color:#4ADE80}
+.cf-msg.error{background:rgba(224,68,72,0.12);border:1px solid rgba(224,68,72,0.3);color:var(--red-lt)}
+.cf-divider{width:1px;background:rgba(255,255,255,0.1);margin:0 auto 2.5rem}
+footer{background:#090D09;padding:2.5rem max(20px,env(safe-area-inset-right,0px));padding-left:max(20px,env(safe-area-inset-left,0px));padding-bottom:max(2.5rem,env(safe-area-inset-bottom,0px))}
+.footer-inner{max-width:1160px;margin:0 auto;display:flex;flex-wrap:wrap;gap:1.25rem;justify-content:space-between;align-items:center}
+.footer-brand{font-family:var(--font-display);font-size:1.1rem;font-weight:600;color:rgba(255,255,255,0.45)}
+.footer-copy{font-size:0.78rem;color:rgba(255,255,255,0.25)}
+.footer-nav{display:flex;gap:1.5rem;flex-wrap:wrap}
+.footer-nav a{font-size:0.78rem;color:rgba(255,255,255,0.35);text-decoration:none}
+.footer-nav a:hover{color:rgba(255,255,255,0.65)}
+.rule{border:none;border-top:1px solid var(--border);margin:0}
+@media(max-width:600px){.hero{padding-block:3.75rem 3.25rem}.section{padding-block:3.75rem}.services-grid{grid-template-columns:1fr}.steps-grid{grid-template-columns:1fr}.cred-pill{font-size:0.78rem;padding:0 0.9rem}.hero-creds{gap:0.6rem 0}}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">
+      <span class="nav-name">The Juris Institute</span>
+      <span class="nav-sub">Legal Document Preparation &amp; Education</span>
+    </a>
+    <div class="nav-links">
+      <a href="asset-protection.html" class="hide-sm">Asset Protection</a>
+      <a href="#services" class="hide-sm">Services</a>
+      <a href="#how" class="hide-sm">How It Works</a>
+      <a href="#about" class="hide-sm">About</a>
+      <a href="blog/index.html" class="hide-sm">Blog</a>
+      <a href="#contact" class="nav-cta">Get Started</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <p class="hero-eyebrow">Credentialed &bull; Experienced &bull; Nationwide</p>
+    <h1>Your Documents,<br><em>Expertly Prepared</em></h1>
+    <p class="hero-sub">Professional legal document preparation, legal education, and coaching for individuals, families, and small businesses — flat-fee, virtual, and nationwide.</p>
+    <div class="hero-creds">
+      <span class="cred-pill"><strong>J.D.</strong> Juris Doctor</span>
+      <span class="cred-pill"><strong>D.D.</strong> Doctor of Divinity</span>
+      <span class="cred-pill"><strong>25+</strong> Years of Legal Experience</span>
+      <span class="cred-pill"><strong>CFC</strong> Certified Financial Coach</span>
+      <span class="cred-pill"><strong>Flat-Fee</strong> Pricing</span>
+    </div>
+    <div class="hero-actions">
+      <a href="#contact" class="btn-primary">Get a Free Quote</a>
+      <a href="#services" class="btn-ghost">View All Services</a>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST STRIP -->
+<div class="trust">
+  <div class="trust-inner">
+    <span class="trust-item">J.D. &amp; D.D. Credentialed</span>
+    <span class="trust-item">25+ Years Legal Practice Experience</span>
+    <span class="trust-item">Multi-State Coverage</span>
+    <span class="trust-item">100% Virtual</span>
+    <span class="trust-item">Flat-Fee &mdash; No Billable Hour Surprises</span>
+    <span class="trust-item">Fast Turnaround</span>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section class="section" id="services">
+  <div class="section-inner">
+    <p class="section-label">Our Services</p>
+    <h2 class="section-title">Comprehensive Legal Document Preparation</h2>
+    <p class="section-lead">We prepare professionally structured, court-ready documents across a wide range of legal matters — based entirely on the facts and instructions you provide.</p>
+    <div class="services-grid">
+      <div class="svc-card">
+        <p class="svc-no">01</p>
+        <h3 class="svc-title">Civil Litigation Documents</h3>
+        <p class="svc-desc">Complete litigation document preparation for self-represented parties in state and federal civil matters.</p>
+        <p class="svc-docs">Complaints &mdash; Answers &mdash; Motions &mdash; Oppositions &mdash; Discovery &mdash; Demand Letters &mdash; Subpoenas</p>
+        <a href="civil-litigation.html" class="svc-link">Learn More &rsaquo;</a>
+      </div>
+      <div class="svc-card">
+        <p class="svc-no">02</p>
+        <h3 class="svc-title">Contract Drafting &amp; Review</h3>
+        <p class="svc-desc">Professionally drafted business and personal contracts based on the terms and provisions you specify.</p>
+        <p class="svc-docs">Service Agreements &mdash; NDAs &mdash; Independent Contractor Agreements &mdash; Partnership Agreements &mdash; Commercial Contracts</p>
+        <a href="contract-drafting.html" class="svc-link">Learn More &rsaquo;</a>
+      </div>
+      <div class="svc-card">
+        <p class="svc-no">03</p>
+        <h3 class="svc-title">Real Estate Documents</h3>
+        <p class="svc-desc">Accurate, properly formatted real estate transaction documents for buyers, sellers, landlords, and investors.</p>
+        <p class="svc-docs">Deeds (Warranty, Quitclaim, Special Warranty) &mdash; Purchase Agreements &mdash; Lease Agreements &mdash; Title Transfer Documents</p>
+        <a href="real-estate-documents.html" class="svc-link">Learn More &rsaquo;</a>
+      </div>
+      <div class="svc-card">
+        <p class="svc-no">04</p>
+        <h3 class="svc-title">Estate Planning Documents</h3>
+        <p class="svc-desc">Comprehensive estate planning document sets to protect your assets, your family, and your wishes.</p>
+        <p class="svc-docs">Wills &mdash; Living Trusts &mdash; Powers of Attorney &mdash; Healthcare Directives &mdash; Beneficiary Designations</p>
+        <a href="estate-planning.html" class="svc-link">Learn More &rsaquo;</a>
+      </div>
+      <div class="svc-card">
+        <p class="svc-no">05</p>
+        <h3 class="svc-title">Asset Protection Documents</h3>
+        <p class="svc-desc">Strategically structured document preparation to help shield your personal assets from business liabilities, creditors, and unforeseen legal claims.</p>
+        <p class="svc-docs">LLC Operating Agreements &mdash; Irrevocable Trust Documents &mdash; Land Trust Agreements &mdash; Property Transfer Deeds &mdash; Business Entity Structures &mdash; Tenancy by the Entirety Instruments</p>
+        <a href="asset-protection.html" class="svc-link">Learn More &rsaquo;</a>
+      </div>
+      <div class="svc-card">
+        <p class="svc-no">06</p>
+        <h3 class="svc-title">Business Formation Documents</h3>
+        <p class="svc-desc">The foundational documents your business entity needs to launch, operate, and remain in good standing.</p>
+        <p class="svc-docs">LLC Operating Agreements &mdash; Articles of Incorporation &mdash; Bylaws &mdash; Shareholder Agreements &mdash; Corporate Resolutions</p>
+        <a href="business-formation.html" class="svc-link">Learn More &rsaquo;</a>
+      </div>
+      <div class="svc-card">
+        <p class="svc-no">07</p>
+        <h3 class="svc-title">Family Law Documents</h3>
+        <p class="svc-desc">Document preparation support for self-represented individuals navigating family court matters.</p>
+        <p class="svc-docs">Separation Agreements &mdash; Custody &amp; Parenting Plans &mdash; Property Settlement Agreements &mdash; Child Support Worksheets</p>
+        <a href="family-law.html" class="svc-link">Learn More &rsaquo;</a>
+      </div>
+      <div class="svc-card">
+        <p class="svc-no">08</p>
+        <h3 class="svc-title">Appellate Briefs &amp; Writs</h3>
+        <p class="svc-desc">Structured, formatted appellate documents for pro se parties appealing adverse trial court rulings.</p>
+        <p class="svc-docs">Appellate Briefs &mdash; Writs of Certiorari &mdash; Notices of Appeal &mdash; Post-Judgment Motions &mdash; Response Briefs</p>
+        <a href="appellate-briefs.html" class="svc-link">Learn More &rsaquo;</a>
+      </div>
+      <div class="svc-card">
+        <p class="svc-no">09</p>
+        <h3 class="svc-title">Foreclosure Defense Documents</h3>
+        <p class="svc-desc">Court-ready foreclosure defense document preparation for homeowners representing themselves.</p>
+        <p class="svc-docs">Answers to Foreclosure Complaints &mdash; Affirmative Defenses &mdash; Loan Modification Letters &mdash; QWR Letters &mdash; Defense Motions</p>
+        <a href="foreclosure-defense.html" class="svc-link">Learn More &rsaquo;</a>
+      </div>
+      <div class="svc-card">
+        <p class="svc-no">10</p>
+        <h3 class="svc-title">Consumer Protection &amp; Dispute Documents</h3>
+        <p class="svc-desc">Formal demand letters and administrative dispute documents for consumer rights matters.</p>
+        <p class="svc-docs">FDCPA Demand Letters &mdash; FCRA Dispute Letters &mdash; Credit Bureau Disputes &mdash; Consumer Complaint Filings</p>
+        <a href="consumer-protection.html" class="svc-link">Learn More &rsaquo;</a>
+      </div>
+      <div class="svc-card">
+        <p class="svc-no">11</p>
+        <h3 class="svc-title">Legal Research &amp; Memoranda</h3>
+        <p class="svc-desc">Organized legal research memoranda on statutes, case law, and regulations relevant to your matter.</p>
+        <p class="svc-docs">Statutory Research &mdash; Case Law Research &mdash; Regulatory Research &mdash; Research Memos &mdash; Paralegal Support for Attorneys</p>
+        <a href="legal-research.html" class="svc-link">Learn More &rsaquo;</a>
+      </div>
+      <div class="svc-card">
+        <p class="svc-no">12</p>
+        <h3 class="svc-title">Legal Education Coaching</h3>
+        <p class="svc-desc">One-on-one coaching sessions with a J.D. to help you understand your legal matter, court procedures, and how to represent yourself effectively.</p>
+        <p class="svc-docs">Pro Se Litigation Coaching &mdash; Court Procedure Education &mdash; Document Review Walkthrough &mdash; Legal Rights Education &mdash; Hearing Preparation</p>
+        <a href="legal-education-coaching.html" class="svc-link">Learn More &rsaquo;</a>
+      </div>
+      <div class="svc-card">
+        <p class="svc-no">13</p>
+        <h3 class="svc-title">Financial Education &amp; Coaching</h3>
+        <p class="svc-desc">One-on-one financial education and coaching from a Dave Ramsey Certified Financial Coach &mdash; covering budgeting, debt elimination, emergency savings, and retirement readiness.</p>
+        <p class="svc-docs">Zero-Based Budgeting &mdash; Debt Snowball Coaching &mdash; Emergency Fund Planning &mdash; Baby Steps Methodology &mdash; Financial Goal Setting &mdash; Accountability Sessions</p>
+        <a href="financial-education.html" class="svc-link">Learn More &rsaquo;</a>
+      </div>
+      <div class="svc-card">
+        <p class="svc-no">14</p>
+        <h3 class="svc-title">Small Claims Court Coaching</h3>
+        <p class="svc-desc">Professional coaching and document preparation for small claims court &mdash; whether you are filing a claim or defending one. About 90% of small claims litigants have no attorney. We give you the edge.</p>
+        <p class="svc-docs">Filing Coaching &mdash; Evidence Organization &mdash; Hearing Preparation &mdash; Defendant Coaching &mdash; Settlement Negotiation &mdash; Judgment Collection</p>
+        <a href="small-claims-court-coaching.html" class="svc-link">Learn More &rsaquo;</a>
+      </div>
+      <div class="svc-card">
+        <p class="svc-no">15</p>
+        <h3 class="svc-title">Free Financial &amp; Legal Tools</h3>
+        <p class="svc-desc">Interactive calculators and checklists to help you build a zero-based budget, pay off debt using the snowball method, track court deadlines, and prepare for document preparation &mdash; completely free, no sign-up required.</p>
+        <p class="svc-docs">Zero-Based Budget Builder &mdash; Debt Snowball Calculator &mdash; Court Deadline Calculator &mdash; Document Preparation Checklist</p>
+        <a href="free-tools.html" class="svc-link">Use Free Tools &rsaquo;</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<!-- HOW IT WORKS -->
+<section class="section how-section" id="how">
+  <div class="section-inner">
+    <p class="section-label">Simple &amp; Straightforward</p>
+    <h2 class="section-title">How It Works</h2>
+    <p class="section-lead">Three clear steps from your first contact to receiving your completed documents. No hidden steps. No billable hour surprises.</p>
+    <div class="steps-grid">
+      <div class="step">
+        <div class="step-circle">1</div>
+        <h3>Submit Your Information</h3>
+        <p>Complete the inquiry form on this page. Tell us your matter type, your state, and a brief description of what you need. We respond in writing within one business day.</p>
+      </div>
+      <div class="step">
+        <div class="step-circle">2</div>
+        <h3>We Prepare Your Documents</h3>
+        <p>Your documents are professionally prepared and formatted to applicable procedural requirements, based entirely on the information and instructions you provide.</p>
+      </div>
+      <div class="step">
+        <div class="step-circle">3</div>
+        <h3>You Review &amp; File</h3>
+        <p>Receive your completed documents, review them for accuracy, and file or execute them yourself. Revisions within scope are included.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SCOPE STRIP -->
+<div class="scope-strip">
+  <div class="scope-inner">
+    <p class="scope-label">Understanding Our Services</p>
+    <div class="scope-compare">
+      <div class="scope-col yes">
+        <h4>What We Do</h4>
+        <ul>
+          <li>Prepare and format legal documents you direct us to create</li>
+          <li>Provide legal and financial education and coaching</li>
+          <li>Research statutes, case law, and regulations</li>
+          <li>Draft documents based on your instructions and facts</li>
+          <li>Explain court processes and procedures in plain terms</li>
+          <li>Prepare multi-state documents for your review and filing</li>
+        </ul>
+      </div>
+      <div class="scope-col no">
+        <h4>What We Do Not Do</h4>
+        <ul>
+          <li>Provide legal advice or legal strategy</li>
+          <li>Represent you in court or negotiations</li>
+          <li>Establish an attorney-client relationship</li>
+          <li>Tell you what legal decisions to make</li>
+          <li>Contact third parties on your behalf</li>
+          <li>Guarantee legal outcomes or court filings</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+  <div class="section-inner">
+    <div class="about-layout">
+      <div>
+        <p class="section-label">About the Founder</p>
+        <h2 class="section-title">25 Years of Legal Experience, Now at Your Service</h2>
+        <p class="about-copy">The Juris Institute was founded by a credentialed legal professional holding a Juris Doctor (J.D.) and a Doctor of Divinity (D.D.), with over 25 years of formal legal training and hands-on experience across litigation, transactional law, real estate, estate planning, and business formation.</p>
+        <p class="about-copy">Our mission is direct: to make high-quality legal document preparation and education accessible to individuals, families, and small businesses who need professional-grade support without the cost — or the complexity — of full representation. The same expertise that once served clients in litigation and multi-state transactions is now available to you at a flat fee, virtually, from anywhere.</p>
+        <p class="about-copy">As both a legal professional and a Certified Financial Coach, our founder uniquely bridges the legal and financial dimensions of the challenges everyday people face — offering coordinated document preparation and financial coaching under one roof.</p>
+        <div class="creds-stack">
+          <div class="cred-row">
+            <div class="cred-badge">J.D.</div>
+            <div class="cred-body">
+              <strong>Juris Doctor (J.D.)</strong>
+              <span>25+ years of legal practice experience spanning civil litigation, real estate, estate planning, business law, and transactional matters across multiple states.</span>
+            </div>
+          </div>
+          <div class="cred-row">
+            <div class="cred-badge">D.D.</div>
+            <div class="cred-body">
+              <strong>Doctor of Divinity (D.D.)</strong>
+              <span>A commitment to service, equity, and access — bringing the same care to every client's documents that reflects our belief that justice should be within everyone's reach.</span>
+            </div>
+          </div>
+          <div class="cred-row">
+            <div class="cred-badge">CFC</div>
+            <div class="cred-body">
+              <strong>Certified Financial Coach (CFC)</strong>
+              <span>One-on-one financial coaching to complement legal document preparation — for clients whose legal challenges have a financial dimension that needs equal attention.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="why-card">
+          <h3>Why Clients Choose The Juris Institute</h3>
+          <ul class="why-list">
+            <li class="why-item"><div class="why-marker"></div><p><strong>Exceptional Credentials.</strong> A J.D. and 25+ years of experience inform every document we prepare. The quality far exceeds anything a generic online document service can deliver.</p></li>
+            <li class="why-item"><div class="why-marker"></div><p><strong>Flat-Fee Pricing.</strong> Every project is quoted upfront. No retainers. No billing surprises. No hourly guesswork. You know the full cost before we begin.</p></li>
+            <li class="why-item"><div class="why-marker"></div><p><strong>Completely Virtual.</strong> We serve clients in multiple states entirely online. No commute, no office visit — just prompt, professional service delivered directly to your inbox.</p></li>
+            <li class="why-item"><div class="why-marker"></div><p><strong>Pro Se Focused.</strong> We specialize in supporting self-represented individuals who need professionally prepared documents without the expense of full legal representation.</p></li>
+            <li class="why-item"><div class="why-marker"></div><p><strong>Legal + Financial Coaching.</strong> A rare combination: legal document preparation and certified financial coaching under one roof, for matters where both dimensions matter.</p></li>
+            <li class="why-item"><div class="why-marker"></div><p><strong>Responsive &amp; Direct.</strong> You communicate directly with the document preparer throughout your project — not with a call center or an intake assistant.</p></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DISCLAIMER -->
+<div class="disclaimer">
+  <div class="disclaimer-inner">
+    <p class="disclaimer-label">Important Notice</p>
+    <p class="disclaimer-text">The Juris Institute provides legal document preparation and legal education services only. Engaging our services does not create an attorney-client relationship. We do not provide legal advice, legal strategy, or court representation of any kind. All documents are prepared based solely on the information and instructions provided by the client. You are solely responsible for reviewing all documents before execution or filing. The Juris Institute is not a law firm. All fees are due upon project initiation and are non-refundable.</p>
+  </div>
+</div>
+
+<!-- CONTACT FORM -->
+<section class="cta-section" id="contact">
+  <h2>Get Your Free Flat-Fee Quote</h2>
+  <p class="sub">Tell us what you need. We will respond in writing within one business day with a flat-fee quote and next steps — no obligation, no phone tag.</p>
+
+  <div class="contact-form-wrap">
+    <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+      <!-- Web3Forms access key — replace with your key from web3forms.com -->
+      <input type="hidden" name="access_key" value="5a306fc6-981e-4b90-889a-215ee73cd45a">
+      <input type="hidden" name="subject" value="New Inquiry — The Juris Institute">
+      <input type="hidden" name="from_name" value="The Juris Institute Website">
+      <input type="hidden" name="redirect" value="false">
+      <!-- Honeypot spam filter -->
+      <input type="checkbox" name="botcheck" style="display:none">
+
+      <div class="cf-grid">
+        <div class="cf-field">
+          <label for="cf-name">Your Full Name</label>
+          <input type="text" id="cf-name" name="name" placeholder="First and Last Name" required>
+        </div>
+        <div class="cf-field">
+          <label for="cf-email">Your Email Address</label>
+          <input type="email" id="cf-email" name="email" placeholder="you@email.com" required>
+        </div>
+      </div>
+
+      <div class="cf-grid">
+        <div class="cf-field">
+          <label for="cf-state">Your State</label>
+          <select id="cf-state" name="state" required>
+            <option value="" disabled selected>Select your state</option>
+            <option>Alabama</option><option>Alaska</option><option>Arizona</option><option>Arkansas</option><option>California</option><option>Colorado</option><option>Connecticut</option><option>Delaware</option><option>Florida</option><option>Georgia</option><option>Hawaii</option><option>Idaho</option><option>Illinois</option><option>Indiana</option><option>Iowa</option><option>Kansas</option><option>Kentucky</option><option>Louisiana</option><option>Maine</option><option>Maryland</option><option>Massachusetts</option><option>Michigan</option><option>Minnesota</option><option>Mississippi</option><option>Missouri</option><option>Montana</option><option>Nebraska</option><option>Nevada</option><option>New Hampshire</option><option>New Jersey</option><option>New Mexico</option><option>New York</option><option>North Carolina</option><option>North Dakota</option><option>Ohio</option><option>Oklahoma</option><option>Oregon</option><option>Pennsylvania</option><option>Rhode Island</option><option>South Carolina</option><option>South Dakota</option><option>Tennessee</option><option>Texas</option><option>Utah</option><option>Vermont</option><option>Virginia</option><option>Washington</option><option>West Virginia</option><option>Wisconsin</option><option>Wyoming</option><option>Washington D.C.</option>
+          </select>
+        </div>
+        <div class="cf-field">
+          <label for="cf-matter">Type of Matter</label>
+          <select id="cf-matter" name="matter_type" required>
+            <option value="" disabled selected>Select a matter type</option>
+            <option>Civil Litigation Documents</option>
+            <option>Contract Drafting or Review</option>
+            <option>Real Estate Documents</option>
+            <option>Estate Planning Documents</option>
+            <option>Asset Protection Documents</option>
+            <option>Business Formation Documents</option>
+            <option>Family Law Documents</option>
+            <option>Appellate Briefs or Writs</option>
+            <option>Foreclosure Defense Documents</option>
+            <option>Consumer Protection Documents</option>
+            <option>Legal Research and Memoranda</option>
+            <option>Legal Education Coaching</option>
+            <option>Financial Education Coaching</option>
+            <option>Small Claims Court Coaching</option>
+            <option>Other / Not Sure</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="cf-field">
+        <label for="cf-message">Brief Description of What You Need</label>
+        <textarea id="cf-message" name="message" placeholder="Please describe your situation and what documents or coaching you are looking for. Include any relevant dates or deadlines." required></textarea>
+      </div>
+
+      <button type="submit" class="cf-submit" id="cf-submit">Submit Your Inquiry</button>
+
+      <div class="cf-msg success" id="cf-success">Your inquiry has been received. We will respond in writing within one business day with your flat-fee quote and next steps. Thank you for contacting The Juris Institute.</div>
+      <div class="cf-msg error" id="cf-error">There was a problem submitting your form. Please email us directly at <a href="mailto:info@TheJurisInstitute.com" style="color:var(--red-lt)">info@TheJurisInstitute.com</a> and we will respond promptly.</div>
+    </form>
+
+    <div class="contact-row">
+      <span class="contact-item">Email: <a href="mailto:info@TheJurisInstitute.com">info@TheJurisInstitute.com</a></span>
+      <span class="contact-item">Virtual &bull; Nationwide Service</span>
+      <span class="contact-item">Flat-Fee &bull; Fast Turnaround</span>
+    </div>
+  </div>
+</section>
+
+<script>
+document.getElementById('contact-form').addEventListener('submit', async function(e) {
+  e.preventDefault();
+  const btn = document.getElementById('cf-submit');
+  const success = document.getElementById('cf-success');
+  const error = document.getElementById('cf-error');
+  btn.disabled = true;
+  btn.textContent = 'Sending...';
+  success.style.display = 'none';
+  error.style.display = 'none';
+  try {
+    const data = new FormData(this);
+    const res = await fetch('https://api.web3forms.com/submit', {method:'POST', body: data});
+    const json = await res.json();
+    if (json.success) {
+      success.style.display = 'block';
+      this.reset();
+      btn.textContent = 'Inquiry Sent';
+    } else {
+      throw new Error(json.message || 'Submission failed');
+    }
+  } catch(err) {
+    error.style.display = 'block';
+    btn.disabled = false;
+    btn.textContent = 'Submit Your Inquiry';
+  }
+});
+</script>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <span class="footer-brand">The Juris Institute</span>
+    <span class="footer-copy">&copy; 2026 The Juris Institute. All rights reserved.</span>
+    <nav class="footer-nav">
+      <a href="asset-protection.html">Asset Protection</a>
+      <a href="#services">Services</a>
+      <a href="#how">How It Works</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a href="sitemap.xml">Sitemap</a>
+    </nav>
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "The Juris Institute",
+  "url": "https://thejurisinstitute.com",
+  "email": "info@TheJurisInstitute.com",
+  "description": "Legal document preparation and legal education services. Flat-fee, virtual, and nationwide.",
+  "serviceType": "Legal Document Preparation",
+  "areaServed": {
+    "@type": "Country",
+    "name": "United States"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Legal Document Services",
+    "itemListElement": [
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Civil Litigation Documents"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Contract Drafting"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Real Estate Documents"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Estate Planning Documents"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Business Formation Documents"}},
+      {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Asset Protection Documents"}}
+    ]
+  }
+}
+</script>
+</body>
+</html>

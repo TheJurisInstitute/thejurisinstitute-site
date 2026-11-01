@@ -1,0 +1,987 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Free Financial &amp; Legal Tools — The Juris Institute</title>
+<meta name="description" content="Free interactive financial and legal tools from The Juris Institute — zero-based budget builder, debt snowball calculator, court deadline calculator, and document preparation checklist.">
+<meta name="keywords" content="free budget calculator, debt snowball calculator, zero based budget, court deadline calculator, legal document checklist, free financial tools, free legal tools">
+<link rel="canonical" href="https://thejurisinstitute.com/free-tools.html">
+<meta property="og:title" content="Free Financial &amp; Legal Tools — The Juris Institute">
+<meta property="og:description" content="Interactive tools to help you budget, pay off debt, track legal deadlines, and prepare documents — free from The Juris Institute.">
+<meta property="og:url" content="https://thejurisinstitute.com/free-tools.html">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F2F4F7;--surface:#FFFFFF;--ink:#111827;--ink-2:#374151;--ink-3:#6B7280;--border:#D1D8E4;--red:#BE1F24;--red-lt:#D94247;--red-bg:#FDF2F2;--red-rule:#F0CCCC;--navy:#1C3058;--navy-mid:#162848;--navy-lt:#223870;--hero-fg:#EDF0F5;--hero-sub:#92A3BC;--hero-muted:#5C7090;--tool-bg:#F8FAFB;--tool-border:#C8D4E0;--font-display:'Cormorant Garamond',Georgia,'Times New Roman',serif;--font-body:'DM Sans',system-ui,-apple-system,sans-serif;color-scheme:light}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0D1520;--surface:#152030;--ink:#EDF0F5;--ink-2:#B8C4D4;--ink-3:#7A90A8;--border:#1E3050;--red:#E04448;--red-lt:#EA6568;--red-bg:#1A1018;--red-rule:#3A1820;--navy:#0A1020;--navy-mid:#0F1828;--navy-lt:#152030;--hero-fg:#EDF0F5;--hero-sub:#7A90A8;--hero-muted:#4A6080;--tool-bg:#0F1828;--tool-border:#1E3050;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0D1520;--surface:#152030;--ink:#EDF0F5;--ink-2:#B8C4D4;--ink-3:#7A90A8;--border:#1E3050;--red:#E04448;--red-lt:#EA6568;--red-bg:#1A1018;--red-rule:#3A1820;--navy:#0A1020;--navy-mid:#0F1828;--navy-lt:#152030;--hero-fg:#EDF0F5;--hero-sub:#7A90A8;--hero-muted:#4A6080;--tool-bg:#0F1828;--tool-border:#1E3050;color-scheme:dark}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--font-body);background:var(--bg);color:var(--ink);font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+
+/* NAV */
+.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:200;background:var(--navy);border-bottom:1px solid rgba(255,255,255,0.06)}
+.nav-inner{max-width:1160px;margin:0 auto;padding:1rem max(20px,env(safe-area-inset-right,0px));padding-left:max(20px,env(safe-area-inset-left,0px));display:flex;align-items:center;justify-content:space-between;gap:1.5rem}
+.nav-brand{display:flex;flex-direction:column;line-height:1.15;min-width:0;text-decoration:none}
+.nav-name{font-family:var(--font-display);font-size:1.3rem;font-weight:600;color:var(--hero-fg);letter-spacing:0.01em;white-space:nowrap}
+.nav-sub{font-size:0.63rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--hero-muted);font-weight:400}
+.nav-links{display:flex;align-items:center;gap:0.25rem 1.75rem;flex-wrap:wrap;justify-content:flex-end}
+.nav-links a{font-size:0.82rem;color:var(--hero-sub);text-decoration:none;font-weight:400;transition:color 0.18s;white-space:nowrap}
+.nav-links a:hover{color:var(--hero-fg)}
+.nav-cta{background:var(--red);color:#fff!important;padding:0.5rem 1.15rem;border-radius:3px;font-weight:500!important;font-size:0.82rem!important;letter-spacing:0.03em;transition:opacity 0.18s!important}
+.nav-cta:hover{opacity:0.85}
+@media(max-width:680px){.nav-links .hide-sm{display:none}}
+
+/* HERO */
+.hero{background:var(--navy);padding:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px));padding-block:4.5rem 4rem;text-align:center;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 50% 0%,rgba(190,31,36,0.12) 0%,transparent 70%);pointer-events:none}
+.hero-inner{position:relative;max-width:860px;margin:0 auto}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:0.5rem;font-size:0.72rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--red-lt);font-weight:500;margin-bottom:1.5rem}
+.hero-eyebrow::before,.hero-eyebrow::after{content:'';width:32px;height:1px;background:var(--red-lt);opacity:0.5}
+.hero h1{font-family:var(--font-display);font-size:clamp(2.4rem,5.5vw,4rem);font-weight:600;color:var(--hero-fg);line-height:1.1;letter-spacing:-0.01em;text-wrap:balance;margin-bottom:1.25rem}
+.hero h1 em{font-style:italic;color:var(--red-lt)}
+.hero-sub{font-size:1rem;color:var(--hero-sub);max-width:640px;margin:0 auto 1.5rem;line-height:1.65;font-weight:300}
+.hero-note{font-size:0.78rem;color:var(--hero-muted);max-width:500px;margin:0 auto}
+
+/* TOOL NAV */
+.tool-nav{background:var(--navy-lt);border-top:1px solid rgba(255,255,255,0.06);border-bottom:1px solid rgba(255,255,255,0.06);padding:0 max(20px,env(safe-area-inset-right,0px));padding-left:max(20px,env(safe-area-inset-left,0px));overflow-x:auto}
+.tool-nav-inner{max-width:1160px;margin:0 auto;display:flex;gap:0}
+.tool-tab{background:none;border:none;cursor:pointer;font-family:var(--font-body);font-size:0.8rem;font-weight:500;color:rgba(255,255,255,0.55);letter-spacing:0.06em;text-transform:uppercase;padding:1.1rem 1.5rem;border-bottom:2px solid transparent;transition:color 0.18s,border-color 0.18s;white-space:nowrap}
+.tool-tab:hover{color:rgba(255,255,255,0.85)}
+.tool-tab.active{color:#fff;border-bottom-color:var(--red-lt)}
+.tool-divider{width:1px;background:rgba(255,255,255,0.08);margin:0.6rem 0}
+
+/* TOOL PANELS */
+.tools-wrap{padding:3.5rem max(20px,env(safe-area-inset-right,0px));padding-left:max(20px,env(safe-area-inset-left,0px))}
+.tools-inner{max-width:900px;margin:0 auto}
+.tool-panel{display:none}
+.tool-panel.active{display:block}
+.tool-panel-header{margin-bottom:2.25rem}
+.tool-label{font-size:0.7rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--red);font-weight:600;margin-bottom:0.5rem}
+.tool-title{font-family:var(--font-display);font-size:clamp(1.75rem,3.5vw,2.5rem);font-weight:600;color:var(--ink);line-height:1.15;margin-bottom:0.75rem;text-wrap:balance}
+.tool-desc{font-size:0.95rem;color:var(--ink-2);line-height:1.7;font-weight:300;max-width:680px}
+
+/* FORM ELEMENTS */
+.tool-card{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:2rem;margin-bottom:1.5rem}
+.tool-card-title{font-family:var(--font-display);font-size:1.2rem;font-weight:600;color:var(--ink);margin-bottom:1.5rem}
+.field-row{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:1rem}
+@media(max-width:580px){.field-row{grid-template-columns:1fr}}
+.field-row-3{display:grid;grid-template-columns:2fr 1fr 1fr;gap:1rem;margin-bottom:0.75rem;align-items:end}
+@media(max-width:640px){.field-row-3{grid-template-columns:1fr 1fr;}.field-row-3 .field:first-child{grid-column:1/-1}}
+.field{display:flex;flex-direction:column;gap:0.4rem;margin-bottom:0.85rem}
+.field:last-child{margin-bottom:0}
+.field label{font-size:0.8rem;font-weight:500;color:var(--ink-2);letter-spacing:0.02em}
+.field input,.field select{font-family:var(--font-body);font-size:0.9rem;color:var(--ink);background:var(--tool-bg);border:1px solid var(--tool-border);border-radius:4px;padding:0.6rem 0.85rem;transition:border-color 0.15s;width:100%}
+.field input:focus,.field select:focus{outline:none;border-color:var(--red)}
+.field input[type="date"]{cursor:pointer}
+.add-row{background:none;border:1px dashed var(--border);color:var(--red);font-family:var(--font-body);font-size:0.82rem;font-weight:500;letter-spacing:0.05em;padding:0.55rem 1.1rem;border-radius:4px;cursor:pointer;margin-top:0.5rem;transition:background 0.15s,border-color 0.15s;display:block;text-align:left}
+.add-row:hover{background:var(--red-bg);border-color:var(--red)}
+.remove-row{background:none;border:none;color:var(--ink-3);font-size:1rem;cursor:pointer;padding:0.2rem 0.4rem;border-radius:3px;line-height:1;transition:color 0.15s}
+.remove-row:hover{color:var(--red)}
+.remove-col{display:flex;align-items:flex-end;padding-bottom:0.1rem}
+.btn-calculate{background:var(--red);color:#fff;font-family:var(--font-body);font-size:0.88rem;font-weight:500;letter-spacing:0.06em;text-transform:uppercase;border:none;border-radius:4px;padding:0.85rem 2rem;cursor:pointer;transition:opacity 0.18s;margin-top:1.25rem}
+.btn-calculate:hover{opacity:0.85}
+
+/* RESULTS */
+.results-card{background:var(--navy);border-radius:8px;padding:2rem;margin-top:1.5rem}
+.results-card .results-title{font-family:var(--font-display);font-size:1.35rem;font-weight:600;color:var(--hero-fg);margin-bottom:1.5rem}
+.results-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:1px;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.08);border-radius:6px;overflow:hidden;margin-bottom:1.5rem}
+.result-cell{background:rgba(255,255,255,0.03);padding:1.25rem 1.1rem;text-align:center}
+.result-cell .rc-label{font-size:0.7rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--hero-muted);margin-bottom:0.4rem}
+.result-cell .rc-value{font-family:var(--font-display);font-size:1.7rem;font-weight:600;color:var(--hero-fg);line-height:1}
+.result-cell .rc-value.green{color:#4ADE80}
+.result-cell .rc-value.red{color:var(--red-lt)}
+.result-cell .rc-value.yellow{color:#FCD34D}
+.result-table{width:100%;border-collapse:collapse;font-size:0.85rem}
+.result-table th{font-size:0.7rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--hero-muted);font-weight:500;padding:0.5rem 0.75rem;text-align:left;border-bottom:1px solid rgba(255,255,255,0.1)}
+.result-table td{padding:0.75rem;color:var(--hero-sub);border-bottom:1px solid rgba(255,255,255,0.05)}
+.result-table tr:last-child td{border-bottom:none}
+.result-table .td-name{color:var(--hero-fg);font-weight:500}
+.result-table .td-amt{font-variant-numeric:tabular-nums;text-align:right}
+.result-table .td-highlight{color:#4ADE80;font-weight:600;text-align:right;font-variant-numeric:tabular-nums}
+.budget-bar-wrap{margin-bottom:1.5rem}
+.budget-bar-label{font-size:0.75rem;color:var(--hero-sub);margin-bottom:0.4rem;display:flex;justify-content:space-between}
+.budget-bar{height:8px;background:rgba(255,255,255,0.08);border-radius:4px;overflow:hidden}
+.budget-bar-fill{height:100%;border-radius:4px;transition:width 0.4s ease}
+.budget-bar-fill.green{background:#4ADE80}
+.budget-bar-fill.yellow{background:#FCD34D}
+.budget-bar-fill.red{background:var(--red-lt)}
+.results-note{font-size:0.8rem;color:var(--hero-muted);line-height:1.6;border-top:1px solid rgba(255,255,255,0.08);padding-top:1.1rem;margin-top:1rem}
+
+/* CHECKLIST */
+.checklist-select-row{display:flex;gap:1rem;flex-wrap:wrap;align-items:flex-end;margin-bottom:1.5rem}
+.checklist-select-row .field{flex:1;min-width:200px;margin-bottom:0}
+.checklist-output{display:none}
+.checklist-output.active{display:block}
+.check-group{margin-bottom:1.5rem}
+.check-group-title{font-size:0.78rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--red);font-weight:600;margin-bottom:0.75rem;padding-bottom:0.4rem;border-bottom:1px solid var(--border)}
+.check-item{display:flex;align-items:flex-start;gap:0.75rem;padding:0.65rem 0;border-bottom:1px solid var(--border)}
+.check-item:last-child{border-bottom:none}
+.check-item input[type="checkbox"]{width:18px;height:18px;accent-color:var(--red);margin-top:0.1rem;flex-shrink:0;cursor:pointer}
+.check-item label{font-size:0.875rem;color:var(--ink-2);line-height:1.5;cursor:pointer}
+.check-item label strong{color:var(--ink);font-weight:500}
+.check-item input[type="checkbox"]:checked + label{color:var(--ink-3);text-decoration:line-through}
+.checklist-progress{font-size:0.8rem;color:var(--ink-3);margin-top:1rem}
+
+/* DEADLINE CALENDAR */
+.deadline-output{display:none;margin-top:1.5rem}
+.deadline-output.active{display:block}
+.deadline-row{display:flex;align-items:center;gap:1.25rem;padding:1rem 1.25rem;background:var(--surface);border:1px solid var(--border);border-radius:6px;margin-bottom:0.75rem}
+.deadline-row:last-child{margin-bottom:0}
+.deadline-date{min-width:120px;font-family:var(--font-display);font-size:1.35rem;font-weight:600;color:var(--ink);line-height:1.1}
+.deadline-date span{display:block;font-family:var(--font-body);font-size:0.68rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--ink-3);font-weight:500;margin-top:0.15rem}
+.deadline-info{flex:1;min-width:0}
+.deadline-name{font-size:0.9rem;font-weight:500;color:var(--ink);margin-bottom:0.2rem}
+.deadline-detail{font-size:0.8rem;color:var(--ink-3);line-height:1.5}
+.deadline-badge{font-size:0.68rem;letter-spacing:0.1em;text-transform:uppercase;font-weight:600;padding:0.25rem 0.6rem;border-radius:3px;white-space:nowrap}
+.badge-warn{background:rgba(252,211,77,0.15);color:#B45309;border:1px solid rgba(252,211,77,0.4)}
+.badge-critical{background:rgba(224,68,72,0.12);color:var(--red);border:1px solid rgba(224,68,72,0.3)}
+.badge-info{background:rgba(99,180,255,0.1);color:#1D6FA4;border:1px solid rgba(99,180,255,0.3)}
+@media(prefers-color-scheme:dark){.badge-warn{color:#FCD34D;border-color:rgba(252,211,77,0.3)}.badge-critical{color:var(--red-lt)}.badge-info{color:#60A5FA;border-color:rgba(96,165,250,0.3)}}
+
+/* SECTION DIVIDERS */
+.rule{border:none;border-top:1px solid var(--border);margin:0}
+
+/* FOOTER */
+footer{background:#090D09;padding:2.5rem max(20px,env(safe-area-inset-right,0px));padding-left:max(20px,env(safe-area-inset-left,0px));padding-bottom:max(2.5rem,env(safe-area-inset-bottom,0px))}
+.footer-inner{max-width:1160px;margin:0 auto;display:flex;flex-wrap:wrap;gap:1.25rem;justify-content:space-between;align-items:center}
+.footer-brand{font-family:var(--font-display);font-size:1.1rem;font-weight:600;color:rgba(255,255,255,0.45);text-decoration:none}
+.footer-copy{font-size:0.78rem;color:rgba(255,255,255,0.25)}
+.footer-nav{display:flex;gap:1.5rem;flex-wrap:wrap}
+.footer-nav a{font-size:0.78rem;color:rgba(255,255,255,0.35);text-decoration:none}
+.footer-nav a:hover{color:rgba(255,255,255,0.65)}
+.disclaimer-section{padding:2rem max(20px,env(safe-area-inset-right,0px));padding-left:max(20px,env(safe-area-inset-left,0px));background:var(--surface);border-top:1px solid var(--border)}
+.disclaimer-inner{max-width:900px;margin:0 auto}
+.disclaimer-text{font-size:0.78rem;color:var(--ink-3);line-height:1.65}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">
+      <span class="nav-name">The Juris Institute</span>
+      <span class="nav-sub">Legal Document Preparation &amp; Education</span>
+    </a>
+    <div class="nav-links">
+      <a href="index.html#services" class="hide-sm">Services</a>
+      <a href="asset-protection.html" class="hide-sm">Asset Protection</a>
+      <a href="financial-education.html" class="hide-sm">Financial Coaching</a>
+      <a href="blog/index.html" class="hide-sm">Blog</a>
+      <a href="index.html#contact" class="nav-cta">Get Started</a>
+    </div>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-inner">
+    <p class="hero-eyebrow">Free Tools</p>
+    <h1>Financial &amp; Legal Tools,<br><em>Completely Free.</em></h1>
+    <p class="hero-sub">Interactive calculators and checklists to help you build a budget, pay off debt, track court deadlines, and prepare for document preparation — no sign-up required.</p>
+    <p class="hero-note">These tools provide general educational information only and do not constitute financial advice, legal advice, or an attorney-client relationship.</p>
+  </div>
+</section>
+
+<div class="tool-nav">
+  <div class="tool-nav-inner">
+    <button class="tool-tab active" data-panel="budget">Budget Builder</button>
+    <div class="tool-divider"></div>
+    <button class="tool-tab" data-panel="snowball">Debt Snowball</button>
+    <div class="tool-divider"></div>
+    <button class="tool-tab" data-panel="deadlines">Court Deadlines</button>
+    <div class="tool-divider"></div>
+    <button class="tool-tab" data-panel="checklist">Document Checklist</button>
+  </div>
+</div>
+
+<div class="tools-wrap">
+  <div class="tools-inner">
+
+    <!-- TOOL 1: ZERO-BASED BUDGET BUILDER -->
+    <div class="tool-panel active" id="panel-budget">
+      <div class="tool-panel-header">
+        <p class="tool-label">Financial Tool 1 of 2</p>
+        <h2 class="tool-title">Zero-Based Monthly Budget Builder</h2>
+        <p class="tool-desc">A zero-based budget assigns every dollar of income to a specific purpose — expenses, savings, or debt payments — until the balance reaches zero. Enter your monthly income and expenses below to see where you stand.</p>
+      </div>
+
+      <div class="tool-card">
+        <p class="tool-card-title">Monthly Income</p>
+        <div class="field-row">
+          <div class="field">
+            <label for="inc-take-home">Take-Home Pay (after taxes)</label>
+            <input type="number" id="inc-take-home" placeholder="0" min="0">
+          </div>
+          <div class="field">
+            <label for="inc-other">Other Income (side jobs, rental, etc.)</label>
+            <input type="number" id="inc-other" placeholder="0" min="0">
+          </div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <p class="tool-card-title">Housing &amp; Utilities</p>
+        <div class="field-row">
+          <div class="field"><label>Rent / Mortgage</label><input type="number" class="exp-field" placeholder="0" min="0"></div>
+          <div class="field"><label>Electric / Gas</label><input type="number" class="exp-field" placeholder="0" min="0"></div>
+          <div class="field"><label>Water / Sewer</label><input type="number" class="exp-field" placeholder="0" min="0"></div>
+          <div class="field"><label>Internet / Cable</label><input type="number" class="exp-field" placeholder="0" min="0"></div>
+          <div class="field"><label>Phone</label><input type="number" class="exp-field" placeholder="0" min="0"></div>
+          <div class="field"><label>Other Housing</label><input type="number" class="exp-field" placeholder="0" min="0"></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <p class="tool-card-title">Transportation &amp; Food</p>
+        <div class="field-row">
+          <div class="field"><label>Car Payment(s)</label><input type="number" class="exp-field" placeholder="0" min="0"></div>
+          <div class="field"><label>Gas / Fuel</label><input type="number" class="exp-field" placeholder="0" min="0"></div>
+          <div class="field"><label>Car Insurance</label><input type="number" class="exp-field" placeholder="0" min="0"></div>
+          <div class="field"><label>Car Maintenance Fund</label><input type="number" class="exp-field" placeholder="0" min="0"></div>
+          <div class="field"><label>Groceries</label><input type="number" class="exp-field" placeholder="0" min="0"></div>
+          <div class="field"><label>Dining Out</label><input type="number" class="exp-field" placeholder="0" min="0"></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <p class="tool-card-title">Insurance, Savings &amp; Debt</p>
+        <div class="field-row">
+          <div class="field"><label>Health Insurance</label><input type="number" class="exp-field" placeholder="0" min="0"></div>
+          <div class="field"><label>Life Insurance</label><input type="number" class="exp-field" placeholder="0" min="0"></div>
+          <div class="field"><label>Emergency Fund Savings</label><input type="number" class="exp-field" placeholder="0" min="0"></div>
+          <div class="field"><label>Retirement Contributions</label><input type="number" class="exp-field" placeholder="0" min="0"></div>
+          <div class="field"><label>Credit Card Payments</label><input type="number" class="exp-field" placeholder="0" min="0"></div>
+          <div class="field"><label>Student Loans</label><input type="number" class="exp-field" placeholder="0" min="0"></div>
+        </div>
+      </div>
+
+      <div class="tool-card">
+        <p class="tool-card-title">Personal &amp; Lifestyle</p>
+        <div class="field-row">
+          <div class="field"><label>Clothing</label><input type="number" class="exp-field" placeholder="0" min="0"></div>
+          <div class="field"><label>Personal Care / Hair</label><input type="number" class="exp-field" placeholder="0" min="0"></div>
+          <div class="field"><label>Entertainment / Subscriptions</label><input type="number" class="exp-field" placeholder="0" min="0"></div>
+          <div class="field"><label>Childcare / Kids Activities</label><input type="number" class="exp-field" placeholder="0" min="0"></div>
+          <div class="field"><label>Medical / Dental (out of pocket)</label><input type="number" class="exp-field" placeholder="0" min="0"></div>
+          <div class="field"><label>Miscellaneous / Cash</label><input type="number" class="exp-field" placeholder="0" min="0"></div>
+        </div>
+      </div>
+
+      <button class="btn-calculate" onclick="calcBudget()">Calculate My Budget</button>
+
+      <div class="results-card" id="budget-results" style="display:none">
+        <p class="results-title">Your Monthly Budget Summary</p>
+        <div class="results-grid" id="budget-summary-cells"></div>
+        <div class="budget-bar-wrap">
+          <div class="budget-bar-label"><span>Budget Allocation</span><span id="budget-bar-pct"></span></div>
+          <div class="budget-bar"><div class="budget-bar-fill" id="budget-bar-fill"></div></div>
+        </div>
+        <p id="budget-message" class="results-note"></p>
+      </div>
+    </div>
+
+    <!-- TOOL 2: DEBT SNOWBALL CALCULATOR -->
+    <div class="tool-panel" id="panel-snowball">
+      <div class="tool-panel-header">
+        <p class="tool-label">Financial Tool 2 of 2</p>
+        <h2 class="tool-title">Debt Snowball Calculator</h2>
+        <p class="tool-desc">The debt snowball method pays off your smallest debt first, then rolls that payment into the next. Enter your debts below — the calculator will show you the payoff order, total interest paid, and how long until you are debt-free.</p>
+      </div>
+
+      <div class="tool-card">
+        <p class="tool-card-title">Your Debts (smallest balance first — the calculator will sort for you)</p>
+        <div style="display:grid;grid-template-columns:2fr 1fr 1fr 2.25rem;gap:0.75rem;margin-bottom:0.5rem;padding:0 0.1rem">
+          <span style="font-size:0.75rem;font-weight:500;color:var(--ink-3)">Debt Name</span>
+          <span style="font-size:0.75rem;font-weight:500;color:var(--ink-3)">Balance ($)</span>
+          <span style="font-size:0.75rem;font-weight:500;color:var(--ink-3)">Min. Payment</span>
+          <span></span>
+        </div>
+        <div id="debt-rows"></div>
+        <button class="add-row" onclick="addDebtRow()">+ Add Another Debt</button>
+
+        <div class="field-row" style="margin-top:1.5rem">
+          <div class="field">
+            <label for="extra-payment">Extra Monthly Payment (above all minimums)</label>
+            <input type="number" id="extra-payment" placeholder="0" min="0">
+          </div>
+          <div class="field">
+            <label for="avg-rate">Average Interest Rate (% — for estimates)</label>
+            <input type="number" id="avg-rate" placeholder="18" min="0" max="100" step="0.1">
+          </div>
+        </div>
+      </div>
+
+      <button class="btn-calculate" onclick="calcSnowball()">Calculate My Debt Snowball</button>
+
+      <div class="results-card" id="snowball-results" style="display:none">
+        <p class="results-title">Your Debt Snowball Plan</p>
+        <div class="results-grid" id="snowball-summary-cells"></div>
+        <table class="result-table" id="snowball-table" style="margin-top:1rem"></table>
+        <p class="results-note" style="margin-top:1.25rem">Estimates assume consistent minimum payments, no new debt added, and the stated extra payment applied each month. Actual results vary based on interest accrual and payment timing. This calculator is for educational purposes only.</p>
+      </div>
+    </div>
+
+    <!-- TOOL 3: COURT DEADLINE CALCULATOR -->
+    <div class="tool-panel" id="panel-deadlines">
+      <div class="tool-panel-header">
+        <p class="tool-label">Legal Tool 1 of 2</p>
+        <h2 class="tool-title">Court Deadline Calculator</h2>
+        <p class="tool-desc">Missing a court deadline can result in a default judgment, a dismissed claim, or a waived right. Enter the trigger date and the type of event to see your key upcoming deadlines.</p>
+      </div>
+
+      <div class="tool-card">
+        <div class="field-row">
+          <div class="field">
+            <label for="trigger-type">What happened? (Select the triggering event)</label>
+            <select id="trigger-type">
+              <option value="">-- Select an event --</option>
+              <optgroup label="Court Service / Filing">
+                <option value="service-complaint">I was served with a lawsuit / complaint</option>
+                <option value="filed-complaint">I filed a complaint — waiting for defendant to respond</option>
+                <option value="discovery-start">Discovery period has begun</option>
+                <option value="judgment-entered">A judgment was entered against me</option>
+                <option value="small-claims-filed">My small claims case was filed / scheduled</option>
+              </optgroup>
+              <optgroup label="Demand Letters">
+                <option value="demand-sent">I sent a demand letter</option>
+                <option value="demand-received">I received a demand letter</option>
+                <option value="fdcpa-letter">Debt collector sent me a notice (FDCPA)</option>
+                <option value="qwr-sent">I sent a Qualified Written Request (QWR) to my servicer</option>
+              </optgroup>
+              <optgroup label="Real Estate / Foreclosure">
+                <option value="foreclosure-complaint">I was served with a foreclosure complaint</option>
+                <option value="notice-of-default">I received a Notice of Default</option>
+              </optgroup>
+            </select>
+          </div>
+          <div class="field">
+            <label for="trigger-date">Date of this event</label>
+            <input type="date" id="trigger-date">
+          </div>
+        </div>
+        <button class="btn-calculate" onclick="calcDeadlines()">Calculate My Deadlines</button>
+      </div>
+
+      <div class="deadline-output" id="deadline-output">
+        <p style="font-size:0.8rem;color:var(--ink-3);margin-bottom:1.25rem">Deadlines below are general estimates only. Actual deadlines depend on your state, court, and specific facts. Verify all deadlines with a licensed attorney or your court's self-help center.</p>
+        <div id="deadline-list"></div>
+      </div>
+    </div>
+
+    <!-- TOOL 4: DOCUMENT PREPARATION CHECKLIST -->
+    <div class="tool-panel" id="panel-checklist">
+      <div class="tool-panel-header">
+        <p class="tool-label">Legal Tool 2 of 2</p>
+        <h2 class="tool-title">Document Preparation Checklist</h2>
+        <p class="tool-desc">Select the type of legal matter you are dealing with. The checklist below identifies the documents you are likely to need and information you should gather before your document preparation engagement.</p>
+      </div>
+
+      <div class="tool-card">
+        <div class="checklist-select-row">
+          <div class="field">
+            <label for="matter-type">Select Your Matter Type</label>
+            <select id="matter-type" onchange="showChecklist()">
+              <option value="">-- Select a matter type --</option>
+              <option value="demand-letter">Demand Letter</option>
+              <option value="civil-complaint">Civil Complaint / Lawsuit</option>
+              <option value="contract">Contract Drafting or Review</option>
+              <option value="estate-planning">Estate Planning Documents</option>
+              <option value="llc-formation">LLC or Business Formation</option>
+              <option value="real-estate-deed">Real Estate Deed Transfer</option>
+              <option value="foreclosure-defense">Foreclosure Defense Documents</option>
+              <option value="consumer-debt">Consumer Debt / FDCPA Dispute</option>
+              <option value="credit-dispute">Credit Report Dispute (FCRA)</option>
+              <option value="small-claims">Small Claims Court Filing</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="checklist-output" id="checklist-output">
+          <div id="checklist-body"></div>
+          <p class="checklist-progress" id="checklist-progress"></p>
+        </div>
+      </div>
+
+      <div class="tool-card" style="background:var(--red-bg);border-color:var(--red-rule)">
+        <p style="font-size:0.9rem;color:var(--ink-2);line-height:1.7">Once you have gathered your documents and information, contact The Juris Institute for a flat-fee quote on document preparation. Most matters are quoted and completed within 1-3 business days.</p>
+        <p style="margin-top:0.75rem"><a href="index.html#contact" style="font-size:0.82rem;font-weight:600;color:var(--red);text-decoration:none;letter-spacing:0.06em;text-transform:uppercase">Contact Us for a Quote &rsaquo;</a></p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<hr class="rule">
+
+<section class="disclaimer-section">
+  <div class="disclaimer-inner">
+    <p class="disclaimer-text">The free tools on this page are provided for general educational and informational purposes only. They do not constitute financial advice, legal advice, tax advice, or professional services of any kind. No attorney-client relationship is created by use of these tools. All calculations and checklists are estimates based on general principles and may not reflect the specific requirements of your jurisdiction, court, or situation. Deadlines vary by state, court rules, and the specific facts of your matter — verify all deadlines with a licensed attorney or your court. The Juris Institute is not a law firm and does not provide legal advice. Document preparation services are separate from these tools and are provided under a flat-fee engagement. &copy; 2026 The Juris Institute.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <a href="index.html" class="footer-brand">The Juris Institute</a>
+    <span class="footer-copy">&copy; 2026 The Juris Institute. All rights reserved.</span>
+    <nav class="footer-nav">
+      <a href="index.html">Home</a>
+      <a href="index.html#services">All Services</a>
+      <a href="financial-education.html">Financial Coaching</a>
+      <a href="free-tools.html">Free Tools</a>
+      <a href="blog/index.html">Blog</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+// ─── TAB SWITCHING ────────────────────────────────────────────────────────────
+document.querySelectorAll('.tool-tab').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.tool-tab').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.tool-panel').forEach(p => p.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById('panel-' + btn.dataset.panel).classList.add('active');
+    window.scrollTo({top: document.querySelector('.tool-nav').offsetTop - 10, behavior: 'smooth'});
+  });
+});
+
+// ─── HELPERS ──────────────────────────────────────────────────────────────────
+const fmt = n => '$' + Math.round(n).toLocaleString();
+
+// ─── TOOL 1: ZERO-BASED BUDGET ────────────────────────────────────────────────
+function calcBudget() {
+  const inc = (parseFloat(document.getElementById('inc-take-home').value)||0)
+            + (parseFloat(document.getElementById('inc-other').value)||0);
+  let totalExp = 0;
+  document.querySelectorAll('.exp-field').forEach(el => {
+    totalExp += parseFloat(el.value) || 0;
+  });
+  const remaining = inc - totalExp;
+  const pct = inc > 0 ? Math.min((totalExp/inc)*100, 100) : 0;
+
+  const cells = document.getElementById('budget-summary-cells');
+  cells.innerHTML = [
+    ['Monthly Income', fmt(inc), ''],
+    ['Total Expenses', fmt(totalExp), remaining < 0 ? 'red' : ''],
+    ['Remaining Balance', fmt(remaining), remaining < 0 ? 'red' : remaining === 0 ? 'green' : 'yellow'],
+    ['Budget Used', Math.round(pct) + '%', '']
+  ].map(([label, val, cls]) =>
+    `<div class="result-cell"><p class="rc-label">${label}</p><p class="rc-value ${cls}">${val}</p></div>`
+  ).join('');
+
+  const fill = document.getElementById('budget-bar-fill');
+  fill.style.width = pct + '%';
+  fill.className = 'budget-bar-fill ' + (pct > 100 ? 'red' : pct >= 95 ? 'green' : 'yellow');
+  document.getElementById('budget-bar-pct').textContent = Math.round(pct) + '% allocated';
+
+  let msg = '';
+  if (inc === 0) {
+    msg = 'Enter your monthly income to see your budget summary.';
+  } else if (remaining < 0) {
+    msg = 'Your expenses exceed your income by ' + fmt(Math.abs(remaining)) + ' per month. This is called a deficit budget. You need to reduce expenses or increase income — the goal is to get this number to exactly $0.';
+  } else if (remaining === 0) {
+    msg = 'Your budget balances to zero. This is the goal of a zero-based budget. Every dollar has a job.';
+  } else if (remaining > 0) {
+    msg = 'You have ' + fmt(remaining) + ' unassigned each month. Give every dollar a job — assign this remainder to debt payoff, savings, or an investment account. An unassigned dollar disappears.';
+  }
+  document.getElementById('budget-message').textContent = msg;
+  document.getElementById('budget-results').style.display = 'block';
+  document.getElementById('budget-results').scrollIntoView({behavior:'smooth', block:'nearest'});
+}
+
+// ─── TOOL 2: DEBT SNOWBALL ────────────────────────────────────────────────────
+let debtRowCount = 0;
+function addDebtRow() {
+  debtRowCount++;
+  const id = debtRowCount;
+  const div = document.createElement('div');
+  div.id = 'debt-row-' + id;
+  div.style.cssText = 'display:grid;grid-template-columns:2fr 1fr 1fr 2.25rem;gap:0.75rem;margin-bottom:0.75rem;align-items:end';
+  div.innerHTML = `
+    <div class="field" style="margin-bottom:0"><input type="text" class="dname" placeholder="e.g. Capital One Visa"></div>
+    <div class="field" style="margin-bottom:0"><input type="number" class="dbal" placeholder="0" min="0"></div>
+    <div class="field" style="margin-bottom:0"><input type="number" class="dmin" placeholder="0" min="0"></div>
+    <button class="remove-row" onclick="removeDebtRow(${id})" title="Remove">&times;</button>`;
+  document.getElementById('debt-rows').appendChild(div);
+}
+function removeDebtRow(id) {
+  const el = document.getElementById('debt-row-' + id);
+  if (el) el.remove();
+}
+
+function calcSnowball() {
+  const rows = document.querySelectorAll('#debt-rows > div');
+  let debts = [];
+  rows.forEach(row => {
+    const name = row.querySelector('.dname').value.trim() || 'Unnamed Debt';
+    const bal = parseFloat(row.querySelector('.dbal').value) || 0;
+    const min = parseFloat(row.querySelector('.dmin').value) || 0;
+    if (bal > 0) debts.push({name, bal, min});
+  });
+
+  if (debts.length === 0) {
+    alert('Please add at least one debt to calculate the snowball.');
+    return;
+  }
+
+  debts.sort((a,b) => a.bal - b.bal);
+  const extra = parseFloat(document.getElementById('extra-payment').value) || 0;
+  const rate = (parseFloat(document.getElementById('avg-rate').value) || 18) / 100 / 12;
+  const totalMin = debts.reduce((s,d) => s+d.min, 0);
+  const totalBal = debts.reduce((s,d) => s+d.bal, 0);
+
+  // Simplified snowball simulation
+  let balances = debts.map(d => ({...d, remaining: d.bal, paid: false, monthsPaid: 0, interestPaid: 0}));
+  let month = 0, freed = 0, totalInterest = 0;
+  const MAX_MONTHS = 600;
+
+  while (balances.some(b => !b.paid) && month < MAX_MONTHS) {
+    month++;
+    let snowball = extra + freed;
+    for (let i = 0; i < balances.length; i++) {
+      const b = balances[i];
+      if (b.paid) continue;
+      const interest = b.remaining * rate;
+      b.interestPaid += interest;
+      totalInterest += interest;
+      b.remaining += interest;
+      if (i === balances.findIndex(x => !x.paid)) {
+        // Apply snowball to first unpaid debt
+        const payment = Math.min(b.remaining, b.min + snowball);
+        b.remaining -= payment;
+        snowball = 0;
+      } else {
+        const payment = Math.min(b.remaining, b.min);
+        b.remaining -= payment;
+      }
+      if (b.remaining <= 0.01) {
+        freed += b.min;
+        b.paid = true;
+        b.monthsPaid = month;
+      }
+    }
+  }
+
+  const years = Math.floor(month/12);
+  const months = month % 12;
+  const payoffStr = years > 0 ? (years + 'y ' + months + 'm') : (months + ' months');
+
+  const summaryEl = document.getElementById('snowball-summary-cells');
+  summaryEl.innerHTML = [
+    ['Total Debt', fmt(totalBal), ''],
+    ['Total Interest Est.', fmt(totalInterest), 'red'],
+    ['Payoff Timeline', payoffStr, 'green'],
+    ['Debts to Eliminate', debts.length.toString(), '']
+  ].map(([label, val, cls]) =>
+    `<div class="result-cell"><p class="rc-label">${label}</p><p class="rc-value ${cls}">${val}</p></div>`
+  ).join('');
+
+  const table = document.getElementById('snowball-table');
+  table.innerHTML = `<thead><tr>
+    <th>Order</th><th>Debt Name</th><th>Balance</th><th>Min. Payment</th><th>Est. Payoff</th>
+  </tr></thead><tbody>` +
+  balances.map((b, i) => {
+    const mo = b.monthsPaid || month;
+    const y = Math.floor(mo/12), m = mo%12;
+    const t = y > 0 ? (y + 'y ' + m + 'm') : (m + ' months');
+    return `<tr>
+      <td>${i+1}</td>
+      <td class="td-name">${b.name}</td>
+      <td class="td-amt">${fmt(b.bal)}</td>
+      <td class="td-amt">${fmt(b.min)}</td>
+      <td class="td-highlight">${t}</td>
+    </tr>`;
+  }).join('') + '</tbody>';
+
+  document.getElementById('snowball-results').style.display = 'block';
+  document.getElementById('snowball-results').scrollIntoView({behavior:'smooth', block:'nearest'});
+}
+
+// ─── TOOL 3: COURT DEADLINES ──────────────────────────────────────────────────
+const DEADLINE_DEFS = {
+  'service-complaint': [
+    {days:20, name:'Answer Due (Federal Court)', detail:'Federal Rules of Civil Procedure Rule 12(a): 21 days to respond to a complaint in federal court.', severity:'critical'},
+    {days:30, name:'Answer Due (Most State Courts)', detail:'Most state courts allow 20-30 days to respond to a complaint. Verify your state\'s specific rule.', severity:'critical'},
+    {days:21, name:'Pre-Answer Motions Due', detail:'Motions to dismiss (Rule 12(b)) must typically be filed before or with the answer.', severity:'warn'},
+    {days:90, name:'Rule 26(f) Conference (Federal)', detail:'In federal court, parties must confer and submit a discovery plan within 21 days of the Rule 26(f) conference.', severity:'info'},
+  ],
+  'filed-complaint': [
+    {days:21, name:'Defendant\'s Answer Due (Federal)', detail:'After proper service, the defendant has 21 days to respond in federal court.', severity:'info'},
+    {days:30, name:'Defendant\'s Answer Due (State)', detail:'Most state courts give defendants 20-30 days to answer. If no answer is filed, you may move for default.', severity:'info'},
+    {days:45, name:'Motion for Default Deadline', detail:'If the defendant does not respond, you may file a motion for entry of default after the answer deadline passes.', severity:'warn'},
+    {days:90, name:'Service Deadline', detail:'Federal rules require service of process within 90 days of filing the complaint (FRCP Rule 4(m)). State rules vary.', severity:'warn'},
+  ],
+  'discovery-start': [
+    {days:14, name:'Initial Disclosures Due (Federal)', detail:'FRCP Rule 26(a)(1): Initial disclosures must be made within 14 days of the Rule 26(f) conference.', severity:'critical'},
+    {days:30, name:'First Interrogatories / Requests Due', detail:'First set of interrogatories and document requests are typically due within 30 days of being served.', severity:'warn'},
+    {days:180, name:'Discovery Cutoff (Estimated)', detail:'Federal courts typically close discovery 4-6 months before trial. Check your scheduling order for the actual cutoff.', severity:'info'},
+    {days:210, name:'Expert Witness Disclosures (Est.)', detail:'Expert disclosures are typically due 90 days before discovery cutoff. Check your court\'s scheduling order.', severity:'info'},
+  ],
+  'judgment-entered': [
+    {days:10, name:'Appeal Deadline (Federal)', detail:'Notice of appeal in federal civil cases must be filed within 30 days of judgment. Some deadlines begin immediately — verify.', severity:'critical'},
+    {days:30, name:'Appeal Deadline (Most States)', detail:'State court appeal deadlines vary widely — typically 30 days. Verify your state\'s rule immediately.', severity:'critical'},
+    {days:14, name:'Motion for New Trial / JNOV', detail:'Post-trial motions under FRCP Rule 59 must be filed within 28 days of judgment in federal court.', severity:'critical'},
+    {days:90, name:'Begin Collection Efforts', detail:'If you are the judgment creditor, you may begin garnishment and levy proceedings after the judgment becomes final.', severity:'info'},
+  ],
+  'small-claims-filed': [
+    {days:5, name:'Confirm Hearing Date and Location', detail:'Verify your hearing date, time, and courtroom. Failure to appear results in automatic judgment against you.', severity:'critical'},
+    {days:14, name:'Gather and Organize Evidence', detail:'Collect and organize all contracts, receipts, photos, text messages, and other evidence. Make 3 copies of everything.', severity:'warn'},
+    {days:21, name:'Send Required Pre-Hearing Notice', detail:'Some courts require you to send a copy of your evidence to the opposing party before the hearing. Check your court\'s rules.', severity:'warn'},
+    {days:30, name:'Consider Pre-Hearing Settlement', detail:'Many small claims cases settle before the hearing. A written settlement agreement should be prepared before any payment is made.', severity:'info'},
+  ],
+  'demand-sent': [
+    {days:14, name:'Follow-Up Deadline', detail:'If no response is received within 14 days, follow up in writing. Document all follow-up attempts.', severity:'info'},
+    {days:30, name:'Response Deadline (Standard)', detail:'A standard demand letter typically allows 30 days for response. After this period, you may file suit or escalate.', severity:'warn'},
+    {days:45, name:'Decision to File Suit', detail:'If your demand has been ignored or rejected, decide by this date whether to file in small claims court or regular civil court.', severity:'info'},
+    {days:60, name:'Statute of Limitations Watch', detail:'Monitor your statute of limitations. Filing a lawsuit preserves your rights; waiting too long may bar your claim.', severity:'warn'},
+  ],
+  'demand-received': [
+    {days:7, name:'Consult on Response', detail:'You have received a demand. Before the deadline stated in the letter, decide whether to respond, negotiate, or dispute the claim.', severity:'critical'},
+    {days:14, name:'Written Response Due', detail:'Respond in writing before the stated deadline — either disputing the claim, proposing a settlement, or requesting additional time.', severity:'critical'},
+    {days:30, name:'Settlement or Denial Final', detail:'If you are going to dispute this demand, do so clearly in writing before this date to preserve your position.', severity:'warn'},
+  ],
+  'fdcpa-letter': [
+    {days:30, name:'Debt Validation Request Deadline', detail:'FDCPA: You have 30 days from the collector\'s first written notice to request debt validation. After 30 days, the collector may assume the debt is valid.', severity:'critical'},
+    {days:30, name:'Dispute Notice Deadline', detail:'If you dispute the debt or any portion of it, you must do so in writing within 30 days of the initial notice.', severity:'critical'},
+    {days:35, name:'Cease Communication Instruction', detail:'You may instruct the collector to cease all communication at any time, but doing so within the initial 30-day period preserves your validation rights simultaneously.', severity:'info'},
+  ],
+  'qwr-sent': [
+    {days:5, name:'Servicer Acknowledgment Due', detail:'RESPA requires your mortgage servicer to acknowledge a Qualified Written Request within 5 business days of receipt.', severity:'warn'},
+    {days:30, name:'Servicer Substantive Response Due', detail:'RESPA requires a substantive response within 30 business days of receipt (extended to 45 days for information requests).', severity:'warn'},
+    {days:60, name:'Credit Reporting Protection Period', detail:'During the 60-day period after a QWR is received, the servicer may not report adverse credit information on the disputed amount.', severity:'info'},
+    {days:45, name:'File CFPB Complaint If No Response', detail:'If your servicer does not respond within 30 business days, file a complaint with the CFPB at consumerfinance.gov/complaint.', severity:'warn'},
+  ],
+  'foreclosure-complaint': [
+    {days:20, name:'Answer Due (Verify Your State)', detail:'Most judicial foreclosure states require an answer within 20-30 days of service. Missing this deadline results in a default judgment. VERIFY YOUR STATE\'S RULE IMMEDIATELY.', severity:'critical'},
+    {days:14, name:'Loss Mitigation Application: Begin Now', detail:'Submitting a complete loss mitigation application can pause the foreclosure while your application is under review. Begin gathering income documentation immediately.', severity:'critical'},
+    {days:30, name:'Contact HUD-Approved Counselor', detail:'Free HUD-approved housing counselors can assist with loss mitigation applications. Call 800-569-4287.', severity:'warn'},
+    {days:45, name:'Discovery Requests to Lender', detail:'In judicial foreclosure, you may serve discovery on the lender requesting the original note, chain of assignments, and servicing records.', severity:'info'},
+  ],
+  'notice-of-default': [
+    {days:30, name:'Contact Servicer About Loss Mitigation', detail:'Contact your servicer immediately about loss mitigation options. In most cases, you must be evaluated for loss mitigation before a foreclosure sale can occur.', severity:'critical'},
+    {days:14, name:'Gather Income Documentation', detail:'Loss mitigation applications require current pay stubs, bank statements, tax returns, and a hardship letter. Begin gathering these now.', severity:'warn'},
+    {days:60, name:'Reinstatement Period (Estimate)', detail:'Most states allow reinstatement of the loan by paying all past-due amounts plus fees before the foreclosure sale. This period varies significantly by state and loan type.', severity:'warn'},
+    {days:90, name:'Foreclosure Sale Window (Estimate)', detail:'Non-judicial foreclosure states can proceed to sale as quickly as 90-120 days after notice. Judicial foreclosure states typically take longer. Verify your state\'s timeline.', severity:'info'},
+  ]
+};
+
+function calcDeadlines() {
+  const type = document.getElementById('trigger-type').value;
+  const dateVal = document.getElementById('trigger-date').value;
+  if (!type || !dateVal) { alert('Please select an event type and a date.'); return; }
+
+  const trigger = new Date(dateVal + 'T00:00:00');
+  const defs = DEADLINE_DEFS[type];
+  const list = document.getElementById('deadline-list');
+  const today = new Date(); today.setHours(0,0,0,0);
+
+  list.innerHTML = defs.map(d => {
+    const due = new Date(trigger);
+    due.setDate(due.getDate() + d.days);
+    const daysLeft = Math.round((due - today) / 86400000);
+    const past = daysLeft < 0;
+    const dateStr = due.toLocaleDateString('en-US', {month:'short', day:'numeric', year:'numeric'});
+    const badge = past
+      ? `<span class="deadline-badge badge-critical">Passed</span>`
+      : daysLeft <= 7
+      ? `<span class="deadline-badge badge-critical">${daysLeft} day${daysLeft===1?'':'s'} left</span>`
+      : daysLeft <= 21
+      ? `<span class="deadline-badge badge-warn">${daysLeft} days left</span>`
+      : `<span class="deadline-badge badge-info">${daysLeft} days left</span>`;
+    return `<div class="deadline-row">
+      <div class="deadline-date">${dateStr}<span>${d.days}-day deadline</span></div>
+      <div class="deadline-info">
+        <p class="deadline-name">${d.name}</p>
+        <p class="deadline-detail">${d.detail}</p>
+      </div>
+      ${badge}
+    </div>`;
+  }).join('');
+
+  document.getElementById('deadline-output').classList.add('active');
+  document.getElementById('deadline-output').scrollIntoView({behavior:'smooth', block:'nearest'});
+}
+
+// ─── TOOL 4: DOCUMENT CHECKLIST ───────────────────────────────────────────────
+const CHECKLISTS = {
+  'demand-letter': {
+    groups: [
+      {title:'Facts and Evidence', items:[
+        {label:'Chronology of events', detail:'Dates, amounts, what was promised vs. what was delivered'},
+        {label:'Original contract or agreement', detail:'Signed copy, emails, text messages confirming the agreement'},
+        {label:'Invoices, receipts, or proof of payment', detail:'Show what you paid and when'},
+        {label:'Proof of breach or failure to perform', detail:'Photos, inspection reports, communications showing the problem'},
+        {label:'Documentation of damages', detail:'Repair estimates, replacement costs, or other monetary losses'},
+      ]},
+      {title:'Recipient Information', items:[
+        {label:'Full legal name of the person or business you are writing to', detail:'Verify the exact legal name — not a nickname or trade name'},
+        {label:'Current mailing address', detail:'For certified mail delivery'},
+        {label:'Email address (for simultaneous delivery)', detail:'Optional but recommended'},
+      ]},
+      {title:'Your Information', items:[
+        {label:'Your full legal name and address', detail:'The return address for any response'},
+        {label:'Specific dollar amount or relief you are demanding', detail:'Be specific — "make it right" is not actionable; a dollar amount is'},
+        {label:'Deadline for response', detail:'Typically 14-30 days'},
+      ]}
+    ]
+  },
+  'civil-complaint': {
+    groups: [
+      {title:'Jurisdiction and Parties', items:[
+        {label:'Full legal names of all plaintiffs and defendants', detail:'Verify exact legal names, including business entity type'},
+        {label:'Addresses of all parties', detail:'For service of process purposes'},
+        {label:'Basis for court jurisdiction', detail:'Federal question, diversity of citizenship, or state court basis'},
+        {label:'Venue analysis', detail:'Which court / county is proper based on where events occurred or where defendant resides'},
+      ]},
+      {title:'Claims and Facts', items:[
+        {label:'Chronological narrative of all relevant events', detail:'What happened, in what order, and on what dates'},
+        {label:'All contracts, agreements, and written communications', detail:'The documents that establish the relationship and the breach'},
+        {label:'Specific legal claims you intend to assert', detail:'Breach of contract, negligence, fraud, FDCPA violation, etc.'},
+        {label:'Damages calculation', detail:'Economic damages, consequential damages, attorney fees if available'},
+        {label:'Any prior demands or settlement negotiations', detail:'Documents the attempt to resolve before litigation'},
+      ]},
+      {title:'Supporting Documentation', items:[
+        {label:'All correspondence with the defendant', detail:'Emails, letters, text messages — chronologically organized'},
+        {label:'Invoices, receipts, bank records showing damages', detail:'Dollar amounts must be documented'},
+        {label:'Any photographs, videos, or physical evidence', detail:'Especially for negligence or property damage claims'},
+        {label:'Expert opinions or repair estimates', detail:'Professional assessment of damages or breach'},
+      ]}
+    ]
+  },
+  'contract': {
+    groups: [
+      {title:'Party Information', items:[
+        {label:'Full legal names and entity types of all contracting parties', detail:'Individual names, LLC names, corporation names — exactly as they appear in official records'},
+        {label:'Addresses of all parties', detail:'For notices and legal service'},
+        {label:'Authorized signatories', detail:'Who has authority to sign on behalf of each entity'},
+      ]},
+      {title:'Deal Terms', items:[
+        {label:'Description of services or goods to be exchanged', detail:'Be as specific as possible — vague descriptions create disputes'},
+        {label:'Payment terms', detail:'Amount, schedule, method, due dates, and late payment provisions'},
+        {label:'Timeline and milestones', detail:'Start date, completion date, key milestones'},
+        {label:'Deliverables and acceptance criteria', detail:'What constitutes satisfactory performance'},
+        {label:'Term and termination provisions', detail:'How long the contract lasts and how either party can end it'},
+      ]},
+      {title:'Risk and Protection', items:[
+        {label:'Indemnification and liability limitations', detail:'Who bears responsibility for what risks'},
+        {label:'Confidentiality and non-disclosure needs', detail:'What information must be kept confidential'},
+        {label:'Intellectual property ownership', detail:'Who owns work product created under the agreement'},
+        {label:'Dispute resolution preference', detail:'Mediation, arbitration, or litigation; which state\'s law governs'},
+      ]}
+    ]
+  },
+  'estate-planning': {
+    groups: [
+      {title:'Personal Information', items:[
+        {label:'Full legal name, date of birth, and state of residence', detail:'Must match your government ID exactly'},
+        {label:'Names and relationships of all intended beneficiaries', detail:'Full names, dates of birth, and relationship to you'},
+        {label:'Names of individuals to serve as executor, trustee, or agent', detail:'First and alternate choices for each role'},
+        {label:'Names of guardian(s) for minor children (if applicable)', detail:'First and alternate choices'},
+      ]},
+      {title:'Assets and Property', items:[
+        {label:'Real property owned', detail:'Address, how title is currently held, approximate value'},
+        {label:'Financial accounts', detail:'Banks, brokerage accounts, retirement accounts — institution names and account types'},
+        {label:'Life insurance policies', detail:'Carrier, face amount, current beneficiary designations'},
+        {label:'Business interests', detail:'LLC memberships, corporate stock, partnership interests'},
+        {label:'Personal property of significant value', detail:'Vehicles, jewelry, artwork, collectibles'},
+      ]},
+      {title:'Intentions and Instructions', items:[
+        {label:'Specific bequests', detail:'Any specific items or amounts going to specific individuals'},
+        {label:'Charitable giving intentions', detail:'Any organizations you wish to benefit'},
+        {label:'Healthcare directive preferences', detail:'Your wishes regarding life support, resuscitation, and end-of-life care'},
+        {label:'Funeral and burial preferences', detail:'Optional but often helpful to document'},
+      ]}
+    ]
+  },
+  'llc-formation': {
+    groups: [
+      {title:'Entity Basics', items:[
+        {label:'Proposed LLC name (including alternatives)', detail:'Name must be available in your state — check your Secretary of State\'s database'},
+        {label:'State of formation', detail:'The state where you will file the Articles of Organization'},
+        {label:'Principal office address', detail:'Must be a physical address in most states — not a P.O. Box'},
+        {label:'Registered agent name and address', detail:'A person or service that will accept legal service of process'},
+      ]},
+      {title:'Ownership and Management', items:[
+        {label:'Names and addresses of all members (owners)', detail:'Full legal names for all individuals or entities with an ownership interest'},
+        {label:'Ownership percentage of each member', detail:'Must total 100%'},
+        {label:'Management structure decision', detail:'Member-managed (all owners manage) or manager-managed (designated manager)'},
+        {label:'Initial capital contributions', detail:'What each member is contributing — cash, property, or services'},
+      ]},
+      {title:'Operating Agreement Provisions', items:[
+        {label:'Voting rights and decision-making rules', detail:'What percentage vote is required for major decisions'},
+        {label:'Profit and loss distribution', detail:'How and when profits are distributed to members'},
+        {label:'Transfer restrictions', detail:'Rules about selling or transferring ownership interests'},
+        {label:'Buy-sell provisions', detail:'What happens if a member dies, becomes disabled, or wants to exit'},
+        {label:'Tax classification election', detail:'How the LLC will be taxed — consult a CPA for this decision'},
+      ]}
+    ]
+  },
+  'real-estate-deed': {
+    groups: [
+      {title:'Property Information', items:[
+        {label:'Current deed (most recent recorded deed)', detail:'Pull a copy from your county recorder or tax assessor — this shows the current legal description and current title holder'},
+        {label:'Legal description of the property', detail:'Not the street address — the metes and bounds or lot/block description from the existing deed'},
+        {label:'Property tax ID number (Parcel ID)', detail:'Found on your property tax bill or county assessor\'s website'},
+        {label:'Current title holders exactly as they appear on the existing deed', detail:'Grantor names must match exactly'},
+      ]},
+      {title:'Transfer Details', items:[
+        {label:'Full legal names of all new owners (grantees)', detail:'Exactly as they want to appear on the new deed — this is how they will hold title'},
+        {label:'Tenancy type for multiple grantees', detail:'Joint tenancy with right of survivorship, tenancy in common, or tenancy by the entirety (for married couples in some states)'},
+        {label:'Consideration amount', detail:'The purchase price or, for gift deeds, "love and affection" or nominal consideration'},
+        {label:'Reason for transfer', detail:'Sale, gift, estate planning, divorce settlement, adding a spouse — affects which deed type is appropriate'},
+      ]},
+      {title:'State-Specific Requirements', items:[
+        {label:'County and state of the property', detail:'Required to prepare state-compliant deed language and cover sheet'},
+        {label:'Notary requirement', detail:'All deeds require notarization — you will sign before a notary after the deed is prepared'},
+        {label:'Transfer tax information', detail:'Some states and counties charge transfer or recording taxes — research your jurisdiction\'s requirements'},
+        {label:'HOA or other deed restrictions', detail:'Review existing deed for any covenants, conditions, or restrictions that affect the transfer'},
+      ]}
+    ]
+  },
+  'foreclosure-defense': {
+    groups: [
+      {title:'Loan Documents', items:[
+        {label:'Original promissory note (if available)', detail:'The document you signed promising to repay the loan'},
+        {label:'Original mortgage or deed of trust', detail:'The security instrument recorded against your property'},
+        {label:'All loan modification agreements', detail:'Any modifications to the original loan terms'},
+        {label:'Complete payment history', detail:'Request from your servicer — a written transaction history of all payments applied'},
+      ]},
+      {title:'Foreclosure Documents Received', items:[
+        {label:'All notices received from the servicer', detail:'Notice of default, notice of acceleration, breach letters'},
+        {label:'Foreclosure complaint (if filed)', detail:'The lawsuit documents — note the docket number and court'},
+        {label:'Summons showing date of service', detail:'Critical for calculating your answer deadline'},
+        {label:'Any correspondence from the lender\'s attorney', detail:'Letters, notices, or communications from foreclosure counsel'},
+      ]},
+      {title:'Loss Mitigation Information', items:[
+        {label:'Two most recent years of tax returns', detail:'Required for all loss mitigation applications'},
+        {label:'Two most recent pay stubs or proof of income', detail:'Current income documentation'},
+        {label:'Two most recent bank statements (all accounts)', detail:'Show liquid assets'},
+        {label:'Hardship explanation (written narrative)', detail:'What caused the default and your current financial situation'},
+        {label:'Monthly income and expense statement', detail:'Current budget showing income vs. expenses'},
+      ]}
+    ]
+  },
+  'consumer-debt': {
+    groups: [
+      {title:'Debt Collector Information', items:[
+        {label:'Name and address of the debt collection company', detail:'As it appears on their letters — for your dispute letter address'},
+        {label:'Collector\'s reference or account number', detail:'Appears on all correspondence from them'},
+        {label:'Date of their first written notice to you', detail:'The 30-day clock for your validation request runs from this date'},
+        {label:'Copies of all letters received from the collector', detail:'Document everything in chronological order'},
+      ]},
+      {title:'The Underlying Debt', items:[
+        {label:'Original creditor name and account number', detail:'Who you originally owed the money to'},
+        {label:'Date of original default / last payment date', detail:'To assess whether the debt is time-barred (past the statute of limitations)'},
+        {label:'Amount claimed', detail:'Including any fees or interest the collector has added'},
+        {label:'Your position regarding the debt', detail:'Do you dispute the debt entirely? Dispute the amount? Claim it has been paid? Claim it is too old?'},
+      ]},
+      {title:'FDCPA Violations (if any)', items:[
+        {label:'Documentation of any abusive or harassing calls', detail:'Dates, times, content, any witnesses'},
+        {label:'Documentation of calls before 8am or after 9pm', detail:'FDCPA prohibited calling hours'},
+        {label:'Documentation of calls to your workplace', detail:'Especially if you informed them your employer prohibits such calls'},
+        {label:'Any threats the collector made', detail:'Threats of arrest, wage garnishment without a judgment, or other improper threats'},
+      ]}
+    ]
+  },
+  'credit-dispute': {
+    groups: [
+      {title:'Your Credit Reports', items:[
+        {label:'Current credit reports from all three bureaus', detail:'Get free reports at AnnualCreditReport.com — pull from Equifax, Experian, and TransUnion separately'},
+        {label:'Specific items you are disputing identified and highlighted', detail:'Item name, creditor, account number, what is wrong about it'},
+        {label:'Which bureau(s) show the error', detail:'Not all errors appear on all three reports — dispute only with the bureau(s) showing the error'},
+      ]},
+      {title:'Supporting Documentation', items:[
+        {label:'Proof that the information is inaccurate', detail:'Payment records, account statements, bankruptcy discharge documents, or identity theft documentation'},
+        {label:'Proof of account closure or payoff (if applicable)', detail:'Zero-balance statements, settlement letters, or payoff confirmations'},
+        {label:'FTC Identity Theft Report (if identity theft)', detail:'Required for fraud-related disputes — file at identitytheft.gov'},
+        {label:'Prior dispute correspondence (if re-disputing)', detail:'If you have disputed this item before, include copies of prior disputes and responses'},
+      ]},
+      {title:'Furnisher Dispute (if applicable)', items:[
+        {label:'Name and address of the data furnisher', detail:'The bank, lender, or creditor who reported the error — separate from the credit bureau'},
+        {label:'Account number with the furnisher', detail:'For their records to locate your account'},
+        {label:'Specific claim about what was reported incorrectly', detail:'Wrong balance, wrong payment history, account does not belong to you, etc.'},
+      ]}
+    ]
+  },
+  'small-claims': {
+    groups: [
+      {title:'Your Claim', items:[
+        {label:'Name and address of the person or business you are suing', detail:'Verify the correct legal name — suing the wrong entity can void your judgment'},
+        {label:'Specific dollar amount you are claiming', detail:'Small claims courts have dollar limits — verify your state\'s current limit'},
+        {label:'Basis for your claim (what they did or failed to do)', detail:'One or two clear sentences describing the breach or wrong'},
+        {label:'Verification that your claim is within the statute of limitations', detail:'Research your state\'s limitation period for your type of claim'},
+      ]},
+      {title:'Evidence You Will Bring to Court', items:[
+        {label:'Original contract or agreement (if any)', detail:'The document that created the obligation they breached'},
+        {label:'All receipts, invoices, and proof of payment', detail:'Show what you paid and when'},
+        {label:'All written communications with the defendant', detail:'Emails, text messages, letters — printed and organized by date'},
+        {label:'Photographs or videos documenting the problem', detail:'Printed photos (3 copies each) for property damage or defective work claims'},
+        {label:'Estimates or receipts for repair costs', detail:'From licensed contractors or professionals — quantify your damages'},
+        {label:'Witness information (if any witnesses)', detail:'Names and brief description of what each witness will say'},
+      ]},
+      {title:'Pre-Filing Steps', items:[
+        {label:'Pre-suit demand letter sent and documented', detail:'Most courts look favorably on a prior demand attempt before filing'},
+        {label:'Court filing fee research', detail:'Small claims filing fees typically range from $30-$100 depending on your state and claim amount'},
+        {label:'Service of process method researched', detail:'How you will serve the defendant after filing — certified mail, sheriff service, or process server'},
+      ]}
+    ]
+  }
+};
+
+let checkboxCount = 0;
+
+function showChecklist() {
+  const type = document.getElementById('matter-type').value;
+  const output = document.getElementById('checklist-output');
+  const body = document.getElementById('checklist-body');
+
+  if (!type) { output.classList.remove('active'); return; }
+
+  const def = CHECKLISTS[type];
+  checkboxCount = 0;
+  let totalItems = 0;
+
+  body.innerHTML = def.groups.map(group => {
+    totalItems += group.items.length;
+    return `<div class="check-group">
+      <p class="check-group-title">${group.title}</p>
+      ${group.items.map(item => {
+        checkboxCount++;
+        const id = 'chk-' + checkboxCount;
+        return `<div class="check-item">
+          <input type="checkbox" id="${id}" onchange="updateProgress(${totalItems})">
+          <label for="${id}"><strong>${item.label}</strong> — ${item.detail}</label>
+        </div>`;
+      }).join('')}
+    </div>`;
+  }).join('');
+
+  updateProgress(totalItems);
+  output.classList.add('active');
+}
+
+function updateProgress(total) {
+  const checked = document.querySelectorAll('#checklist-body input[type="checkbox"]:checked').length;
+  document.getElementById('checklist-progress').textContent =
+    checked + ' of ' + total + ' items gathered' + (checked === total ? ' — you\'re ready to start your engagement.' : '.');
+}
+
+// ─── INITIALIZE ──────────────────────────────────────────────────────────────
+// Pre-add 3 debt rows on load
+window.addEventListener('DOMContentLoaded', () => {
+  addDebtRow(); addDebtRow(); addDebtRow();
+  // Set today as default date for deadline calculator
+  const today = new Date();
+  const y = today.getFullYear();
+  const m = String(today.getMonth()+1).padStart(2,'0');
+  const d = String(today.getDate()).padStart(2,'0');
+  document.getElementById('trigger-date').value = `${y}-${m}-${d}`;
+});
+</script>
+
+</body>
+</html>

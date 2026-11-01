@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Blog &mdash; The Juris Institute</title>
+<meta name="description" content="Legal education articles on asset protection, estate planning, business formation, privacy law, and online business documents — from Ray Dyson, J.D., D.D., 25+ years of legal experience.">
+<link rel="canonical" href="https://thejurisinstitute.com/blog/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap">
+<style>
+:root{--bg:#F2F4F7;--surface:#FFFFFF;--ink:#111827;--ink-2:#374151;--ink-3:#6B7280;--border:#D1D8E4;--red:#BE1F24;--red-lt:#D94247;--red-bg:#FDF2F2;--navy:#1C3058;--navy-mid:#162848;--hero-fg:#EDF0F5;--hero-sub:#92A3BC;--hero-muted:#5C7090;--font-display:'Cormorant Garamond',Georgia,'Times New Roman',serif;--font-body:'DM Sans',system-ui,-apple-system,sans-serif;color-scheme:light}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0D1520;--surface:#152030;--ink:#EDF0F5;--ink-2:#B8C4D4;--ink-3:#7A90A8;--border:#1E3050;--red:#E04448;--red-lt:#EA6568;--red-bg:#1A1018;--navy:#0A1020;--navy-mid:#0F1828;--hero-fg:#EDF0F5;--hero-sub:#7A90A8;--hero-muted:#4A6080;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0D1520;--surface:#152030;--ink:#EDF0F5;--ink-2:#B8C4D4;--ink-3:#7A90A8;--border:#1E3050;--red:#E04448;--red-lt:#EA6568;--red-bg:#1A1018;--navy:#0A1020;--navy-mid:#0F1828;--hero-fg:#EDF0F5;--hero-sub:#7A90A8;--hero-muted:#4A6080;color-scheme:dark}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--font-body);background:var(--bg);color:var(--ink);font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
+.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:200;background:var(--navy);border-bottom:1px solid rgba(255,255,255,0.06)}
+.nav-inner{max-width:1160px;margin:0 auto;padding:1rem max(20px,env(safe-area-inset-right,0px));padding-left:max(20px,env(safe-area-inset-left,0px));display:flex;align-items:center;justify-content:space-between;gap:1.5rem}
+.nav-brand{display:flex;flex-direction:column;line-height:1.15;min-width:0;text-decoration:none}
+.nav-name{font-family:var(--font-display);font-size:1.3rem;font-weight:600;color:var(--hero-fg);letter-spacing:0.01em;white-space:nowrap}
+.nav-sub{font-size:0.63rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--hero-muted);font-weight:400;white-space:nowrap}
+.nav-links{display:flex;align-items:center;gap:0.25rem 1.75rem;flex-wrap:wrap;justify-content:flex-end}
+.nav-links a{font-size:0.82rem;color:var(--hero-sub);text-decoration:none;font-weight:400;transition:color 0.18s;white-space:nowrap}
+.nav-links a:hover,.nav-links a.active{color:var(--hero-fg)}
+.nav-cta{background:var(--red);color:#fff!important;padding:0.5rem 1.15rem;border-radius:3px;font-weight:500!important;font-size:0.82rem!important;letter-spacing:0.03em;transition:opacity 0.18s!important}
+.nav-cta:hover{opacity:0.85}
+@media(max-width:680px){.nav-links .hide-sm{display:none}}
+
+.blog-list-hero{background:var(--navy);padding:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px));padding-block:4rem 3.5rem}
+.blog-list-hero-inner{max-width:900px;margin:0 auto}
+.blog-list-eyebrow{font-size:0.7rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--red-lt);font-weight:600;margin-bottom:1.1rem}
+.blog-list-hero h1{font-family:var(--font-display);font-size:clamp(2.5rem,5vw,4rem);font-weight:600;color:var(--hero-fg);line-height:1.1;text-wrap:balance;margin-bottom:1rem}
+.blog-list-hero p{font-size:1rem;color:var(--hero-sub);max-width:600px;font-weight:300;line-height:1.75}
+
+.blog-grid-wrap{max-width:1000px;margin:0 auto;padding:4rem max(20px,env(safe-area-inset-right,0px));padding-left:max(20px,env(safe-area-inset-left,0px))}
+.blog-category-label{font-size:0.67rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--ink-3);font-weight:600;margin-bottom:2rem;padding-bottom:0.75rem;border-bottom:1px solid var(--border)}
+.blog-list{display:flex;flex-direction:column;gap:0}
+.blog-card{display:block;text-decoration:none;padding:1.75rem 0;border-bottom:1px solid var(--border);transition:background 0.15s}
+.blog-card:last-child{border-bottom:none}
+.blog-card:hover .blog-card-title{color:var(--red)}
+.blog-card-meta{font-size:0.75rem;color:var(--ink-3);margin-bottom:0.6rem;display:flex;gap:1.25rem;flex-wrap:wrap}
+.blog-card-category{color:var(--red-lt);font-weight:600;text-transform:uppercase;letter-spacing:0.12em;font-size:0.68rem}
+.blog-card-title{font-family:var(--font-display);font-size:1.5rem;font-weight:600;color:var(--ink);line-height:1.2;margin-bottom:0.6rem;transition:color 0.18s;text-wrap:balance}
+.blog-card-excerpt{font-size:0.9rem;color:var(--ink-3);line-height:1.7;font-weight:300;max-width:680px}
+.blog-card-read{font-size:0.8rem;color:var(--red);font-weight:500;margin-top:0.75rem;display:inline-block}
+
+.blog-cta{background:var(--navy);padding:3.5rem max(20px,env(safe-area-inset-right,0px));padding-left:max(20px,env(safe-area-inset-left,0px));text-align:center}
+.blog-cta-inner{max-width:600px;margin:0 auto}
+.blog-cta h2{font-family:var(--font-display);font-size:2.2rem;font-weight:600;color:var(--hero-fg);margin-bottom:0.85rem;line-height:1.2}
+.blog-cta p{color:var(--hero-sub);font-weight:300;margin-bottom:1.75rem;line-height:1.7}
+.blog-cta a{display:inline-block;background:var(--red);color:#fff;padding:0.85rem 2rem;border-radius:3px;text-decoration:none;font-weight:500;font-size:0.9rem;letter-spacing:0.03em;transition:opacity 0.18s}
+.blog-cta a:hover{opacity:0.85}
+
+footer{background:#090D09;padding:2.5rem max(20px,env(safe-area-inset-right,0px));padding-left:max(20px,env(safe-area-inset-left,0px));padding-bottom:max(2.5rem,env(safe-area-inset-bottom,0px))}
+.footer-inner{max-width:1160px;margin:0 auto;display:flex;flex-wrap:wrap;gap:1.25rem;justify-content:space-between;align-items:center}
+.footer-brand{font-family:var(--font-display);font-size:1.1rem;font-weight:600;color:rgba(255,255,255,0.45)}
+.footer-copy{font-size:0.78rem;color:rgba(255,255,255,0.25)}
+.footer-nav{display:flex;gap:1.5rem;flex-wrap:wrap}
+.footer-nav a{font-size:0.78rem;color:rgba(255,255,255,0.35);text-decoration:none}
+.footer-nav a:hover{color:rgba(255,255,255,0.65)}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="../index.html" class="nav-brand">
+      <span class="nav-name">The Juris Institute</span>
+      <span class="nav-sub">Legal Document Preparation &amp; Education</span>
+    </a>
+    <div class="nav-links">
+      <a href="../index.html#services" class="hide-sm">Services</a>
+      <a href="../index.html#about" class="hide-sm">About</a>
+      <a href="index.html" class="hide-sm active">Blog</a>
+      <a href="../index.html#contact" class="nav-cta">Get Started</a>
+    </div>
+  </div>
+</nav>
+
+<section class="blog-list-hero">
+  <div class="blog-list-hero-inner">
+    <p class="blog-list-eyebrow">Legal Education</p>
+    <h1>The Juris Institute Blog</h1>
+    <p>Practical legal education on asset protection, estate planning, business formation, and online business documents &mdash; from Ray Dyson, J.D., D.D., with 25+ years of legal experience.</p>
+  </div>
+</section>
+
+<div class="blog-grid-wrap">
+  <p class="blog-category-label">All Articles &mdash; Most Recent First</p>
+  <div class="blog-list">
+
+    <a href="how-to-respond-to-a-debt-collection-lawsuit.html" class="blog-card">
+      <div class="blog-card-meta">
+        <span class="blog-card-category">Consumer Protection</span>
+        <span>November 1, 2026</span>
+        <span>8 min read</span>
+      </div>
+      <div class="blog-card-title">How to Respond to a Debt Collection Lawsuit</div>
+      <p class="blog-card-excerpt">Sued by a debt collector? Learn how to respond to a debt collection lawsuit step by step &mdash; before the deadline passes and a default judgment is entered against you.</p>
+      <span class="blog-card-read">Read article &rarr;</span>
+    </a>
+
+    <a href="what-is-durable-power-of-attorney.html" class="blog-card">
+      <div class="blog-card-meta">
+        <span class="blog-card-category">Estate Planning</span>
+        <span>October 24, 2026</span>
+        <span>7 min read</span>
+      </div>
+      <div class="blog-card-title">What Is a Durable Power of Attorney and Why You Need One</div>
+      <p class="blog-card-excerpt">A Durable Power of Attorney lets someone manage your finances if you become incapacitated. Without one, your family may need court intervention &mdash; an expensive, time-consuming process that a single document could have prevented.</p>
+      <span class="blog-card-read">Read article &rarr;</span>
+    </a>
+
+    <a href="how-living-trust-protects-your-assets.html" class="blog-card">
+      <div class="blog-card-meta">
+        <span class="blog-card-category">Estate Planning</span>
+        <span>October 17, 2026</span>
+        <span>8 min read</span>
+      </div>
+      <div class="blog-card-title">How a Living Trust Protects Your Assets</div>
+      <p class="blog-card-excerpt">A revocable living trust avoids probate, keeps your estate private, and gives you precise control over how your assets pass to your heirs &mdash; including protections a will alone cannot provide.</p>
+      <span class="blog-card-read">Read article &rarr;</span>
+    </a>
+
+    <a href="llc-vs-corporation-which-is-right-for-you.html" class="blog-card">
+      <div class="blog-card-meta">
+        <span class="blog-card-category">Business Formation</span>
+        <span>October 10, 2026</span>
+        <span>9 min read</span>
+      </div>
+      <div class="blog-card-title">LLC vs. Corporation: Which Structure Is Right for Your Business?</div>
+      <p class="blog-card-excerpt">Both LLCs and corporations protect your personal assets from business liabilities &mdash; but they work very differently. Here is how they compare on taxation, governance, flexibility, and what matters for raising capital.</p>
+      <span class="blog-card-read">Read article &rarr;</span>
+    </a>
+
+    <a href="saas-agreements-key-clauses-software-business.html" class="blog-card">
+      <div class="blog-card-meta">
+        <span class="blog-card-category">Technology Law</span>
+        <span>October 3, 2026</span>
+        <span>9 min read</span>
+      </div>
+      <div class="blog-card-title">SaaS Agreements: Key Clauses Every Software Business Needs</div>
+      <p class="blog-card-excerpt">A standard Terms of Service is not enough for a SaaS business. Here are the critical clauses &mdash; SLAs, data ownership, liability caps, and IP protections &mdash; that define your relationship with every customer.</p>
+      <span class="blog-card-read">Read article &rarr;</span>
+    </a>
+
+    <a href="terms-of-service-protecting-your-business-online.html" class="blog-card">
+      <div class="blog-card-meta">
+        <span class="blog-card-category">Online Business</span>
+        <span>September 26, 2026</span>
+        <span>7 min read</span>
+      </div>
+      <div class="blog-card-title">Terms of Service Agreements: Protecting Your Business Online</div>
+      <p class="blog-card-excerpt">Your Terms of Service defines the rules of your relationship with users, limits your liability, protects your intellectual property, and gives you enforceable remedies when things go wrong.</p>
+      <span class="blog-card-read">Read article &rarr;</span>
+    </a>
+
+    <a href="privacy-policy-requirements-for-websites.html" class="blog-card">
+      <div class="blog-card-meta">
+        <span class="blog-card-category">Online Business</span>
+        <span>September 19, 2026</span>
+        <span>8 min read</span>
+      </div>
+      <div class="blog-card-title">Privacy Policy Requirements for Websites and Online Businesses</div>
+      <p class="blog-card-excerpt">If your website collects any user data &mdash; even just an email address or analytics cookies &mdash; you almost certainly need a Privacy Policy. Here is what laws apply, what your policy must say, and how to stay compliant.</p>
+      <span class="blog-card-read">Read article &rarr;</span>
+    </a>
+
+    <a href="understanding-last-will-and-testament.html" class="blog-card">
+      <div class="blog-card-meta">
+        <span class="blog-card-category">Estate Planning</span>
+        <span>September 12, 2026</span>
+        <span>7 min read</span>
+      </div>
+      <div class="blog-card-title">Understanding a Last Will and Testament</div>
+      <p class="blog-card-excerpt">A will directs how your property is distributed, names your executor, and designates a guardian for your children. Here is what it covers, what it cannot do, and what it must contain to be legally valid.</p>
+      <span class="blog-card-read">Read article &rarr;</span>
+    </a>
+
+    <a href="llc-operating-agreement-requirements.html" class="blog-card">
+      <div class="blog-card-meta">
+        <span class="blog-card-category">Business Documents</span>
+        <span>September 5, 2026</span>
+        <span>8 min read</span>
+      </div>
+      <div class="blog-card-title">What Your LLC Operating Agreement Must Include</div>
+      <p class="blog-card-excerpt">The Operating Agreement is the most important document your LLC has &mdash; it governs ownership, management, profit sharing, and what happens when a member wants out. Here is what it must address.</p>
+      <span class="blog-card-read">Read article &rarr;</span>
+    </a>
+
+    <a href="adding-spouse-to-property-deed.html" class="blog-card">
+      <div class="blog-card-meta">
+        <span class="blog-card-category">Real Estate</span>
+        <span>August 29, 2026</span>
+        <span>7 min read</span>
+      </div>
+      <div class="blog-card-title">How to Add a Spouse to a Property Deed</div>
+      <p class="blog-card-excerpt">Adding a spouse to a property deed after marriage involves choosing the right deed type, the right form of co-ownership, and navigating lender and tax considerations. Here is how each decision affects your rights.</p>
+      <span class="blog-card-read">Read article &rarr;</span>
+    </a>
+
+    <a href="asset-protection-strategies-small-business.html" class="blog-card">
+      <div class="blog-card-meta">
+        <span class="blog-card-category">Asset Protection</span>
+        <span>August 22, 2026</span>
+        <span>9 min read</span>
+      </div>
+      <div class="blog-card-title">Asset Protection Strategies for Small Business Owners</div>
+      <p class="blog-card-excerpt">Effective asset protection starts with the right business entity, continues with disciplined separation of personal and business finances, and extends to holding company structures and personal asset planning. Here is how to build it layer by layer.</p>
+      <span class="blog-card-read">Read article &rarr;</span>
+    </a>
+
+  </div>
+</div>
+
+<section class="blog-cta">
+  <div class="blog-cta-inner">
+    <h2>Ready to Protect What You've Built?</h2>
+    <p>Flat-fee legal document preparation, virtual and nationwide. J.D. credentialed with 25+ years of experience. No billable-hour surprises.</p>
+    <a href="../index.html#contact">Get Started Today</a>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <span class="footer-brand">The Juris Institute</span>
+    <nav class="footer-nav">
+      <a href="../index.html">Home</a>
+      <a href="index.html">Blog</a>
+      <a href="../index.html#services">Services</a>
+      <a href="../index.html#contact">Contact</a>
+    </nav>
+    <span class="footer-copy">&copy; 2026 The Juris Institute. All rights reserved.</span>
+  </div>
+</footer>
+
+</body>
+</html>
