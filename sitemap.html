@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Site Map — The Juris Institute</title>
+<meta name="description" content="Every page on The Juris Institute website: services, free resources, blog articles, and legal pages.">
+<link rel="canonical" href="https://thejurisinstitute.com/sitemap.html">
+<meta property="og:title" content="Site Map — The Juris Institute">
+<meta property="og:description" content="Every page on The Juris Institute website.">
+<meta property="og:url" content="https://thejurisinstitute.com/sitemap.html">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://thejurisinstitute.com/og-image.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap">
+<style>
+
+:root { --bg:#F2F4F7; --surface:#FFFFFF; --ink:#111827; --ink-2:#374151; --ink-3:#6B7280; --border:#D1D8E4; --red:#BE1F24; --red-lt:#D94247; --red-bg:#FDF2F2; --red-rule:#F0CCCC; --navy:#1C3058; --navy-mid:#162848; --navy-lt:#223870; --hero-fg:#EDF0F5; --hero-sub:#92A3BC; --hero-muted:#5C7090; --font-display:'Cormorant Garamond',Georgia,'Times New Roman',serif; --font-body:'DM Sans',system-ui,-apple-system,sans-serif; color-scheme:light; }
+@media (prefers-color-scheme:dark) { :root:not([data-theme="light"]) { --bg:#0D1520; --surface:#152030; --ink:#EDF0F5; --ink-2:#B8C4D4; --ink-3:#7A90A8; --border:#1E3050; --red:#E04448; --red-lt:#EA6568; --red-bg:#1A1018; --red-rule:#3A1820; --navy:#0A1020; --navy-mid:#0F1828; --navy-lt:#152030; --hero-fg:#EDF0F5; --hero-sub:#7A90A8; --hero-muted:#4A6080; color-scheme:dark; } }
+:root[data-theme="dark"] { --bg:#0D1520; --surface:#152030; --ink:#EDF0F5; --ink-2:#B8C4D4; --ink-3:#7A90A8; --border:#1E3050; --red:#E04448; --red-lt:#EA6568; --red-bg:#1A1018; --red-rule:#3A1820; --navy:#0A1020; --navy-mid:#0F1828; --navy-lt:#152030; --hero-fg:#EDF0F5; --hero-sub:#7A90A8; --hero-muted:#4A6080; color-scheme:dark; }
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--font-body);background:var(--bg);color:var(--ink);font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+.nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:200;background:var(--navy);border-bottom:1px solid rgba(255,255,255,0.06)}
+.nav-inner{max-width:1160px;margin:0 auto;padding:1rem max(20px,env(safe-area-inset-right,0px));padding-left:max(20px,env(safe-area-inset-left,0px));display:flex;align-items:center;justify-content:space-between;gap:1.5rem}
+.nav-brand{display:flex;flex-direction:column;line-height:1.15;min-width:0;text-decoration:none}
+.nav-name{font-family:var(--font-display);font-size:1.3rem;font-weight:600;color:var(--hero-fg);letter-spacing:0.01em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.nav-sub{font-size:0.63rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--hero-muted);font-weight:400;white-space:nowrap}
+.nav-links{display:flex;align-items:center;gap:0.25rem 1.75rem;flex-wrap:wrap;justify-content:flex-end}
+.nav-links a{font-size:0.82rem;color:var(--hero-sub);text-decoration:none;font-weight:400;transition:color 0.18s;white-space:nowrap}
+.nav-links a:hover{color:var(--hero-fg)}
+.nav-links a.active{color:var(--hero-fg)}
+.nav-cta{background:var(--red);color:#fff!important;padding:0.5rem 1.15rem;border-radius:3px;font-weight:500!important;font-size:0.82rem!important;letter-spacing:0.03em;transition:opacity 0.18s!important}
+.nav-cta:hover{opacity:0.85}
+@media(max-width:680px){.nav-links .hide-sm{display:none}}
+.hero{background:var(--navy);padding:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px));padding-block:5.5rem 5rem;text-align:center;position:relative;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 50% 0%,rgba(190,31,36,0.12) 0%,transparent 70%);pointer-events:none}
+.hero-inner{position:relative;max-width:860px;margin:0 auto}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:0.5rem;font-size:0.72rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--red-lt);font-weight:500;margin-bottom:1.5rem}
+.hero-eyebrow::before,.hero-eyebrow::after{content:'';width:32px;height:1px;background:var(--red-lt);opacity:0.5}
+.hero h1{font-family:var(--font-display);font-size:clamp(2.8rem,6.5vw,5rem);font-weight:600;color:var(--hero-fg);line-height:1.08;letter-spacing:-0.01em;text-wrap:balance;margin-bottom:1.5rem}
+.hero h1 em{font-style:italic;color:var(--red-lt)}
+.hero-sub{font-size:1.05rem;color:var(--hero-sub);max-width:600px;margin:0 auto 2.75rem;line-height:1.65;font-weight:300}
+.hero-creds{display:flex;flex-wrap:wrap;justify-content:center;gap:0.4rem 0;margin-bottom:3rem;border-top:1px solid rgba(255,255,255,0.08);border-bottom:1px solid rgba(255,255,255,0.08);padding-block:1.1rem}
+.cred-pill{display:flex;align-items:center;gap:0;color:var(--hero-fg);font-size:0.82rem;font-weight:400;letter-spacing:0.03em;padding:0 1.25rem;border-right:1px solid rgba(255,255,255,0.12)}
+.cred-pill:last-child{border-right:none}
+.cred-pill strong{color:var(--red-lt);font-weight:600;margin-right:0.4rem}
+.hero-actions{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap}
+.btn-primary{background:var(--red);color:#fff;padding:0.875rem 2.25rem;border-radius:3px;text-decoration:none;font-weight:500;font-size:0.9rem;letter-spacing:0.04em;transition:opacity 0.18s;display:inline-block;text-transform:uppercase}
+.btn-primary:hover{opacity:0.85}
+.btn-ghost{background:transparent;color:var(--hero-fg);padding:0.875rem 2.25rem;border-radius:3px;text-decoration:none;font-weight:400;font-size:0.9rem;letter-spacing:0.04em;border:1px solid rgba(255,255,255,0.2);display:inline-block;text-transform:uppercase;transition:border-color 0.18s}
+.btn-ghost:hover{border-color:rgba(255,255,255,0.5)}
+.trust{background:var(--navy-lt);border-top:1px solid rgba(255,255,255,0.06);border-bottom:1px solid rgba(255,255,255,0.06);padding:0.95rem max(20px,env(safe-area-inset-right,0px));padding-left:max(20px,env(safe-area-inset-left,0px))}
+.trust-inner{max-width:1160px;margin:0 auto;display:flex;flex-wrap:wrap;justify-content:center;gap:0.35rem 2.5rem}
+.trust-item{font-size:0.74rem;letter-spacing:0.14em;text-transform:uppercase;color:rgba(255,255,255,0.7);font-weight:500}
+.section{padding:5.5rem max(20px,env(safe-area-inset-right,0px));padding-left:max(20px,env(safe-area-inset-left,0px))}
+.section-inner{max-width:1160px;margin:0 auto}
+.section-label{font-size:0.7rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--red);font-weight:600;margin-bottom:0.8rem}
+.section-title{font-family:var(--font-display);font-size:clamp(2rem,4.5vw,3.25rem);font-weight:600;line-height:1.12;color:var(--ink);text-wrap:balance;margin-bottom:1rem}
+.section-lead{font-size:1.05rem;color:var(--ink-2);max-width:700px;margin-bottom:3.5rem;line-height:1.7;font-weight:300}
+.services-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:1px;background:var(--border);border:1px solid var(--border);border-radius:6px;overflow:hidden}
+.svc-card{background:var(--surface);padding:1.85rem 1.75rem;transition:background 0.18s;position:relative}
+.svc-card:hover{background:var(--red-bg)}
+.svc-no{font-size:0.65rem;letter-spacing:0.16em;font-weight:700;color:var(--red);text-transform:uppercase;margin-bottom:0.8rem;font-variant-numeric:tabular-nums}
+.svc-title{font-family:var(--font-display);font-size:1.25rem;font-weight:600;color:var(--ink);line-height:1.25;margin-bottom:0.65rem}
+.svc-desc{font-size:0.875rem;color:var(--ink-3);line-height:1.65;margin-bottom:1.1rem}
+.svc-docs{font-size:0.77rem;color:var(--ink-3);font-style:italic;margin-bottom:1rem;line-height:1.5}
+.svc-link{font-size:0.75rem;font-weight:600;color:var(--red);text-decoration:none;letter-spacing:0.08em;text-transform:uppercase}
+.svc-link:hover{text-decoration:underline}
+.edu-section{background:var(--surface);border-bottom:1px solid var(--border)}
+.edu-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start}
+@media(max-width:860px){.edu-grid{grid-template-columns:1fr;gap:2.5rem}}
+.edu-copy{font-size:1rem;color:var(--ink-2);line-height:1.8;font-weight:300;margin-bottom:1.25rem}
+.edu-callout{background:var(--red-bg);border:1px solid var(--red-rule);border-radius:6px;padding:2rem;margin-bottom:1.25rem}
+.edu-callout:last-child{margin-bottom:0}
+.edu-callout h3{font-family:var(--font-display);font-size:1.5rem;font-weight:600;color:var(--ink);margin-bottom:1rem;line-height:1.2}
+.edu-callout p{font-size:0.9rem;color:var(--ink-2);line-height:1.7;font-weight:300;margin-bottom:0.75rem}
+.edu-callout p:last-child{margin-bottom:0}
+.who-section{background:var(--navy)}
+.who-section .section-title{color:var(--hero-fg)}
+.who-section .section-lead{color:var(--hero-sub)}
+.who-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:1.25rem}
+.who-card{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:6px;padding:1.75rem}
+.who-card h3{font-family:var(--font-display);font-size:1.3rem;font-weight:600;color:var(--hero-fg);margin-bottom:0.65rem;line-height:1.2}
+.who-card p{font-size:0.875rem;color:var(--hero-sub);line-height:1.65;font-weight:300}
+.how-section{background:var(--bg)}
+.steps-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:2.5rem}
+.step{text-align:center}
+.step-circle{width:64px;height:64px;border-radius:50%;border:1.5px solid var(--red);margin:0 auto 1.4rem;display:flex;align-items:center;justify-content:center;font-family:var(--font-display);font-size:1.65rem;font-weight:600;color:var(--red-lt);font-variant-numeric:tabular-nums}
+.faq-section{background:var(--surface);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.faq-list{display:flex;flex-direction:column;gap:0}
+.faq-item{border-bottom:1px solid var(--border);padding:1.75rem 0}
+.faq-item:last-child{border-bottom:none}
+.faq-q{font-family:var(--font-display);font-size:1.2rem;font-weight:600;color:var(--ink);margin-bottom:0.75rem;line-height:1.3}
+.faq-a{font-size:0.95rem;color:var(--ink-2);line-height:1.8;font-weight:300;max-width:780px}
+.scope-strip{background:var(--red-bg);border-top:1px solid var(--red-rule);border-bottom:1px solid var(--red-rule);padding:2.5rem max(20px,env(safe-area-inset-right,0px));padding-left:max(20px,env(safe-area-inset-left,0px))}
+.scope-inner{max-width:960px;margin:0 auto}
+.scope-label{font-size:0.68rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--red);font-weight:700;margin-bottom:0.65rem;text-align:center}
+.scope-compare{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem}
+@media(max-width:600px){.scope-compare{grid-template-columns:1fr}}
+.scope-col h4{font-size:0.78rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:0.75rem;padding-bottom:0.5rem;border-bottom:1px solid var(--red-rule)}
+.scope-col.yes h4{color:var(--red)}
+.scope-col.no h4{color:var(--ink-3)}
+.scope-col ul{list-style:none;display:flex;flex-direction:column;gap:0.5rem}
+.scope-col li{font-size:0.85rem;color:var(--ink-2);padding-left:1.25rem;position:relative;font-weight:300}
+.scope-col.yes li::before{content:'✓';position:absolute;left:0;color:var(--red);font-weight:700;font-size:0.8rem}
+.scope-col.no li::before{content:'✕';position:absolute;left:0;color:var(--ink-3);font-size:0.8rem}
+.disclaimer{background:var(--navy-mid);padding:2.25rem max(20px,env(safe-area-inset-right,0px));padding-left:max(20px,env(safe-area-inset-left,0px))}
+.disclaimer-inner{max-width:900px;margin:0 auto;text-align:center}
+.disclaimer-label{font-size:0.67rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--hero-muted);font-weight:600;margin-bottom:0.65rem}
+.disclaimer-text{font-size:0.82rem;color:var(--hero-muted);line-height:1.75;font-weight:300}
+.cta-section{background:var(--navy);padding:5rem max(20px,env(safe-area-inset-right,0px));padding-left:max(20px,env(safe-area-inset-left,0px));text-align:center}
+.cta-section h2{font-family:var(--font-display);font-size:clamp(2rem,4.5vw,3.25rem);font-weight:600;color:var(--hero-fg);max-width:700px;margin:0 auto 1rem;text-wrap:balance;line-height:1.15}
+.cta-section .sub{font-size:1rem;color:var(--hero-sub);max-width:520px;margin:0 auto 2.75rem;font-weight:300}
+.contact-row{margin-top:2.25rem;display:flex;flex-wrap:wrap;gap:0.4rem 2.5rem;justify-content:center}
+.contact-item{font-size:0.87rem;color:var(--hero-muted)}
+.contact-item a{color:var(--red-lt);text-decoration:none}
+.contact-item a:hover{text-decoration:underline}
+footer{background:#090D09;padding:2.5rem max(20px,env(safe-area-inset-right,0px));padding-left:max(20px,env(safe-area-inset-left,0px));padding-bottom:max(2.5rem,env(safe-area-inset-bottom,0px))}
+.footer-inner{max-width:1160px;margin:0 auto;display:flex;flex-wrap:wrap;gap:1.25rem;justify-content:space-between;align-items:center}
+.footer-brand{font-family:var(--font-display);font-size:1.1rem;font-weight:600;color:rgba(255,255,255,0.45);text-decoration:none}
+.footer-copy{font-size:0.78rem;color:rgba(255,255,255,0.25)}
+.footer-nav{display:flex;gap:1.5rem;flex-wrap:wrap}
+.footer-nav a{font-size:0.78rem;color:rgba(255,255,255,0.35);text-decoration:none}
+.footer-nav a:hover{color:rgba(255,255,255,0.65)}
+.rule{border:none;border-top:1px solid var(--border);margin:0}
+@media(max-width:600px){.hero{padding-block:3.75rem 3.25rem}.section{padding-block:3.75rem}.services-grid{grid-template-columns:1fr}.steps-grid{grid-template-columns:1fr}.cred-pill{font-size:0.78rem;padding:0 0.9rem}.hero-creds{gap:0.6rem 0}.who-grid{grid-template-columns:1fr}}
+
+</style>
+<style>
+.legal-wrap{padding:3.5rem max(20px,env(safe-area-inset-right,0px)) 4.5rem;padding-left:max(20px,env(safe-area-inset-left,0px))}
+.legal-doc{max-width:780px;margin:0 auto;background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:clamp(1.5rem,4vw,3rem)}
+.legal-meta{font-size:0.82rem;color:var(--ink-3);margin-bottom:1.75rem;padding-bottom:1.25rem;border-bottom:1px solid var(--border)}
+.legal-doc h2{font-family:var(--font-display);font-size:1.6rem;font-weight:600;color:var(--ink);line-height:1.2;margin:2.25rem 0 0.75rem}
+.legal-doc h2:first-of-type{margin-top:0.5rem}
+.legal-doc h3{font-size:1rem;font-weight:600;color:var(--ink);margin:1.4rem 0 0.4rem}
+.legal-doc p{color:var(--ink-2);margin-bottom:0.95rem}
+.legal-doc ul{color:var(--ink-2);margin:0 0 1rem 1.25rem}
+.legal-doc li{margin-bottom:0.45rem}
+.legal-doc a{color:var(--red)}
+.legal-doc .callout-box{background:var(--red-bg);border-left:3px solid var(--red);border-radius:4px;padding:1rem 1.25rem;margin:0 0 1.5rem}
+.legal-doc .callout-box p{margin:0;color:var(--ink)}
+.legal-doc .caps{text-transform:none;font-weight:500;color:var(--ink)}
+.legal-toc{background:var(--bg);border:1px solid var(--border);border-radius:6px;padding:1rem 1.25rem;margin-bottom:2rem}
+.legal-toc p{font-size:0.72rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--red);font-weight:600;margin-bottom:0.5rem}
+.legal-toc ul{list-style:none;margin:0;color:var(--ink-2);columns:2 16rem;column-gap:2rem;font-size:0.92rem}
+.legal-toc li{margin-bottom:0.3rem;break-inside:avoid}
+.legal-toc a{color:var(--ink-2);text-decoration:none}
+.legal-toc a:hover{color:var(--red)}
+</style>
+<style id="tji-nav-fix">
+.nav{position:sticky}
+.nav-brand{min-width:0}
+.nav-toggle{display:none;align-items:center;gap:0.5rem;background:transparent;border:1px solid rgba(255,255,255,0.22);color:var(--hero-fg,#EDF0F5);border-radius:4px;padding:0.45rem 0.7rem;font:500 0.8rem var(--font-body,system-ui,sans-serif);letter-spacing:0.04em;cursor:pointer;white-space:nowrap}
+.nav-toggle-bars{display:inline-flex;flex-direction:column;gap:3px}
+.nav-toggle-bars span{display:block;width:16px;height:2px;background:currentColor;border-radius:1px;transition:transform 0.2s,opacity 0.2s}
+.nav-toggle[aria-expanded="true"] .nav-toggle-bars span:nth-child(1){transform:translateY(5px) rotate(45deg)}
+.nav-toggle[aria-expanded="true"] .nav-toggle-bars span:nth-child(2){opacity:0}
+.nav-toggle[aria-expanded="true"] .nav-toggle-bars span:nth-child(3){transform:translateY(-5px) rotate(-45deg)}
+.nav-menu{border-top:1px solid rgba(255,255,255,0.08);background:var(--navy,#1C3058);padding:0.5rem max(20px,env(safe-area-inset-right,0px)) 1rem;padding-left:max(20px,env(safe-area-inset-left,0px))}
+.nav-menu a{display:block;padding:0.8rem 0.25rem;color:var(--hero-fg,#EDF0F5);text-decoration:none;font-size:1rem;border-bottom:1px solid rgba(255,255,255,0.07)}
+.nav-menu a:last-child{border-bottom:0}
+.nav-menu a:hover{color:#fff}
+@media(max-width:680px){.nav-toggle{display:inline-flex}.nav-links{flex-wrap:nowrap;gap:0.5rem}.nav-links .hide-sm{display:none}.nav-cta{padding:0.45rem 0.8rem!important;font-size:0.78rem!important}.nav-name{font-size:1.15rem}.nav-inner{gap:0.75rem}}
+@media(max-width:420px){.nav-sub{display:none}.nav-name{font-size:1.05rem}.nav-cta{padding:0.4rem 0.6rem!important;font-size:0.74rem!important;letter-spacing:0.01em!important}.nav-toggle{padding:0.4rem 0.55rem;font-size:0.76rem}}
+@media(max-width:350px){.nav-toggle-label{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}}
+@media(min-width:681px){.nav-menu{display:none!important}}
+.footer-nav{display:flex;flex-wrap:wrap;gap:0.6rem 1.5rem}
+</style>
+<style>.sm-wrap{padding:3.5rem max(20px,env(safe-area-inset-right,0px)) 4.5rem;padding-left:max(20px,env(safe-area-inset-left,0px))}
+.sm-doc{max-width:900px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.5rem;align-items:start}
+.sm-group{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:1.5rem 1.6rem;min-width:0}
+.sm-group h2{font-family:var(--font-display);font-size:1.45rem;font-weight:600;color:var(--ink);margin-bottom:0.75rem}
+.sm-group ul{list-style:none;margin:0;padding:0}
+.sm-group li{padding:0.4rem 0;border-bottom:1px solid var(--border)}
+.sm-group li:last-child{border-bottom:0}
+.sm-group a{color:var(--ink-2);text-decoration:none;font-size:0.95rem}
+.sm-group a:hover{color:var(--red)}</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">
+      <span class="nav-name">The Juris Institute</span>
+      <span class="nav-sub">Legal Document Preparation &amp; Education</span>
+    </a>
+    <div class="nav-links">
+      <a href="asset-protection.html" class="hide-sm">Asset Protection</a>
+      <a href="index.html#services" class="hide-sm">Services</a>
+      <a href="index.html#how" class="hide-sm">How It Works</a>
+      <a href="index.html#about" class="hide-sm">About</a>
+      <a href="blog/index.html" class="hide-sm">Blog</a>
+      <a href="free-resource.html" class="hide-sm">Free Checklist</a>
+      <a href="index.html#contact" class="nav-cta">Get Started</a>
+      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="nav-menu"><span class="nav-toggle-bars" aria-hidden="true"><span></span><span></span><span></span></span><span class="nav-toggle-label">Menu</span></button>
+    </div>
+  </div>
+  <div class="nav-menu" id="nav-menu" hidden>
+    <a href="index.html">Home</a>
+    <a href="index.html#services">Services</a>
+    <a href="asset-protection.html">Asset Protection</a>
+    <a href="estate-planning.html">Estate Planning</a>
+    <a href="index.html#how">How It Works</a>
+    <a href="index.html#about">About</a>
+    <a href="blog/index.html">Blog</a>
+    <a href="free-resource.html">Free Checklist</a>
+    <a href="free-tools.html">Free Tools</a>
+    <a href="index.html#contact">Contact</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-inner">
+    <p class="hero-eyebrow">Navigation</p>
+    <h1>Site <em>Map</em></h1>
+    <p class="hero-sub">Every page on The Juris Institute website in one place.</p>
+  </div>
+</section>
+
+<main class="sm-wrap">
+  <div class="sm-doc">
+    <section class="sm-group">
+      <h2>Main Pages</h2>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#services">All Services</a></li>
+        <li><a href="index.html#how">How It Works</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#contact">Contact and Free Quote</a></li>
+        <li><a href="blog/index.html">Blog</a></li>
+      </ul>
+    </section>
+    <section class="sm-group">
+      <h2>Services</h2>
+      <ul>
+        <li><a href="civil-litigation.html">Civil Litigation Document Preparation</a></li>
+        <li><a href="contract-drafting.html">Contract Drafting &amp; Review Document Preparation</a></li>
+        <li><a href="real-estate-documents.html">Real Estate Document Preparation</a></li>
+        <li><a href="estate-planning.html">Estate Planning Document Preparation</a></li>
+        <li><a href="business-formation.html">Business Formation Document Preparation</a></li>
+        <li><a href="asset-protection.html">Asset Protection Document Preparation</a></li>
+        <li><a href="family-law.html">Family Law Document Preparation</a></li>
+        <li><a href="appellate-briefs.html">Appellate Brief Document Preparation</a></li>
+        <li><a href="foreclosure-defense.html">Foreclosure Defense Document Preparation</a></li>
+        <li><a href="bankruptcy-documents.html">Bankruptcy Documents</a></li>
+        <li><a href="consumer-protection.html">Consumer Protection Document Preparation</a></li>
+        <li><a href="legal-research.html">Legal Research Services</a></li>
+        <li><a href="legal-education-coaching.html">Legal Education &amp; Coaching Services</a></li>
+        <li><a href="small-claims-court-coaching.html">Small Claims Court Coaching</a></li>
+        <li><a href="financial-education.html">Financial Education &amp; Coaching</a></li>
+      </ul>
+    </section>
+    <section class="sm-group">
+      <h2>Free Resources</h2>
+      <ul>
+        <li><a href="free-resource.html">Pro Se Legal Survival Checklist</a></li>
+        <li><a href="free-tools.html">Free Financial and Legal Tools</a></li>
+      </ul>
+    </section>
+    <section class="sm-group">
+      <h2>Blog Articles</h2>
+      <ul>
+        <li><a href="blog/how-to-transfer-real-estate-into-a-living-trust.html">How to Transfer Real Estate Into a Living Trust</a></li>
+        <li><a href="blog/how-to-respond-to-a-debt-collection-lawsuit.html">How to Respond to a Debt Collection Lawsuit</a></li>
+        <li><a href="blog/what-is-durable-power-of-attorney.html">What Is a Durable Power of Attorney and Why You Need One</a></li>
+        <li><a href="blog/how-living-trust-protects-your-assets.html">How a Living Trust Protects Your Assets</a></li>
+        <li><a href="blog/llc-vs-corporation-which-is-right-for-you.html">LLC vs. Corporation: Which Structure Is Right for Your Business?</a></li>
+        <li><a href="blog/saas-agreements-key-clauses-software-business.html">SaaS Agreements: Key Clauses Every Software Business Needs</a></li>
+        <li><a href="blog/terms-of-service-protecting-your-business-online.html">Terms of Service Agreements: Protecting Your Business Online</a></li>
+        <li><a href="blog/privacy-policy-requirements-for-websites.html">Privacy Policy Requirements for Websites and Online Businesses</a></li>
+        <li><a href="blog/understanding-last-will-and-testament.html">Understanding a Last Will and Testament</a></li>
+        <li><a href="blog/llc-operating-agreement-requirements.html">What Your LLC Operating Agreement Must Include</a></li>
+        <li><a href="blog/adding-spouse-to-property-deed.html">How to Add a Spouse to a Property Deed</a></li>
+        <li><a href="blog/asset-protection-strategies-small-business.html">Asset Protection Strategies for Small Business Owners</a></li>
+      </ul>
+    </section>
+    <section class="sm-group">
+      <h2>Legal</h2>
+      <ul>
+        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+        <li><a href="terms-of-service.html">Terms of Service</a></li>
+      </ul>
+    </section>
+  </div>
+</main>
+
+<style>.donate-strip{background:linear-gradient(135deg,#152b15 0%,#0b1f0b 100%);border-top:3px solid #c8a84b;padding:2.25rem max(20px,env(safe-area-inset-right,0px));padding-left:max(20px,env(safe-area-inset-left,0px))}.donate-inner{max-width:960px;margin:0 auto;display:flex;flex-wrap:wrap;gap:1rem 2rem;align-items:center;justify-content:center;text-align:center}.donate-text{display:flex;flex-direction:column;gap:0.4rem}.donate-text strong{font-size:1.05rem;font-weight:700;color:#f0e8d0;letter-spacing:0.02em}.donate-text span{font-size:0.85rem;color:rgba(240,232,208,0.72);max-width:580px;line-height:1.5}.donate-btn{display:inline-block;background:#c8a84b;color:#0b1f0b;font-weight:700;font-size:0.88rem;padding:0.72rem 1.65rem;border-radius:4px;text-decoration:none;letter-spacing:0.05em;transition:opacity 0.18s;white-space:nowrap}.donate-btn:hover{opacity:0.85}</style>
+<!-- DONATE SECTION -->
+<section class="donate-strip">
+  <div class="donate-inner">
+    <div class="donate-text">
+      <strong>Support Equal Justice for All</strong>
+      <span>Tax-deductible donations to our recognized 501(c)(3) partner support nonprofit legal aid for those who cannot afford representation. No PayPal account required. Every donation helps us fight for equal justice for all.</span>
+    </div>
+    <a href="https://www.paypal.com/US/fundraiser/charity/4241775" target="_blank" rel="noopener noreferrer" class="donate-btn">Donate Now</a>
+  </div>
+</section>
+<footer>
+  <div class="footer-inner">
+    <a href="index.html" class="footer-brand">The Juris Institute</a>
+    <span class="footer-copy">&copy; 2026 The Juris Institute. All rights reserved.</span>
+    <nav class="footer-nav">
+      <a href="index.html">Home</a>
+      <a href="index.html#services">Services</a>
+      <a href="asset-protection.html">Asset Protection</a>
+      <a href="estate-planning.html">Estate Planning</a>
+      <a href="index.html#how">How It Works</a>
+      <a href="index.html#about">About</a>
+      <a href="blog/index.html">Blog</a>
+      <a href="free-resource.html">Free Checklist</a>
+      <a href="free-tools.html">Free Tools</a>
+      <a href="index.html#contact">Contact</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="terms-of-service.html">Terms of Service</a>
+      <a href="sitemap.html">Site Map</a>
+    </nav>
+  </div>
+</footer>
+
+<script id="tji-nav-js">(function(){var b=document.querySelector('.nav-toggle'),m=document.getElementById('nav-menu');if(!b||!m)return;b.addEventListener('click',function(){var o=b.getAttribute('aria-expanded')==='true';b.setAttribute('aria-expanded',o?'false':'true');m.hidden=o;});m.addEventListener('click',function(e){if(e.target.tagName==='A'){b.setAttribute('aria-expanded','false');m.hidden=true;}});})();</script>
+</body>
+</html>

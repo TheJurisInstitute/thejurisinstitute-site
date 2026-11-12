@@ -131,6 +131,25 @@ footer{background:#090D09;padding:2.5rem max(20px,env(safe-area-inset-right,0px)
 @media(max-width:600px){.hero{padding-block:3.75rem 3.25rem}.section{padding-block:3.75rem}.services-grid{grid-template-columns:1fr}.steps-grid{grid-template-columns:1fr}.cred-pill{font-size:0.78rem;padding:0 0.9rem}.hero-creds{gap:0.6rem 0}.who-grid{grid-template-columns:1fr}}
 
 </style>
+<style id="tji-nav-fix">
+.nav{position:sticky}
+.nav-brand{min-width:0}
+.nav-toggle{display:none;align-items:center;gap:0.5rem;background:transparent;border:1px solid rgba(255,255,255,0.22);color:var(--hero-fg,#EDF0F5);border-radius:4px;padding:0.45rem 0.7rem;font:500 0.8rem var(--font-body,system-ui,sans-serif);letter-spacing:0.04em;cursor:pointer;white-space:nowrap}
+.nav-toggle-bars{display:inline-flex;flex-direction:column;gap:3px}
+.nav-toggle-bars span{display:block;width:16px;height:2px;background:currentColor;border-radius:1px;transition:transform 0.2s,opacity 0.2s}
+.nav-toggle[aria-expanded="true"] .nav-toggle-bars span:nth-child(1){transform:translateY(5px) rotate(45deg)}
+.nav-toggle[aria-expanded="true"] .nav-toggle-bars span:nth-child(2){opacity:0}
+.nav-toggle[aria-expanded="true"] .nav-toggle-bars span:nth-child(3){transform:translateY(-5px) rotate(-45deg)}
+.nav-menu{border-top:1px solid rgba(255,255,255,0.08);background:var(--navy,#1C3058);padding:0.5rem max(20px,env(safe-area-inset-right,0px)) 1rem;padding-left:max(20px,env(safe-area-inset-left,0px))}
+.nav-menu a{display:block;padding:0.8rem 0.25rem;color:var(--hero-fg,#EDF0F5);text-decoration:none;font-size:1rem;border-bottom:1px solid rgba(255,255,255,0.07)}
+.nav-menu a:last-child{border-bottom:0}
+.nav-menu a:hover{color:#fff}
+@media(max-width:680px){.nav-toggle{display:inline-flex}.nav-links{flex-wrap:nowrap;gap:0.5rem}.nav-links .hide-sm{display:none}.nav-cta{padding:0.45rem 0.8rem!important;font-size:0.78rem!important}.nav-name{font-size:1.15rem}.nav-inner{gap:0.75rem}}
+@media(max-width:420px){.nav-sub{display:none}.nav-name{font-size:1.05rem}.nav-cta{padding:0.4rem 0.6rem!important;font-size:0.74rem!important;letter-spacing:0.01em!important}.nav-toggle{padding:0.4rem 0.55rem;font-size:0.76rem}}
+@media(max-width:350px){.nav-toggle-label{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}}
+@media(min-width:681px){.nav-menu{display:none!important}}
+.footer-nav{display:flex;flex-wrap:wrap;gap:0.6rem 1.5rem}
+</style>
 </head>
 <body>
 
@@ -141,12 +160,27 @@ footer{background:#090D09;padding:2.5rem max(20px,env(safe-area-inset-right,0px)
       <span class="nav-sub">Legal Document Preparation &amp; Education</span>
     </a>
     <div class="nav-links">
-      <a href="index.html#services" class="hide-sm">Services</a>
       <a href="asset-protection.html" class="hide-sm">Asset Protection</a>
-      <a href="estate-planning.html" class="hide-sm">Estate Planning</a>
+      <a href="index.html#services" class="hide-sm">Services</a>
+      <a href="index.html#how" class="hide-sm">How It Works</a>
+      <a href="index.html#about" class="hide-sm">About</a>
       <a href="blog/index.html" class="hide-sm">Blog</a>
+      <a href="free-resource.html" class="hide-sm">Free Checklist</a>
       <a href="#contact" class="nav-cta">Get Started</a>
+      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="nav-menu"><span class="nav-toggle-bars" aria-hidden="true"><span></span><span></span><span></span></span><span class="nav-toggle-label">Menu</span></button>
     </div>
+  </div>
+  <div class="nav-menu" id="nav-menu" hidden>
+    <a href="index.html">Home</a>
+    <a href="index.html#services">Services</a>
+    <a href="asset-protection.html">Asset Protection</a>
+    <a href="estate-planning.html">Estate Planning</a>
+    <a href="index.html#how">How It Works</a>
+    <a href="index.html#about">About</a>
+    <a href="blog/index.html">Blog</a>
+    <a href="free-resource.html">Free Checklist</a>
+    <a href="free-tools.html">Free Tools</a>
+    <a href="index.html#contact">Contact</a>
   </div>
 </nav>
 
@@ -418,13 +452,18 @@ footer{background:#090D09;padding:2.5rem max(20px,env(safe-area-inset-right,0px)
     <span class="footer-copy">&copy; 2026 The Juris Institute. All rights reserved.</span>
     <nav class="footer-nav">
       <a href="index.html">Home</a>
-      <a href="index.html#services">All Services</a>
+      <a href="index.html#services">Services</a>
       <a href="asset-protection.html">Asset Protection</a>
       <a href="estate-planning.html">Estate Planning</a>
+      <a href="index.html#how">How It Works</a>
+      <a href="index.html#about">About</a>
       <a href="blog/index.html">Blog</a>
-      <a href="sitemap.xml">Sitemap</a>
+      <a href="free-resource.html">Free Checklist</a>
+      <a href="free-tools.html">Free Tools</a>
+      <a href="index.html#contact">Contact</a>
       <a href="privacy-policy.html">Privacy Policy</a>
       <a href="terms-of-service.html">Terms of Service</a>
+      <a href="sitemap.html">Site Map</a>
     </nav>
   </div>
 </footer>
@@ -458,5 +497,6 @@ footer{background:#090D09;padding:2.5rem max(20px,env(safe-area-inset-right,0px)
   }
 }
 </script>
+<script id="tji-nav-js">(function(){var b=document.querySelector('.nav-toggle'),m=document.getElementById('nav-menu');if(!b||!m)return;b.addEventListener('click',function(){var o=b.getAttribute('aria-expanded')==='true';b.setAttribute('aria-expanded',o?'false':'true');m.hidden=o;});m.addEventListener('click',function(e){if(e.target.tagName==='A'){b.setAttribute('aria-expanded','false');m.hidden=true;}});})();</script>
 </body>
 </html>
