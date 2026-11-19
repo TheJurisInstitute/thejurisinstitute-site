@@ -122,6 +122,10 @@ footer{background:var(--navy);border-top:1px solid rgba(255,255,255,0.06);paddin
 }
 </style>
 <style id="tji-nav-fix">
+.nav-links{display:flex;align-items:center;gap:0.25rem 1.75rem;flex-wrap:wrap;justify-content:flex-end}
+.nav-links a{font-size:0.82rem;color:var(--hero-sub);text-decoration:none;font-weight:400;transition:color 0.18s;white-space:nowrap}
+.nav-links a:hover,.nav-links a.active{color:var(--hero-fg)}
+.nav-links a.nav-cta{color:#fff}
 .nav{position:sticky}
 .nav-brand{min-width:0}
 .nav-toggle{display:none;align-items:center;gap:0.5rem;background:transparent;border:1px solid rgba(255,255,255,0.22);color:var(--hero-fg,#EDF0F5);border-radius:4px;padding:0.45rem 0.7rem;font:500 0.8rem var(--font-body,system-ui,sans-serif);letter-spacing:0.04em;cursor:pointer;white-space:nowrap}
