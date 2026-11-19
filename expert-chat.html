@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Monthly Expert Chat Sign-Up — The Juris Institute</title>
+<meta name="robots" content="noindex,nofollow">
+<meta name="description" content="Sign up for the Monthly Expert Chat with The Juris Institute.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap">
+<style>
+:root{--bg:#F2F4F7;--surface:#FFFFFF;--ink:#111827;--ink-2:#374151;--ink-3:#6B7280;--border:#D1D8E4;--red:#BE1F24;--red-lt:#D94247;--red-bg:#FDF2F2;--red-rule:#F0CCCC;--navy:#1C3058;--navy-mid:#162848;--navy-lt:#223870;--hero-fg:#EDF0F5;--hero-sub:#92A3BC;--hero-muted:#5C7090;--font-display:'Cormorant Garamond',Georgia,'Times New Roman',serif;--font-body:'DM Sans',system-ui,-apple-system,sans-serif;color-scheme:light}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0D1520;--surface:#152030;--ink:#EDF0F5;--ink-2:#B8C4D4;--ink-3:#7A90A8;--border:#1E3050;--red:#E04448;--red-lt:#EA6568;--red-bg:#1A1018;--red-rule:#3A1820;--navy:#0A1020;--navy-mid:#0F1828;--navy-lt:#152030;--hero-fg:#EDF0F5;--hero-sub:#7A90A8;--hero-muted:#4A6080;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0D1520;--surface:#152030;--ink:#EDF0F5;--ink-2:#B8C4D4;--ink-3:#7A90A8;--border:#1E3050;--red:#E04448;--red-lt:#EA6568;--red-bg:#1A1018;--red-rule:#3A1820;--navy:#0A1020;--navy-mid:#0F1828;--navy-lt:#152030;--hero-fg:#EDF0F5;--hero-sub:#7A90A8;--hero-muted:#4A6080;color-scheme:dark}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:var(--font-body);background:var(--bg);color:var(--ink);font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+
+/* NAV */
+.nav{background:var(--navy);border-bottom:1px solid rgba(255,255,255,0.06);padding:1rem max(20px,env(safe-area-inset-right,0px));padding-left:max(20px,env(safe-area-inset-left,0px))}
+.nav-inner{max-width:1000px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:1.5rem}
+.nav-brand{text-decoration:none}
+.nav-name{font-family:var(--font-display);font-size:1.3rem;font-weight:600;color:var(--hero-fg);letter-spacing:0.01em}
+.nav-sub{font-size:0.63rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--hero-muted);font-weight:400}
+.nav-cta{background:var(--red);color:#fff;padding:0.5rem 1.15rem;border-radius:3px;font-weight:500;font-size:0.82rem;letter-spacing:0.03em;text-decoration:none;white-space:nowrap}
+
+/* HERO BAND */
+.resource-hero{background:var(--navy);padding:3.5rem max(20px,env(safe-area-inset-right,0px)) 3rem;padding-left:max(20px,env(safe-area-inset-left,0px));text-align:center;position:relative;overflow:hidden}
+.resource-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 80% 60% at 50% 0%,rgba(190,31,36,0.12) 0%,transparent 70%);pointer-events:none}
+.resource-hero-inner{position:relative;max-width:760px;margin:0 auto}
+.free-badge{display:inline-block;background:var(--red);color:#fff;font-size:0.68rem;font-weight:700;letter-spacing:0.22em;text-transform:uppercase;padding:0.3rem 0.85rem;border-radius:2px;margin-bottom:1.25rem}
+.resource-hero h1{font-family:var(--font-display);font-size:clamp(2rem,5vw,3.25rem);font-weight:600;color:var(--hero-fg);line-height:1.1;text-wrap:balance;margin-bottom:1rem}
+.resource-hero h1 em{font-style:italic;color:var(--red-lt)}
+.resource-hero-sub{font-size:1rem;color:var(--hero-sub);font-weight:300;line-height:1.65;max-width:580px;margin:0 auto 1.75rem}
+.author-line{font-size:0.8rem;color:var(--hero-muted);letter-spacing:0.04em;border-top:1px solid rgba(255,255,255,0.1);padding-top:1.25rem;margin-top:0.5rem}
+.author-line strong{color:var(--hero-sub)}
+
+/* CONTENT */
+.content-wrap{max-width:760px;margin:0 auto;padding:3.5rem max(20px,env(safe-area-inset-right,0px));padding-left:max(20px,env(safe-area-inset-left,0px))}
+
+.intro-box{background:var(--red-bg);border-left:3px solid var(--red);border-radius:0 4px 4px 0;padding:1.25rem 1.5rem;margin-bottom:2.75rem}
+.intro-box p{font-size:0.95rem;color:var(--ink-2);line-height:1.7}
+
+.signup-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:2.5rem;align-items:start}
+.inside-col{min-width:0}
+.inside-list{margin:0 0 1rem 1.2rem;padding:0;display:flex;flex-direction:column;gap:0.55rem;font-size:0.92rem;color:var(--ink-2);line-height:1.5}
+.inside-bonus{font-size:0.88rem;color:var(--ink-3);font-style:italic}
+.signup-card{background:var(--surface);border:1px solid var(--border);border-top:3px solid var(--red);border-radius:6px;padding:1.75rem;box-shadow:0 8px 28px rgba(17,24,39,0.08);min-width:0;scroll-margin-top:1rem}
+.signup-eyebrow{font-size:0.68rem;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:var(--red);margin-bottom:0.5rem}
+.signup-title{font-family:var(--font-display);font-size:1.55rem;font-weight:600;color:var(--ink);line-height:1.2;margin-bottom:0.6rem;text-wrap:balance}
+.signup-sub{font-size:0.9rem;color:var(--ink-2);line-height:1.6;margin-bottom:1.25rem}
+#ml-form{display:flex;flex-direction:column}
+.sf-label{font-size:0.8rem;font-weight:600;color:var(--ink);margin:0.75rem 0 0.35rem}
+.sf-opt{font-weight:400;color:var(--ink-3)}
+.sf-input{width:100%;padding:0.7rem 0.8rem;border:1px solid var(--border);border-radius:4px;background:var(--surface);color:var(--ink);font:inherit;font-size:0.92rem}
+.sf-input:focus{outline:2px solid var(--navy);outline-offset:1px}
+.sf-hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.sf-agree{display:flex;gap:0.6rem;align-items:flex-start;font-size:0.8rem;color:var(--ink-2);line-height:1.5;margin:1rem 0 0.25rem}
+.sf-agree input{margin-top:0.15rem;flex-shrink:0;width:18px;height:18px;accent-color:var(--red)}
+.sf-agree a{color:var(--red)}
+.sf-error{font-size:0.82rem;color:var(--red);margin-top:0.5rem}
+.sf-btn{margin-top:1rem;border:0;cursor:pointer;width:100%;text-align:center;font:inherit;font-weight:600}
+.sf-btn[disabled]{opacity:0.7;cursor:wait}
+.sf-note{font-size:0.78rem;color:var(--ink-3);text-align:center;margin-top:0.6rem}
+.ty-next{margin-top:1.5rem;padding-top:1.25rem;border-top:1px solid var(--border)}
+.ty-next h3{font-family:var(--font-display);font-size:1.2rem;color:var(--ink);margin-bottom:0.4rem}
+.ty-next p{font-size:0.86rem;color:var(--ink-2);line-height:1.6}
+.ty-link{display:inline-block;margin:0.6rem 0;color:var(--red);font-weight:600;text-decoration:none}
+.ty-how{font-size:0.8rem!important;color:var(--ink-3)!important}
+.signup-disclaimer{font-size:0.78rem;color:var(--ink-3);line-height:1.6;margin-top:2.5rem;border-top:1px solid var(--border);padding-top:1rem}
+@media(max-width:760px){.signup-grid{grid-template-columns:1fr}.signup-card{order:-1}}
+.checklist-section{margin-bottom:2.5rem}
+.checklist-section-title{font-family:var(--font-display);font-size:1.5rem;font-weight:600;color:var(--ink);margin-bottom:1.5rem;padding-bottom:0.6rem;border-bottom:2px solid var(--red-rule)}
+
+.checklist-item{display:flex;gap:1rem;align-items:flex-start;padding:1.1rem 0;border-bottom:1px solid var(--border)}
+.checklist-item:last-child{border-bottom:none}
+.item-number{flex-shrink:0;width:2rem;height:2rem;border-radius:50%;background:var(--navy);color:var(--hero-fg);font-size:0.75rem;font-weight:700;display:flex;align-items:center;justify-content:center;letter-spacing:0.05em;margin-top:0.1rem}
+.item-body{min-width:0}
+.item-title{font-size:0.97rem;font-weight:600;color:var(--ink);margin-bottom:0.3rem;line-height:1.4}
+.item-desc{font-size:0.88rem;color:var(--ink-2);line-height:1.65}
+.item-warning{display:inline-block;font-size:0.74rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:var(--red);margin-top:0.4rem}
+
+/* PRINT CHECKBOX */
+@media print{
+  .item-number{background:#1C3058;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .print-check{display:inline-block;width:14px;height:14px;border:1.5px solid #6B7280;border-radius:2px;margin-right:0.4rem;vertical-align:middle}
+}
+.print-check{display:none}
+
+/* CTA BOX */
+.cta-box{background:var(--navy);border-radius:8px;padding:2.5rem;text-align:center;margin:3rem 0}
+.cta-box h2{font-family:var(--font-display);font-size:1.85rem;font-weight:600;color:var(--hero-fg);margin-bottom:0.75rem;text-wrap:balance;line-height:1.15}
+.cta-box p{font-size:0.95rem;color:var(--hero-sub);font-weight:300;margin-bottom:1.75rem;max-width:480px;margin-left:auto;margin-right:auto}
+.btn-red{display:inline-block;background:var(--red);color:#fff;padding:0.9rem 2.25rem;border-radius:3px;text-decoration:none;font-weight:500;font-size:0.9rem;letter-spacing:0.06em;text-transform:uppercase;transition:opacity 0.18s}
+.btn-red:hover{opacity:0.85}
+.btn-ghost{display:inline-block;background:transparent;color:var(--hero-fg);padding:0.9rem 2.25rem;border-radius:3px;text-decoration:none;font-weight:400;font-size:0.9rem;letter-spacing:0.04em;border:1px solid rgba(255,255,255,0.2);transition:border-color 0.18s;margin-top:0.75rem}
+.btn-ghost:hover{border-color:rgba(255,255,255,0.5)}
+
+/* DISCLAIMER */
+.disclaimer{background:var(--surface);border-top:1px solid var(--border);padding:1.75rem max(20px,env(safe-area-inset-right,0px));padding-left:max(20px,env(safe-area-inset-left,0px))}
+.disclaimer-inner{max-width:760px;margin:0 auto}
+.disclaimer-label{font-size:0.67rem;letter-spacing:0.2em;text-transform:uppercase;color:var(--ink-3);font-weight:600;margin-bottom:0.5rem}
+.disclaimer-text{font-size:0.8rem;color:var(--ink-3);line-height:1.65}
+
+/* FOOTER */
+footer{background:var(--navy);border-top:1px solid rgba(255,255,255,0.06);padding:1.75rem max(20px,env(safe-area-inset-right,0px));padding-left:max(20px,env(safe-area-inset-left,0px));text-align:center}
+.footer-inner{max-width:1000px;margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:0.5rem 2rem}
+.footer-brand{font-family:var(--font-display);font-size:1.1rem;font-weight:600;color:var(--hero-fg)}
+.footer-copy{font-size:0.78rem;color:var(--hero-muted)}
+.footer-nav{display:flex;gap:1.25rem;flex-wrap:wrap}.footer-nav a{font-size:0.78rem;color:var(--hero-muted);text-decoration:none}.footer-nav a:hover{color:var(--hero-fg)}.footer-back{font-size:0.82rem;color:var(--red-lt);text-decoration:none}
+.footer-back:hover{text-decoration:underline}
+
+@media(max-width:600px){
+  .resource-hero{padding-block:2.5rem 2rem}
+  .content-wrap{padding-block:2.5rem}
+  .cta-box{padding:1.75rem 1.25rem}
+}
+</style>
+<style id="tji-nav-fix">
+.nav{position:sticky}
+.nav-brand{min-width:0}
+.nav-toggle{display:none;align-items:center;gap:0.5rem;background:transparent;border:1px solid rgba(255,255,255,0.22);color:var(--hero-fg,#EDF0F5);border-radius:4px;padding:0.45rem 0.7rem;font:500 0.8rem var(--font-body,system-ui,sans-serif);letter-spacing:0.04em;cursor:pointer;white-space:nowrap}
+.nav-toggle-bars{display:inline-flex;flex-direction:column;gap:3px}
+.nav-toggle-bars span{display:block;width:16px;height:2px;background:currentColor;border-radius:1px;transition:transform 0.2s,opacity 0.2s}
+.nav-toggle[aria-expanded="true"] .nav-toggle-bars span:nth-child(1){transform:translateY(5px) rotate(45deg)}
+.nav-toggle[aria-expanded="true"] .nav-toggle-bars span:nth-child(2){opacity:0}
+.nav-toggle[aria-expanded="true"] .nav-toggle-bars span:nth-child(3){transform:translateY(-5px) rotate(-45deg)}
+.nav-menu{border-top:1px solid rgba(255,255,255,0.08);background:var(--navy,#1C3058);padding:0.5rem max(20px,env(safe-area-inset-right,0px)) 1rem;padding-left:max(20px,env(safe-area-inset-left,0px))}
+.nav-menu a{display:block;padding:0.8rem 0.25rem;color:var(--hero-fg,#EDF0F5);text-decoration:none;font-size:1rem;border-bottom:1px solid rgba(255,255,255,0.07)}
+.nav-menu a:last-child{border-bottom:0}
+.nav-menu a:hover{color:#fff}
+@media(max-width:680px){.nav-toggle{display:inline-flex}.nav-links{flex-wrap:nowrap;gap:0.5rem}.nav-links .hide-sm{display:none}.nav-cta{padding:0.45rem 0.8rem!important;font-size:0.78rem!important}.nav-name{font-size:1.15rem}.nav-inner{gap:0.75rem}}
+@media(max-width:420px){.nav-sub{display:none}.nav-name{font-size:1.05rem}.nav-cta{padding:0.4rem 0.6rem!important;font-size:0.74rem!important;letter-spacing:0.01em!important}.nav-toggle{padding:0.4rem 0.55rem;font-size:0.76rem}}
+@media(max-width:350px){.nav-toggle-label{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}}
+@media(min-width:681px){.nav-menu{display:none!important}}
+.footer-nav{display:flex;flex-wrap:wrap;gap:0.6rem 1.5rem}
+</style>
+<style id="tji-sub">
+.sub-price{font-family:var(--font-display);font-size:3rem;font-weight:600;color:var(--ink);line-height:1}
+.sub-price small{font-family:var(--font-body);font-size:0.95rem;font-weight:400;color:var(--ink-3)}
+.sub-lock{font-size:0.85rem;color:var(--red);font-weight:600;margin:0.4rem 0 1.25rem}
+#pp-wrap{min-height:150px}
+.sub-ok{background:var(--red-bg);border-left:3px solid var(--red);border-radius:0 4px 4px 0;padding:1rem 1.25rem;font-size:0.9rem;color:var(--ink-2);line-height:1.6}
+.sub-ok strong{color:var(--ink)}
+.sub-id{font-family:ui-monospace,Consolas,monospace;font-size:0.85rem;word-break:break-all;user-select:all}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">
+      <span class="nav-name">The Juris Institute</span>
+      <span class="nav-sub">Legal Document Preparation &amp; Education</span>
+    </a>
+    <div class="nav-links">
+      <a href="asset-protection.html" class="hide-sm">Asset Protection</a>
+      <a href="index.html#services" class="hide-sm">Services</a>
+      <a href="index.html#how" class="hide-sm">How It Works</a>
+      <a href="index.html#about" class="hide-sm">About</a>
+      <a href="blog/index.html" class="hide-sm">Blog</a>
+      <a href="free-resource.html" class="hide-sm">Free Checklist</a>
+      <a href="index.html#contact" class="nav-cta">Get a Free Quote</a>
+      <button type="button" class="nav-toggle" aria-expanded="false" aria-controls="nav-menu"><span class="nav-toggle-bars" aria-hidden="true"><span></span><span></span><span></span></span><span class="nav-toggle-label">Menu</span></button>
+    </div>
+  </div>
+  <div class="nav-menu" id="nav-menu" hidden>
+    <a href="index.html">Home</a>
+    <a href="index.html#services">Services</a>
+    <a href="asset-protection.html">Asset Protection</a>
+    <a href="estate-planning.html">Estate Planning</a>
+    <a href="index.html#how">How It Works</a>
+    <a href="index.html#pricing">Pricing</a>
+    <a href="index.html#about">About</a>
+    <a href="blog/index.html">Blog</a>
+    <a href="free-resource.html">Free Checklist</a>
+    <a href="free-tools.html">Free Tools</a>
+    <a href="index.html#contact">Contact</a>
+    <a href="https://www.youtube.com/@TheJurisInstitute" target="_blank" rel="noopener">YouTube</a>
+    <a href="https://x.com/JurisInstitute" target="_blank" rel="noopener">X (Twitter)</a>
+  </div>
+</nav>
+
+<div class="resource-hero">
+  <div class="resource-hero-inner">
+    <span class="free-badge">Members Only</span>
+    <h1>Monthly<br><em>Expert Chat</em></h1>
+    <p class="resource-hero-sub">Ongoing written access to The Juris Institute for your legal questions, document questions and next-step guidance, billed simply each month.</p>
+    <p class="author-line">The Juris Institute &mdash; 25+ Years of Legal Experience</p>
+  </div>
+</div>
+
+<div class="content-wrap">
+
+  <div class="signup-grid">
+    <div class="inside-col">
+      <h2 class="checklist-section-title">What You Get</h2>
+      <ol class="inside-list">
+        <li>Written chat access to The Juris Institute each month</li>
+        <li>Answers to your questions about contracts, documents and legal processes</li>
+        <li>Guidance on next steps and what to watch for</li>
+        <li>A heads-up when a question needs a separate flat-fee project, quoted before any work begins</li>
+      </ol>
+      <p class="inside-bonus">Cancel anytime from your PayPal account. No contract and no cancellation fee.</p>
+    </div>
+
+    <div class="signup-card" id="subscribe">
+      <p class="signup-eyebrow">Subscribe</p>
+      <p class="sub-price">$39.99 <small>per month</small></p>
+      <p class="sub-lock">Your rate stays at $39.99 for as long as your subscription remains active.</p>
+      <div id="pp-wrap"><div id="paypal-button-container-P-27J49499FT180040ANL7VEGA"></div></div>
+      <div id="sub-done" hidden></div>
+      <p class="sf-note">Pay with your PayPal account or a debit or credit card. Billed today, then automatically every month.</p>
+    </div>
+  </div>
+
+  <p class="signup-disclaimer">The Juris Institute provides legal information, education and document preparation. The Monthly Expert Chat is not legal representation and does not create an attorney-client relationship. Questions about your subscription: info@thejurisinstitute.com.</p>
+
+</div>
+
+<script src="https://www.paypal.com/sdk/js?client-id=BAAFts90XG-Hw3s6AMPoTvrroT1EqaJL1LX7NchX_cAOwZnXKqFU9GfZedcAivcnz8hMg_lq05saoGZJUc&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script>
+<script>
+(function(){
+  if(!window.paypal){document.getElementById('pp-wrap').innerHTML='<p class="sub-ok">The payment button did not load. Please refresh the page, or email info@thejurisinstitute.com for help.</p>';return;}
+  paypal.Buttons({
+    style:{shape:'rect',color:'gold',layout:'vertical',label:'subscribe'},
+    createSubscription:function(data,actions){return actions.subscription.create({plan_id:'P-27J49499FT180040ANL7VEGA'});},
+    onApprove:function(data){
+      var w=document.getElementById('pp-wrap');w.hidden=true;
+      var d=document.getElementById('sub-done');
+      d.innerHTML='<div class="sub-ok"><strong>You are subscribed. Thank you!</strong><br>Your Monthly Expert Chat is active. A receipt is on its way from PayPal. Please keep this subscription ID for your records:<br><span class="sub-id"></span><br>Send your first question to info@thejurisinstitute.com.</div>';
+      d.querySelector('.sub-id').textContent=data.subscriptionID||'';
+      d.hidden=false;
+    }
+  }).render('#paypal-button-container-P-27J49499FT180040ANL7VEGA');
+})();
+</script>
+
+<footer>
+  <div class="footer-inner">
+    <span class="footer-brand">The Juris Institute</span>
+    <span class="footer-copy">&copy; 2026 The Juris Institute. All rights reserved.</span>
+    <nav class="footer-nav">
+      <a href="index.html">Home</a>
+      <a href="index.html#services">Services</a>
+      <a href="asset-protection.html">Asset Protection</a>
+      <a href="estate-planning.html">Estate Planning</a>
+      <a href="index.html#how">How It Works</a>
+      <a href="index.html#pricing">Pricing</a>
+      <a href="index.html#about">About</a>
+      <a href="blog/index.html">Blog</a>
+      <a href="free-resource.html">Free Checklist</a>
+      <a href="free-tools.html">Free Tools</a>
+      <a href="index.html#contact">Contact</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="terms-of-service.html">Terms of Service</a>
+      <a href="sitemap.html">Site Map</a>
+      <a href="https://www.youtube.com/@TheJurisInstitute" target="_blank" rel="noopener">YouTube</a>
+      <a href="https://x.com/JurisInstitute" target="_blank" rel="noopener">X (Twitter)</a>
+    </nav>
+  </div>
+</footer>
+
+<script id="tji-nav-js">(function(){var b=document.querySelector('.nav-toggle'),m=document.getElementById('nav-menu');if(!b||!m)return;b.addEventListener('click',function(){var o=b.getAttribute('aria-expanded')==='true';b.setAttribute('aria-expanded',o?'false':'true');m.hidden=o;});m.addEventListener('click',function(e){if(e.target.tagName==='A'){b.setAttribute('aria-expanded','false');m.hidden=true;}});})();</script>
+</body>
+</html>
