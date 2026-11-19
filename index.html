@@ -206,6 +206,10 @@ footer{background:#090D09;padding:2.5rem max(20px,env(safe-area-inset-right,0px)
 @media(max-width:350px){.nav-toggle-label{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}}
 @media(min-width:681px){.nav-menu{display:none!important}}
 .footer-nav{display:flex;flex-wrap:wrap;gap:0.6rem 1.5rem}
+.nav-inner{max-width:1200px}
+@media(max-width:1280px){.nav-links{column-gap:1.1rem}}
+@media(max-width:1240px){.nav-links a.hide-sm[href$="#how"],.nav-links a.hide-sm[href$="#about"]{display:none}}
+@media(max-width:1000px){.nav-toggle{display:inline-flex}.nav-links .hide-sm{display:none}.nav-menu:not([hidden]){display:block!important}}
 </style>
 </head>
 <body>
