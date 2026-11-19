@@ -462,6 +462,28 @@ footer{background:#090D09;padding:2.5rem max(20px,env(safe-area-inset-right,0px)
   </div>
 </div>
 
+<section class="ck-band" id="checklist-email">
+  <div class="ck-inner">
+    <div class="ck-copy">
+      <p class="ck-eyebrow">Optional</p>
+      <h2 class="ck-title">Want the Pro Se Legal Survival Checklist too?</h2>
+      <p class="ck-sub">The tools above stay free with no sign-up. If you&rsquo;d also like our 12-step checklist for handling a legal matter on your own, we&rsquo;ll email it to you.</p>
+    </div>
+    <form class="ck-form" id="ck-form" novalidate>
+      <div class="ck-row">
+        <input class="ck-input" type="text" id="ck-name" autocomplete="given-name" placeholder="First name" aria-label="First name">
+        <input class="ck-input" type="email" id="ck-email" autocomplete="email" placeholder="you@email.com" aria-label="Email address">
+      </div>
+      <div class="ck-hp" aria-hidden="true"><input type="text" id="ck-website" tabindex="-1" autocomplete="off"></div>
+      <label class="ck-agree"><input type="checkbox" id="ck-agree"> <span>I agree to receive the checklist and occasional plain-language legal education emails from The Juris Institute. I can unsubscribe at any time. See our <a href="privacy-policy.html">Privacy Policy</a>.</span></label>
+      <p class="ck-msg" id="ck-msg" role="alert" hidden></p>
+      <button type="submit" class="ck-btn" id="ck-btn">Email Me the Checklist</button>
+    </form>
+  </div>
+</section>
+<style>.ck-band{background:var(--surface);border-top:1px solid var(--border);padding-block:2.5rem;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}.ck-inner{max-width:960px;margin:0 auto;display:grid;grid-template-columns:1fr 1.1fr;gap:1.5rem 2.5rem;align-items:center}.ck-copy,.ck-form{min-width:0}.ck-eyebrow{font-size:0.68rem;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:var(--red);margin-bottom:0.4rem}.ck-title{font-family:var(--font-display);font-size:1.45rem;font-weight:600;color:var(--ink);line-height:1.25;margin-bottom:0.5rem;text-wrap:balance}.ck-sub{font-size:0.9rem;color:var(--ink-2);line-height:1.6}.ck-row{display:flex;gap:0.6rem;flex-wrap:wrap}.ck-input{flex:1 1 180px;min-width:0;padding:0.7rem 0.8rem;border:1px solid var(--border);border-radius:4px;background:var(--surface);color:var(--ink);font:inherit;font-size:0.92rem}.ck-hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}.ck-agree{display:flex;gap:0.6rem;align-items:flex-start;font-size:0.8rem;color:var(--ink-2);line-height:1.5;margin:0.8rem 0 0}.ck-agree input{margin-top:0.15rem;flex-shrink:0;width:18px;height:18px;accent-color:var(--red)}.ck-agree a{color:var(--red)}.ck-msg{font-size:0.85rem;margin-top:0.6rem;color:var(--red)}.ck-msg.ok{color:var(--ink)}.ck-btn{margin-top:0.9rem;background:var(--red);color:#fff;border:0;border-radius:3px;padding:0.8rem 1.5rem;font:inherit;font-weight:600;font-size:0.88rem;letter-spacing:0.04em;cursor:pointer}.ck-btn[disabled]{opacity:0.7;cursor:wait}@media(max-width:760px){.ck-inner{grid-template-columns:1fr}}</style>
+<script>(function(){var f=document.getElementById('ck-form');if(!f)return;var msg=document.getElementById('ck-msg'),btn=document.getElementById('ck-btn');f.addEventListener('submit',function(e){e.preventDefault();var n=document.getElementById('ck-name').value.trim(),em=document.getElementById('ck-email').value.trim();msg.className='ck-msg';if(!n||!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(em)||!document.getElementById('ck-agree').checked){msg.textContent='Please enter your first name and a valid email address, and check the box to agree.';msg.hidden=false;return;}if(document.getElementById('ck-website').value)return;var d=new FormData();d.append('fields[name]',n);d.append('fields[email]',em);d.append('ml-submit','1');d.append('anticsrf','true');btn.disabled=true;btn.textContent='Sending...';fetch('https://assets.mailerlite.com/jsonp/2808255/forms/204524964696557401/subscribe',{method:'POST',body:d}).then(function(r){return r.json().catch(function(){return{};});}).then(function(j){if(j&&j.success===false)throw new Error('fail');f.querySelector('.ck-row').hidden=true;f.querySelector('.ck-agree').hidden=true;btn.hidden=true;msg.className='ck-msg ok';msg.innerHTML='Thank you, '+n.replace(/[<>&]/g,'')+'. Your checklist is on its way. You can also <a href="pro-se-checklist.html" style="color:var(--red);font-weight:600">open it now</a>.';msg.hidden=false;}).catch(function(){btn.disabled=false;btn.textContent='Email Me the Checklist';msg.textContent='Something went wrong. Please try again, or email info@thejurisinstitute.com.';msg.hidden=false;});});})();</script>
+
 <hr class="rule">
 
 <section class="disclaimer-section">

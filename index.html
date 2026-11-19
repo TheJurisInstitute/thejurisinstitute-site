@@ -322,7 +322,7 @@ footer{background:#090D09;padding:2.5rem max(20px,env(safe-area-inset-right,0px)
         <p class="svc-no">06</p>
         <h3 class="svc-title">Asset Protection Documents</h3>
         <p class="svc-desc">Strategically structured document preparation to help shield your personal assets from business liabilities, creditors, and unforeseen legal claims.</p>
-        <p class="svc-docs">LLC Operating Agreements &mdash; Irrevocable Trust Documents &mdash; Land Trust Agreements &mdash; Property Transfer Deeds &mdash; Business Entity Structures &mdash; Tenancy by the Entirety Instruments</p>
+        <p class="svc-docs">Irrevocable Trust Documents &mdash; Land Trust Agreements &mdash; Property Transfer Deeds &mdash; Business Entity Structures &mdash; Tenancy by the Entirety Instruments</p>
         <a href="asset-protection.html" class="svc-link">Learn More &rsaquo;</a>
       </div>
       <div class="svc-card">
@@ -878,5 +878,6 @@ document.getElementById('contact-form').addEventListener('submit', async functio
 }
 </script>
 <script id="tji-nav-js">(function(){var b=document.querySelector('.nav-toggle'),m=document.getElementById('nav-menu');if(!b||!m)return;b.addEventListener('click',function(){var o=b.getAttribute('aria-expanded')==='true';b.setAttribute('aria-expanded',o?'false':'true');m.hidden=o;});m.addEventListener('click',function(e){if(e.target.tagName==='A'){b.setAttribute('aria-expanded','false');m.hidden=true;}});})();</script>
+<script id="tji-quote-prefill">(function(){try{var p=new URLSearchParams(location.search),m=p.get('matter'),d=p.get('doc');if(m){var sel=document.getElementById('cf-matter');if(sel){for(var i=0;i<sel.options.length;i++){if(sel.options[i].text===m){sel.selectedIndex=i;break;}}}}if(d){var inp=document.getElementById('cf-document');if(inp&&!inp.value)inp.value=d;}}catch(e){}})();</script>
 </body>
 </html>
