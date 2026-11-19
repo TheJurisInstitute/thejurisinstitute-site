@@ -60,9 +60,9 @@ img{max-width:100%;display:block}
 .sf-input{width:100%;padding:0.7rem 0.8rem;border:1px solid var(--border);border-radius:4px;background:var(--surface);color:var(--ink);font:inherit;font-size:0.92rem}
 .sf-input:focus{outline:2px solid var(--navy);outline-offset:1px}
 .sf-hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
-.sf-consent{display:flex;gap:0.6rem;align-items:flex-start;font-size:0.8rem;color:var(--ink-2);line-height:1.5;margin:1rem 0 0.25rem}
-.sf-consent input{margin-top:0.2rem;flex-shrink:0}
-.sf-consent a{color:var(--red)}
+.sf-agree{display:flex;gap:0.6rem;align-items:flex-start;font-size:0.8rem;color:var(--ink-2);line-height:1.5;margin:1rem 0 0.25rem}
+.sf-agree input{margin-top:0.15rem;flex-shrink:0;width:18px;height:18px;accent-color:var(--red)}
+.sf-agree a{color:var(--red)}
 .sf-error{font-size:0.82rem;color:var(--red);margin-top:0.5rem}
 .sf-btn{margin-top:1rem;border:0;cursor:pointer;width:100%;text-align:center;font:inherit;font-weight:600}
 .sf-btn[disabled]{opacity:0.7;cursor:wait}
@@ -298,7 +298,7 @@ footer{background:var(--navy);border-top:1px solid rgba(255,255,255,0.06);paddin
           <option>Other or not sure</option>
           </select>
           <div class="sf-hp" aria-hidden="true"><label for="sf-website">Leave this field empty</label><input type="text" id="sf-website" name="website" tabindex="-1" autocomplete="off"></div>
-          <label class="sf-consent"><input type="checkbox" id="sf-consent" required> <span>I agree to receive the checklist and occasional plain-language legal education emails from The Juris Institute. I can unsubscribe at any time. See our <a href="privacy-policy.html">Privacy Policy</a>.</span></label>
+          <label class="sf-agree"><input type="checkbox" id="sf-agree" required> <span>I agree to receive the checklist and occasional plain-language legal education emails from The Juris Institute. I can unsubscribe at any time. See our <a href="privacy-policy.html">Privacy Policy</a>.</span></label>
           <p class="sf-error" id="sf-error" role="alert" hidden>Please enter your first name and a valid email address, and check the box to agree.</p>
           <button type="submit" class="btn-red sf-btn" id="sf-btn">Send Me the Free Checklist</button>
           <p class="sf-note">Free. No spam. Unsubscribe anytime.</p>
@@ -332,7 +332,7 @@ footer{background:var(--navy);border-top:1px solid rgba(255,255,255,0.06);paddin
     e.preventDefault();
     var name=document.getElementById('sf-name').value.trim();
     var email=document.getElementById('sf-email').value.trim();
-    var ok=name && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) && document.getElementById('sf-consent').checked;
+    var ok=name && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) && document.getElementById('sf-agree').checked;
     if(!ok){ err.hidden=false; return; }
     err.hidden=true;
     if(document.getElementById('sf-website').value) return;
