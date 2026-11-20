@@ -9,6 +9,14 @@ export const TIERS = {
   plan_estate:       { price: '49.00',  name: 'Estate Planning Organizer',            urlVar: 'KIT_ESTATE_URL' },
   plan_prenup:       { price: '79.00',  name: 'Prenup Preparation Workbook',          urlVar: 'KIT_PRENUP_URL' },
   llc_founder:       { price: '149.00', name: 'LLC Founder Kit',                      urlVar: 'KIT_LLC_URL' },
+  kit_attorney:      { price: '29.00',  name: 'Working With Your Attorney Toolkit',   urlVar: 'KIT_ATTORNEY_URL' },
+  kit_money:         { price: '39.00',  name: 'Money Reset Kit',                      urlVar: 'KIT_MONEY_URL' },
+  coach_quick:       { price: '79.00',  name: 'Written Legal Coaching: Quick Answer', service: 'written' },
+  coach_standard:    { price: '149.00', name: 'Written Legal Coaching: Standard',     service: 'written' },
+  coach_deep:        { price: '299.00', name: 'Written Legal Coaching: Deep Dive',    service: 'written' },
+  call_20:           { price: '49.00',  name: 'Financial Coaching Call (20 minutes)', service: 'call', urlVar: 'CALL_BOOKING_URL' },
+  call_40:           { price: '89.00',  name: 'Financial Coaching Call (40 minutes)', service: 'call', urlVar: 'CALL_BOOKING_URL' },
+  call_60:           { price: '129.00', name: 'Financial Coaching Call (60 minutes)', service: 'call', urlVar: 'CALL_BOOKING_URL' },
   test_one:      { price: '1.00',   name: 'Checkout Test (owner only)', urlVar: 'KIT_REGD_STARTER_URL', testOnly: true },
 };
 export function tierFor(env, key) {

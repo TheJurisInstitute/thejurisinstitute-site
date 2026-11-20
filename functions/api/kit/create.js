@@ -10,7 +10,7 @@ export async function onRequestPost({ request, env }) {
       headers: { Authorization: 'Bearer ' + token, 'Content-Type': 'application/json' },
       body: JSON.stringify({
         intent: 'CAPTURE',
-        purchase_units: [{ reference_id: tier, custom_id: tier, description: t.name + ' (digital download)',
+        purchase_units: [{ reference_id: tier, custom_id: tier, description: t.name + (t.service ? ' (educational coaching service)' : ' (digital download)'),
           amount: { currency_code: 'USD', value: t.price } }],
         application_context: { brand_name: 'The Juris Institute', shipping_preference: 'NO_SHIPPING', user_action: 'PAY_NOW' },
       }),

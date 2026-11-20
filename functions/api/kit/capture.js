@@ -24,6 +24,9 @@ export async function onRequestPost({ request, env }) {
         amount.currency_code !== 'USD' || amount.value !== t.price) {
       return json({ error: 'Payment not completed', status: cap.status || order.status || 'UNKNOWN' }, 402);
     }
+    if (t.service) {
+      return json({ ok: true, product: t.name, service: t.service, url: t.urlVar ? (env[t.urlVar] || null) : null, order: order.id, email: (order.payer || {}).email_address || null });
+    }
     const url = env[t.urlVar];
     if (!url) return json({ error: 'Download not configured' }, 500);
     return json({ ok: true, product: t.name, url, email: (order.payer || {}).email_address || null });

@@ -154,6 +154,28 @@ footer{background:#090D09;padding:2.5rem max(20px,env(safe-area-inset-right,0px)
 @media(max-width:1240px){.nav-links a.hide-sm[href$="#how"],.nav-links a.hide-sm[href$="#about"]{display:none}}
 @media(max-width:1000px){.nav-toggle{display:inline-flex}.nav-links .hide-sm{display:none}.nav-menu:not([hidden]){display:block!important}}
 </style>
+<style id="tji-book">
+.book-sec{background:var(--bg);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.book-tiers{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;margin:1.5rem 0 1rem}
+.book-tier{background:var(--surface);border:1px solid var(--border);border-top:3px solid var(--navy);border-radius:6px;padding:1.5rem;min-width:0;display:flex;flex-direction:column;box-shadow:0 8px 28px rgba(17,24,39,0.06)}
+.book-tier.best{border-top-color:var(--red)}
+.book-name{font-size:0.7rem;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:var(--red);margin-bottom:0.4rem}
+.book-price{font-family:var(--font-display);font-size:2.4rem;font-weight:600;color:var(--ink);line-height:1;margin-bottom:0.75rem}
+.book-tier ul{margin:0 0 1.25rem 1.1rem;font-size:0.88rem;color:var(--ink-2);line-height:1.55;display:flex;flex-direction:column;gap:0.35rem;flex:1}
+.book-slot{min-height:120px}
+.book-slot.locked{opacity:0.35;pointer-events:none;filter:grayscale(1)}
+.book-ack{background:var(--red-bg);border-left:3px solid var(--red);border-radius:0 4px 4px 0;padding:1rem 1.25rem;margin:1.25rem 0 0.5rem}
+.book-ack label{display:flex;gap:0.7rem;align-items:flex-start;font-size:0.88rem;color:var(--ink-2);line-height:1.55;cursor:pointer}
+.book-ack input{margin-top:0.2rem;flex-shrink:0;width:19px;height:19px;accent-color:var(--red)}
+.book-hint{font-size:0.8rem;color:var(--red);margin-top:0.5rem;font-weight:600}
+.book-note{font-size:0.82rem;color:var(--ink-3);line-height:1.6;margin-top:0.75rem}
+.book-done{background:var(--surface);border:1px solid var(--border);border-top:3px solid #2F6B3A;border-radius:6px;padding:1.75rem;margin:1.5rem 0}
+.book-done h3{font-family:var(--font-display);font-size:1.6rem;color:var(--ink);margin-bottom:0.5rem}
+.book-done p{font-size:0.92rem;color:var(--ink-2);line-height:1.65;margin-bottom:0.75rem}
+.book-btn{display:inline-block;background:var(--red);color:#fff;padding:0.85rem 1.6rem;border-radius:3px;text-decoration:none;font-weight:600}
+.book-err{color:var(--red);font-size:0.88rem;font-weight:600;margin-top:0.75rem}
+@media(max-width:900px){.book-tiers{grid-template-columns:1fr}}
+</style>
 </head>
 <body>
 
@@ -191,6 +213,8 @@ footer{background:#090D09;padding:2.5rem max(20px,env(safe-area-inset-right,0px)
       <a href="pro-se-toolkits.html">Pro Se Toolkits</a>
       <a href="planning-workbooks.html">Estate &amp; Prenup Workbooks</a>
       <a href="llc-founder-kit.html">LLC Founder Kit</a>
+      <a href="attorney-toolkit.html">Working With Your Attorney Toolkit</a>
+      <a href="money-reset-kit.html">Money Reset Kit</a>
     <a href="index.html#contact">Contact</a>
     <a href="https://www.youtube.com/@TheJurisInstitute" target="_blank" rel="noopener">YouTube</a>
     <a href="https://x.com/JurisInstitute" target="_blank" rel="noopener">X (Twitter)</a>
@@ -307,6 +331,39 @@ footer{background:#090D09;padding:2.5rem max(20px,env(safe-area-inset-right,0px)
 </section>
 
 <hr class="rule">
+
+<section class="section book-sec" id="book">
+  <div class="section-inner">
+    <p class="section-label">Book Written Coaching</p>
+    <h2 class="section-title">Get Your Question Answered in Writing</h2>
+    <p class="book-note" style="font-size:0.98rem;color:var(--ink-2);max-width:760px">Pay online, then email us your question. You receive a clear, plain-English written explanation that you can keep and reread. All coaching is educational and delivered in writing.</p>
+    <div class="book-tiers">
+      <div class="book-tier">
+        <p class="book-name">Quick Answer</p>
+        <p class="book-price">$79</p>
+        <ul><li>One focused question</li><li>Written explanation by the end of the next business day</li><li>Best for a term, a notice or a single step in a process</li></ul>
+        <div class="book-slot locked" id="pp-coach_quick"></div>
+      </div>
+      <div class="book-tier best">
+        <p class="book-name">Standard</p>
+        <p class="book-price">$149</p>
+        <ul><li>Up to three related questions</li><li>One follow-up question</li><li>Written explanation within two business days</li><li>Best for understanding a process or a set of documents</li></ul>
+        <div class="book-slot locked" id="pp-coach_standard"></div>
+      </div>
+      <div class="book-tier">
+        <p class="book-name">Deep Dive</p>
+        <p class="book-price">$299</p>
+        <ul><li>A full topic or a document of up to 10 pages explained section by section</li><li>Two follow-up questions</li><li>Written explanation within three business days</li><li>Best for contracts, court orders, leases and estate documents</li></ul>
+        <div class="book-slot locked" id="pp-coach_deep"></div>
+      </div>
+    </div>
+    <div class="book-ack"><label><input type="checkbox" id="book-ack"> <span>I understand that written coaching is legal education only. It is not legal advice, it does not tell me what to do in my situation, and it does not create an attorney-client relationship with The Juris Institute or anyone associated with it. For advice about my specific situation, I will consult a licensed attorney in my state.</span></label><p class="book-hint" id="book-hint">Check the box above to unlock checkout.</p></div>
+    <p class="book-note">Business days are Monday through Friday, excluding holidays. Coaching fees are non-refundable once your written response has been delivered. If we determine your question asks for legal advice that coaching cannot provide, we will tell you and refund your payment.</p>
+    <div id="book-done" hidden></div>
+    <p class="book-err" id="book-err" hidden></p>
+    <p class="book-note">Have questions every month? The <a href="expert-chat.html" style="color:var(--red);font-weight:600">Monthly Expert Chat</a> at $39.99 a month may be the better value.</p>
+  </div>
+</section>
 
 <section class="section who-section">
   <div class="section-inner">
@@ -477,6 +534,8 @@ footer{background:#090D09;padding:2.5rem max(20px,env(safe-area-inset-right,0px)
       <a href="pro-se-toolkits.html">Pro Se Toolkits</a>
       <a href="planning-workbooks.html">Estate &amp; Prenup Workbooks</a>
       <a href="llc-founder-kit.html">LLC Founder Kit</a>
+      <a href="attorney-toolkit.html">Working With Your Attorney Toolkit</a>
+      <a href="money-reset-kit.html">Money Reset Kit</a>
       <a href="index.html#contact">Contact</a>
       <a href="privacy-policy.html">Privacy Policy</a>
       <a href="terms-of-service.html">Terms of Service</a>
@@ -517,5 +576,53 @@ footer{background:#090D09;padding:2.5rem max(20px,env(safe-area-inset-right,0px)
 }
 </script>
 <script id="tji-nav-js">(function(){var b=document.querySelector('.nav-toggle'),m=document.getElementById('nav-menu');if(!b||!m)return;b.addEventListener('click',function(){var o=b.getAttribute('aria-expanded')==='true';b.setAttribute('aria-expanded',o?'false':'true');m.hidden=o;});m.addEventListener('click',function(e){if(e.target.tagName==='A'){b.setAttribute('aria-expanded','false');m.hidden=true;}});})();</script>
+<script>
+(function(){
+  var sec=document.getElementById('book'); if(!sec) return;
+  var ack=document.getElementById('book-ack'), hint=document.getElementById('book-hint');
+  var errEl=document.getElementById('book-err'), done=document.getElementById('book-done');
+  var slots=[].slice.call(sec.querySelectorAll('.book-slot'));
+  function sync(){ slots.forEach(function(s){ s.classList.toggle('locked',!ack.checked); }); hint.hidden=ack.checked; }
+  ack.addEventListener('change',sync); sync();
+  function showErr(m){ errEl.textContent=m; errEl.hidden=false; }
+  function post(u,b){ return fetch(u,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(b)}).then(function(r){ return r.json().then(function(j){ if(!r.ok) throw new Error(j.error||'Request failed'); return j; }); }); }
+  function el(tag,txt){ var e=document.createElement(tag); if(txt) e.textContent=txt; return e; }
+  function finish(j){
+    done.innerHTML=''; var box=el('div'); box.className='book-done';
+    box.appendChild(el('h3','Thank you. Your payment is confirmed.'));
+    box.appendChild(el('p','You purchased: '+j.product+'. Your order number is '+j.order+'.'));
+    if(j.service==='call'){
+      if(j.url){ box.appendChild(el('p','Next step: choose a time for your call.')); var a=el('a','Book your call time'); a.className='book-btn'; a.href=j.url; a.target='_blank'; a.rel='noopener'; box.appendChild(a); box.appendChild(el('p','When you book, enter the same name and email you used at checkout, and include your order number in the notes.')); }
+      else { box.appendChild(el('p','Next step: email info@thejurisinstitute.com with your order number and two or three times that work for you, and we will confirm your call.')); }
+      box.appendChild(el('p','Before your call, gather your recent bank statements, a list of your debts with balances and minimum payments, and your take-home pay.'));
+    } else {
+      box.appendChild(el('p','Next step: email your question to info@thejurisinstitute.com with the subject line "Written Coaching - Order '+j.order+'". Include your question, the background we need to understand it, and any documents you want explained. Please remove Social Security numbers and full account numbers first.'));
+      box.appendChild(el('p','Your response time starts when we receive your question. If we need more information, we will ask.'));
+    }
+    box.appendChild(el('p','Keep your PayPal receipt. Questions: info@thejurisinstitute.com.'));
+    done.appendChild(box); done.hidden=false; done.scrollIntoView({behavior:'smooth'});
+  }
+  fetch('/api/kit/config').then(function(r){return r.json();}).then(function(cfg){
+    if(!cfg.clientId){ showErr('Online booking is being set up. Please use the quote form below.'); return; }
+    function render(){
+      slots.forEach(function(slot){
+        var tier=slot.id.replace('pp-','');
+        paypal.Buttons({
+          style:{shape:'rect',layout:'vertical',label:'pay'},
+          onClick:function(d,actions){ if(!ack.checked){ hint.hidden=false; return actions.reject(); } return actions.resolve(); },
+          createOrder:function(){ errEl.hidden=true; return post('/api/kit/create',{tier:tier}).then(function(j){ return j.id; }); },
+          onApprove:function(data){ return post('/api/kit/capture',{orderID:data.orderID}).then(finish).catch(function(){ showErr('Your payment could not be confirmed automatically. Please email info@thejurisinstitute.com with your PayPal receipt and we will follow up right away.'); }); },
+          onError:function(){ showErr('Something went wrong with checkout. Please try again, or email info@thejurisinstitute.com.'); }
+        }).render(slot);
+      });
+    }
+    if(window.paypal){ render(); return; }
+    var s=document.createElement('script');
+    s.src='https://www.paypal.com/sdk/js?client-id='+encodeURIComponent(cfg.clientId)+'&currency=USD&intent=capture&enable-funding=venmo';
+    s.onload=render; s.onerror=function(){ showErr('The payment buttons did not load. Please refresh the page.'); };
+    document.head.appendChild(s);
+  }).catch(function(){ showErr('Online booking is temporarily unavailable. Please use the quote form below.'); });
+})();
+</script>
 </body>
 </html>
