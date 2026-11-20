@@ -6,6 +6,8 @@ export const TIERS = {
   prose_smallclaims: { price: '79.00',  name: 'Small Claims Court Prep Kit',          urlVar: 'KIT_SMALLCLAIMS_URL' },
   prose_debt:        { price: '97.00',  name: 'Debt Collection Lawsuit Response Kit', urlVar: 'KIT_DEBT_URL' },
   prose_bundle:      { price: '149.00', name: 'Pro Se Toolkit Bundle',                urlVar: 'KIT_PROSE_BUNDLE_URL' },
+  plan_estate:       { price: '49.00',  name: 'Estate Planning Organizer',            urlVar: 'KIT_ESTATE_URL' },
+  plan_prenup:       { price: '79.00',  name: 'Prenup Preparation Workbook',          urlVar: 'KIT_PRENUP_URL' },
   test_one:      { price: '1.00',   name: 'Checkout Test (owner only)', urlVar: 'KIT_REGD_STARTER_URL', testOnly: true },
 };
 export function tierFor(env, key) {
