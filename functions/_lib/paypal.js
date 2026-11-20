@@ -8,6 +8,7 @@ export const TIERS = {
   prose_bundle:      { price: '149.00', name: 'Pro Se Toolkit Bundle',                urlVar: 'KIT_PROSE_BUNDLE_URL' },
   plan_estate:       { price: '49.00',  name: 'Estate Planning Organizer',            urlVar: 'KIT_ESTATE_URL' },
   plan_prenup:       { price: '79.00',  name: 'Prenup Preparation Workbook',          urlVar: 'KIT_PRENUP_URL' },
+  llc_founder:       { price: '149.00', name: 'LLC Founder Kit',                      urlVar: 'KIT_LLC_URL' },
   test_one:      { price: '1.00',   name: 'Checkout Test (owner only)', urlVar: 'KIT_REGD_STARTER_URL', testOnly: true },
 };
 export function tierFor(env, key) {
