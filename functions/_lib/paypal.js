@@ -2,6 +2,10 @@
 export const TIERS = {
   regd_starter:  { price: '497.00', name: 'Reg D Starter Kit',  urlVar: 'KIT_REGD_STARTER_URL' },
   regd_complete: { price: '797.00', name: 'Reg D Complete Kit', urlVar: 'KIT_REGD_COMPLETE_URL' },
+  prose_demand:      { price: '49.00',  name: 'Demand Letter Kit',                    urlVar: 'KIT_DEMAND_URL' },
+  prose_smallclaims: { price: '79.00',  name: 'Small Claims Court Prep Kit',          urlVar: 'KIT_SMALLCLAIMS_URL' },
+  prose_debt:        { price: '97.00',  name: 'Debt Collection Lawsuit Response Kit', urlVar: 'KIT_DEBT_URL' },
+  prose_bundle:      { price: '149.00', name: 'Pro Se Toolkit Bundle',                urlVar: 'KIT_PROSE_BUNDLE_URL' },
   test_one:      { price: '1.00',   name: 'Checkout Test (owner only)', urlVar: 'KIT_REGD_STARTER_URL', testOnly: true },
 };
 export function tierFor(env, key) {
