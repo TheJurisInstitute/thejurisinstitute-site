@@ -130,6 +130,26 @@ footer{background:#090D09;padding:2.5rem max(20px,env(safe-area-inset-right,0px)
 .rule{border:none;border-top:1px solid var(--border);margin:0}
 @media(max-width:600px){.hero{padding-block:3.75rem 3.25rem}.section{padding-block:3.75rem}.services-grid{grid-template-columns:1fr}.steps-grid{grid-template-columns:1fr}.cred-pill{font-size:0.78rem;padding:0 0.9rem}.hero-creds{gap:0.6rem 0}.who-grid{grid-template-columns:1fr}}
 
+.contact-form-wrap{max-width:680px;margin:0 auto;text-align:left}
+.cf-grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+@media(max-width:560px){.cf-grid{grid-template-columns:1fr}}
+.cf-field{display:flex;flex-direction:column;gap:0.4rem;margin-bottom:1rem}
+.cf-field:last-of-type{margin-bottom:0}
+.cf-field label{font-size:0.75rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--hero-muted)}
+.cf-optional{font-size:0.7rem;font-weight:400;letter-spacing:0;color:var(--hero-muted);text-transform:none}
+.cf-field input,.cf-field select,.cf-field textarea{font-family:var(--font-body);font-size:0.9rem;color:var(--ink);background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);border-radius:4px;padding:0.7rem 0.9rem;width:100%;transition:border-color 0.15s;color:#EDF0F5}
+.cf-field input::placeholder,.cf-field textarea::placeholder{color:rgba(255,255,255,0.3)}
+.cf-field select{color:#EDF0F5}
+.cf-field select option{background:#1C3058;color:#EDF0F5}
+.cf-field input:focus,.cf-field select:focus,.cf-field textarea:focus{outline:none;border-color:var(--red-lt);background:rgba(255,255,255,0.12)}
+.cf-field textarea{resize:vertical;min-height:110px;line-height:1.6}
+.cf-submit{background:var(--red);color:#fff;font-family:var(--font-body);font-size:0.88rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;border:none;border-radius:4px;padding:0.9rem 2.5rem;cursor:pointer;transition:opacity 0.18s;margin-top:1.5rem;width:100%}
+.cf-submit:hover{opacity:0.85}
+.cf-consent{font-size:0.78rem;color:var(--ink-3);line-height:1.55;margin-top:0.85rem;text-align:center}.cf-consent a{color:var(--red);text-decoration:underline}.cf-submit:disabled{opacity:0.55;cursor:not-allowed}
+.cf-msg{margin-top:1.25rem;padding:1rem 1.25rem;border-radius:4px;font-size:0.875rem;line-height:1.6;display:none}
+.cf-msg.success{background:rgba(74,222,128,0.12);border:1px solid rgba(74,222,128,0.3);color:#4ADE80}
+.cf-msg.error{background:rgba(224,68,72,0.12);border:1px solid rgba(224,68,72,0.3);color:var(--red-lt)}
+.cf-divider{width:1px;background:rgba(255,255,255,0.1);margin:0 auto 2.5rem}
 </style>
 <style id="tji-nav-fix">
 .nav{position:sticky}
@@ -441,13 +461,152 @@ footer{background:#090D09;padding:2.5rem max(20px,env(safe-area-inset-right,0px)
 <section class="cta-section" id="contact">
   <h2>Get Your Civil Litigation Documents Prepared</h2>
   <p class="sub">Contact us with your matter and we will provide a flat-fee quote — typically within one business day. Virtual, nationwide, no hourly billing.</p>
-  <a href="mailto:info@TheJurisInstitute.com" class="btn-primary">Contact Us to Get Started</a>
+  <div class="contact-form-wrap">
+    <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+      <!-- Web3Forms access key — replace with your key from web3forms.com -->
+      <input type="hidden" name="access_key" value="5a306fc6-981e-4b90-889a-215ee73cd45a">
+      <input type="hidden" name="subject" id="cf-subject" value="New Inquiry — The Juris Institute">
+      <input type="hidden" name="from_name" value="The Juris Institute Website">
+      <input type="hidden" name="redirect" value="false">
+      <!-- Honeypot spam filter -->
+      <input type="checkbox" name="botcheck" style="display:none">
+      <input type="hidden" name="lead_source" id="cf-lead" value="">
+      <input type="hidden" name="page" value="civil-litigation">
+
+
+      <div class="cf-grid">
+        <div class="cf-field">
+          <label for="cf-name">Your Full Name</label>
+          <input type="text" id="cf-name" name="name" placeholder="First and Last Name" required>
+        </div>
+        <div class="cf-field">
+          <label for="cf-email">Your Email Address</label>
+          <input type="email" id="cf-email" name="email" placeholder="you@email.com" required>
+        </div>
+      </div>
+
+      <div class="cf-grid">
+        <div class="cf-field">
+          <label for="cf-phone">Phone Number <span class="cf-optional">(Optional)</span></label>
+          <input type="tel" id="cf-phone" name="phone" placeholder="(555) 000-0000">
+        </div>
+        <div class="cf-field">
+          <label for="cf-urgency">When Do You Need This?</label>
+          <select id="cf-urgency" name="urgency">
+            <option value="" disabled selected>Select a timeframe</option>
+            <option>Within 24&ndash;48 hours (urgent)</option>
+            <option>Within 1 week</option>
+            <option>Within 2&ndash;4 weeks</option>
+            <option>No specific deadline</option>
+            <option>Just getting a quote for now</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="cf-grid">
+        <div class="cf-field">
+          <label for="cf-state">Your State</label>
+          <select id="cf-state" name="state" required>
+            <option value="" disabled selected>Select your state</option>
+            <option>Alabama</option><option>Alaska</option><option>Arizona</option><option>Arkansas</option><option>California</option><option>Colorado</option><option>Connecticut</option><option>Delaware</option><option>Florida</option><option>Georgia</option><option>Hawaii</option><option>Idaho</option><option>Illinois</option><option>Indiana</option><option>Iowa</option><option>Kansas</option><option>Kentucky</option><option>Louisiana</option><option>Maine</option><option>Maryland</option><option>Massachusetts</option><option>Michigan</option><option>Minnesota</option><option>Mississippi</option><option>Missouri</option><option>Montana</option><option>Nebraska</option><option>Nevada</option><option>New Hampshire</option><option>New Jersey</option><option>New Mexico</option><option>New York</option><option>North Carolina</option><option>North Dakota</option><option>Ohio</option><option>Oklahoma</option><option>Oregon</option><option>Pennsylvania</option><option>Rhode Island</option><option>South Carolina</option><option>South Dakota</option><option>Tennessee</option><option>Texas</option><option>Utah</option><option>Vermont</option><option>Virginia</option><option>Washington</option><option>West Virginia</option><option>Wisconsin</option><option>Wyoming</option><option>Washington D.C.</option>
+          </select>
+        </div>
+        <div class="cf-field">
+          <label for="cf-matter">Type of Matter</label>
+          <select id="cf-matter" name="matter_type" required>
+            <option value="" disabled>Select a matter type</option>
+            <option selected>Civil Litigation Documents</option>
+            <option>Contract Drafting or Review</option>
+            <option>Website &amp; Online Business Documents</option>
+            <option>Real Estate Documents</option>
+            <option>Estate Planning Documents</option>
+            <option>Asset Protection Documents</option>
+            <option>Business Formation Documents</option>
+            <option>Family Law Documents</option>
+            <option>Appellate Briefs or Writs</option>
+            <option>Foreclosure Defense Documents</option>
+            <option>Consumer Protection Documents</option>
+            <option>Legal Research and Memoranda</option>
+            <option>Legal Education Coaching</option>
+            <option>Financial Education Coaching</option>
+            <option>Small Claims Court Coaching</option>
+            <option>Other / Not Sure</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="cf-field">
+        <label for="cf-document">Document or Matter You&rsquo;re Asking About <span class="cf-optional">(Optional)</span></label>
+        <input type="text" id="cf-document" name="document_requested" placeholder="For example: answer to a complaint, motion, discovery responses">
+      </div>
+
+      <div class="cf-field">
+        <label for="cf-message">Brief Description of What You Need</label>
+        <textarea id="cf-message" name="message" placeholder="Please describe your situation and what documents or coaching you are looking for. Include any relevant dates or deadlines." required></textarea>
+      </div>
+
+      <div class="cf-field">
+        <label for="cf-referral">How Did You Hear About Us? <span class="cf-optional">(Optional)</span></label>
+        <select id="cf-referral" name="referral_source">
+          <option value="" disabled selected>Select one</option>
+          <option>Google or other search engine</option>
+          <option>Social media (LinkedIn, Facebook, etc.)</option>
+          <option>YouTube</option>
+          <option>X (Twitter)</option>
+          <option>Referral from a friend or family member</option>
+          <option>Online community or forum</option>
+          <option>Free checklist / resource</option>
+          <option>Other</option>
+        </select>
+      </div>
+
+      <button type="submit" class="cf-submit" id="cf-submit">Submit Your Inquiry &mdash; Get a Free Quote</button>
+      <p class="cf-consent">By submitting this form, you agree to our <a href="terms-of-service.html">Terms of Service</a> and acknowledge our <a href="privacy-policy.html">Privacy Policy</a>. Submitting an inquiry does not create an attorney-client relationship.</p>
+
+      <div class="cf-msg success" id="cf-success">Your inquiry has been received. We will respond in writing within one business day with your flat-fee quote and next steps. Thank you for contacting The Juris Institute.</div>
+      <div class="cf-msg error" id="cf-error">There was a problem submitting your form. Please email us directly at <a href="mailto:info@TheJurisInstitute.com" style="color:var(--red-lt)">info@TheJurisInstitute.com</a> and we will respond promptly.</div>
+    </form>
+  </div>
+
   <div class="contact-row">
     <span class="contact-item">Email: <a href="mailto:info@TheJurisInstitute.com">info@TheJurisInstitute.com</a></span>
     <span class="contact-item">Virtual &bull; Nationwide Service</span>
     <span class="contact-item">Flat-Fee &bull; Fast Turnaround</span>
   </div>
 </section>
+<script>
+document.getElementById('contact-form').addEventListener('submit', async function(e) {
+  e.preventDefault();
+  const btn = document.getElementById('cf-submit');
+  const success = document.getElementById('cf-success');
+  const error = document.getElementById('cf-error');
+  // Build a descriptive subject line
+  const matter = document.getElementById('cf-matter').value || 'General';
+  const state = document.getElementById('cf-state').value || '';
+  document.getElementById('cf-subject').value = 'New Inquiry: ' + matter + (state ? ' — ' + state : '') + ' — The Juris Institute';
+  btn.disabled = true;
+  btn.textContent = 'Sending...';
+  success.style.display = 'none';
+  error.style.display = 'none';
+  try {
+    const data = new FormData(this);
+    const res = await fetch('https://api.web3forms.com/submit', {method:'POST', body: data});
+    const json = await res.json();
+    if (json.success) {
+      success.style.display = 'block';
+      this.reset();
+      btn.textContent = 'Inquiry Sent';
+    } else {
+      throw new Error(json.message || 'Submission failed');
+    }
+  } catch(err) {
+    error.style.display = 'block';
+    btn.disabled = false;
+    btn.textContent = 'Submit Your Inquiry — Get a Free Quote';
+  }
+});
+</script>
+<script id="tji-lead-source">(function(){try{var k='tji_first_touch',p=new URLSearchParams(location.search),u=['utm_source','utm_medium','utm_campaign'].map(function(x){return p.get(x)?x.replace('utm_','')+'='+p.get(x):''}).filter(Boolean).join(' '),r=document.referrer&&document.referrer.indexOf(location.host)<0?' ref='+new URL(document.referrer).host:'',cur=(u||'direct')+r;var first=null;try{first=localStorage.getItem(k);if(!first&&(u||r)){localStorage.setItem(k,cur+' on '+location.pathname);first=localStorage.getItem(k);}}catch(e){}var f=document.getElementById('cf-lead');if(f)f.value='page='+location.pathname+' | this visit: '+cur+(first?' | first visit: '+first:'');}catch(e){}})();</script>
 
 <style>.donate-strip{background:linear-gradient(135deg,#152b15 0%,#0b1f0b 100%);border-top:3px solid #c8a84b;padding:2.25rem max(20px,env(safe-area-inset-right,0px));padding-left:max(20px,env(safe-area-inset-left,0px))}.donate-inner{max-width:960px;margin:0 auto;display:flex;flex-wrap:wrap;gap:1rem 2rem;align-items:center;justify-content:center;text-align:center}.donate-text{display:flex;flex-direction:column;gap:0.4rem}.donate-text strong{font-size:1.05rem;font-weight:700;color:#f0e8d0;letter-spacing:0.02em}.donate-text span{font-size:0.85rem;color:rgba(240,232,208,0.72);max-width:580px;line-height:1.5}.donate-btn{display:inline-block;background:#c8a84b;color:#0b1f0b;font-weight:700;font-size:0.88rem;padding:0.72rem 1.65rem;border-radius:4px;text-decoration:none;letter-spacing:0.05em;transition:opacity 0.18s;white-space:nowrap}.donate-btn:hover{opacity:0.85}</style>
 <!-- DONATE SECTION -->

@@ -792,6 +792,9 @@ footer{background:#090D09;padding:2.5rem max(20px,env(safe-area-inset-right,0px)
       <input type="hidden" name="redirect" value="false">
       <!-- Honeypot spam filter -->
       <input type="checkbox" name="botcheck" style="display:none">
+      <input type="hidden" name="lead_source" id="cf-lead" value="">
+      <input type="hidden" name="page" value="home">
+
 
       <div class="cf-grid">
         <div class="cf-field">
@@ -1000,6 +1003,7 @@ document.getElementById('contact-form').addEventListener('submit', async functio
 }
 </script>
 <script id="tji-nav-js">(function(){var b=document.querySelector('.nav-toggle'),m=document.getElementById('nav-menu');if(!b||!m)return;b.addEventListener('click',function(){var o=b.getAttribute('aria-expanded')==='true';b.setAttribute('aria-expanded',o?'false':'true');m.hidden=o;});m.addEventListener('click',function(e){if(e.target.tagName==='A'){b.setAttribute('aria-expanded','false');m.hidden=true;}});})();</script>
+<script id="tji-lead-source">(function(){try{var k='tji_first_touch',p=new URLSearchParams(location.search),u=['utm_source','utm_medium','utm_campaign'].map(function(x){return p.get(x)?x.replace('utm_','')+'='+p.get(x):''}).filter(Boolean).join(' '),r=document.referrer&&document.referrer.indexOf(location.host)<0?' ref='+new URL(document.referrer).host:'',cur=(u||'direct')+r;var first=null;try{first=localStorage.getItem(k);if(!first&&(u||r)){localStorage.setItem(k,cur+' on '+location.pathname);first=localStorage.getItem(k);}}catch(e){}var f=document.getElementById('cf-lead');if(f)f.value='page='+location.pathname+' | this visit: '+cur+(first?' | first visit: '+first:'');}catch(e){}})();</script>
 <script id="tji-quote-prefill">(function(){try{var p=new URLSearchParams(location.search),m=p.get('matter'),d=p.get('doc');if(m){var sel=document.getElementById('cf-matter');if(sel){for(var i=0;i<sel.options.length;i++){if(sel.options[i].text===m){sel.selectedIndex=i;break;}}}}if(d){var inp=document.getElementById('cf-document');if(inp&&!inp.value)inp.value=d;}}catch(e){}})();</script>
 </body>
 </html>
