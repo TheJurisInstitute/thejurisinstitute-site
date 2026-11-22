@@ -150,6 +150,7 @@ footer{background:#090D09;padding:2.5rem max(20px,env(safe-area-inset-right,0px)
 .cf-msg.success{background:rgba(74,222,128,0.12);border:1px solid rgba(74,222,128,0.3);color:#4ADE80}
 .cf-msg.error{background:rgba(224,68,72,0.12);border:1px solid rgba(224,68,72,0.3);color:var(--red-lt)}
 .cf-divider{width:1px;background:rgba(255,255,255,0.1);margin:0 auto 2.5rem}
+#online-business{scroll-margin-top:96px}
 </style>
 <style id="tji-nav-fix">
 .nav{position:sticky}
@@ -339,7 +340,7 @@ footer{background:#090D09;padding:2.5rem max(20px,env(safe-area-inset-right,0px)
         <h3 class="svc-title">Website and Online Business Documents</h3>
         <p class="svc-desc">If your website collects names or emails, sells online, or offers software by subscription, you need legal pages written for how your business actually works. Copied templates often promise things your business does not do, or leave out disclosures the law requires.</p>
         <p class="svc-docs">Privacy Policies &mdash; Terms of Service &mdash; Terms of Use &mdash; SaaS and Subscription Agreements &mdash; End User License Agreements &mdash; Refund and Return Policies &mdash; Cookie Notices</p>
-        <a href="#contact" class="svc-link">Get a Quote &rsaquo;</a>
+        <a href="?matter=Website+%26+Online+Business+Documents#contact" class="svc-link">Get a Quote &rsaquo;</a>
       </div>
     </div>
   </div>
@@ -699,5 +700,6 @@ document.getElementById('contact-form').addEventListener('submit', async functio
 }
 </script>
 <script id="tji-nav-js">(function(){var b=document.querySelector('.nav-toggle'),m=document.getElementById('nav-menu');if(!b||!m)return;b.addEventListener('click',function(){var o=b.getAttribute('aria-expanded')==='true';b.setAttribute('aria-expanded',o?'false':'true');m.hidden=o;});m.addEventListener('click',function(e){if(e.target.tagName==='A'){b.setAttribute('aria-expanded','false');m.hidden=true;}});})();</script>
+<script id="tji-quote-prefill">(function(){try{var p=new URLSearchParams(location.search),m=p.get('matter'),d=p.get('doc');if(m){var sel=document.getElementById('cf-matter');if(sel){for(var i=0;i<sel.options.length;i++){if(sel.options[i].text===m){sel.selectedIndex=i;break;}}}}if(d){var inp=document.getElementById('cf-document');if(inp&&!inp.value)inp.value=d;}}catch(e){}})();</script>
 </body>
 </html>
